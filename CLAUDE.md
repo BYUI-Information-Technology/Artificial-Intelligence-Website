@@ -237,7 +237,7 @@ Track content authoring status here. Update as pages are completed.
 |------|--------|-------|
 | Home | Not started | |
 | About GenAI | Not started | |
-| Tools | Not started | |
+| Tools | Draft complete | |
 | AI in Academics | Not started | Requires academic stakeholder review |
 | Academic Integrity | Not started | Requires academic stakeholder review |
 | AI in the Syllabus | Not started | Requires academic stakeholder review |
