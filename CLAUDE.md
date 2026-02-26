@@ -162,3 +162,34 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 
 - Academic content changes should be flagged for stakeholder review before finalizing
 - All content is reviewed by Ron before being sent to University Communications
+
+## Git
+
+### Commits
+
+- Use imperative mood (e.g., "Add tools page content" not "Added tools page content")
+- Concise, descriptive, and professional
+- No emojis
+- No Claude Code signatures (no "Co-Authored-By: Claude", no generated-with tags)
+- Scope commits to logical units of work -- one page or one coherent change per commit, not bulk "update everything" commits
+- Always run `git diff` before committing to verify what's being committed
+
+### Branching
+
+- `main` is the primary branch
+- Ask before creating feature branches unless a branching strategy has been discussed
+
+### Changelog
+
+This project maintains a `CHANGELOG.md` following the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format.
+
+- **Update CHANGELOG.md with every commit.** Every commit that changes content, structure, or project configuration must have a corresponding CHANGELOG entry.
+- Use the standard categories: Added, Changed, Removed, Fixed
+- Write entries from the perspective of the project's purpose (content overhaul), not implementation details
+- Keep entries concise -- one line per change
+- Group related changes under `## [Unreleased]` until a version is tagged
+- Examples:
+  - Added: "New Future-State content for the Tools page"
+  - Changed: "Updated Privacy page to reflect new governance contacts"
+  - Removed: "Removed Custom Bots and Connectors pages (inaccurate, out of scope)"
+  - Fixed: "Corrected data classification levels for Copilot on Tools page"
