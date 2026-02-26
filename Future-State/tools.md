@@ -4,9 +4,11 @@ BYU-Idaho provides access to the following approved generative AI tools. Each to
 
 | Tool | Provider | Approved Data Levels | Access |
 | --- | --- | --- | --- |
-| ChatGPT | OpenAI | Public, Internal, PII | [Access ChatGPT](https://chatgpt.com) |
+| ChatGPT Edu (CES) | OpenAI | Public, Internal, PII | [Access ChatGPT](https://chatgpt.com) |
 | Copilot | Microsoft | Public, Internal | [Access Copilot](https://copilot.microsoft.com) |
 | Gemini | Google | Public, Internal | [Access Gemini](https://gemini.google.com) |
+
+**ChatGPT note:** The approved data levels above apply only to employees with an active ChatGPT Edu license provisioned through the Church Educational System (CES). Personal ChatGPT accounts (free or paid) do not have these data protections and should be treated as Public-level only. See [How to Log In to ChatGPT with Your CES Subscription](/genai/chatgpt-login) for login instructions and how to request a license if you don't have one.
 
 For details on what each data classification level means, see the [BYU-Idaho Data Classification Policy](https://webmailbyui.sharepoint.com/sites/Policies/SitePages/Data%20Classification.aspx).
 

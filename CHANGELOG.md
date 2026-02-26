@@ -20,6 +20,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Copied Current-State content to Future-State as editing baseline (10 files)
 - Renamed products.md to tools.md in Future-State per site restructure
 - New Future-State content for the Tools page
+- ChatGPT login guide (chatgpt-login.md) for CES Edu subscription setup
+- Tools page clarifies ChatGPT data protections apply only to CES Edu accounts
 
 ### Removed
 - Design document (docs/plans/2026-02-26-claude-md-design.md)
