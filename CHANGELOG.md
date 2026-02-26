@@ -17,6 +17,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Progress tracking table in CLAUDE.md for content authoring status
 - Best Practices section added to site navigation (subpages TBD)
 - Directory tree added to CLAUDE.md for project structure reference
+- Copied Current-State content to Future-State as editing baseline (10 files)
+- Renamed products.md to tools.md in Future-State per site restructure
 
 ### Removed
 - Design document (docs/plans/2026-02-26-claude-md-design.md)
