@@ -60,6 +60,8 @@ Employees only (faculty, administrative staff, and staff). Student content will 
   - Academic Integrity
   - AI in the Syllabus
   - Grading with AI
+- Best Practices
+  - (Subpages TBD -- e.g., AI usage, data privacy, staying safe with AI)
 - Privacy
 - Copyright
 - Training
@@ -127,6 +129,14 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 - Clean up verbosity
 - Updates require collaboration with academic stakeholders
 
+### Best Practices (New Section)
+
+- New content -- no Current-State source material
+- Landing page with links to subpages
+- Subpages TBD -- potential topics include AI usage tips, data privacy practices, staying safe with AI
+- Subpage structure and specific topics to be defined before authoring begins
+- Write for an employee audience: practical, actionable guidance (not generic AI hype)
+
 ### Privacy
 
 - Largely accurate -- clean up and polish
@@ -182,6 +192,7 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 | privacy.md | privacy.md | |
 | copyright.md | copyright.md | |
 | training.md | training.md | Placeholder content only |
+| -- | best-practices.md | New content (no Current-State source) |
 | navbar.md | -- | Reference only (documents old nav structure) |
 | custom-bots.md | -- | Removed (inaccurate, noise) |
 | connectors.md | -- | Removed (inaccurate, noise) |
@@ -206,6 +217,7 @@ Track content authoring status here. Update as pages are completed.
 | Grading with AI | Not started | Requires academic stakeholder review |
 | Privacy | Not started | |
 | Copyright | Not started | |
+| Best Practices | Not started | New section, subpages TBD |
 | Training | Not started | Placeholder only |
 
 ## Git
