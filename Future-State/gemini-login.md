@@ -23,7 +23,7 @@ On the Google sign-in page, enter your **BYU-Idaho email address** in this forma
 email@byui.edu
 ```
 
-Replace `email` with your BYU-Idaho email address (e.g., `lastname+firstinitial@byui.edu`). Then click **Next**.
+Replace `email` with your BYU-Idaho email address (e.g., `email@byui.edu`). Then click **Next**.
 
 > **Important:** Use your BYU-Idaho **email address**, not your username. Google authentication requires the email format.
 
@@ -31,12 +31,12 @@ Replace `email` with your BYU-Idaho email address (e.g., `lastname+firstinitial@
 
 ## Step 3 — Complete BYU-Idaho Authentication
 
-After entering your BYU-Idaho email, you'll be redirected through the standard BYU-Idaho authentication flow. Depending on your session state, you may:
+After entering your BYU-Idaho email you may be redirected to the Church login page. Depending on your session state, you may:
 
 - Be signed in automatically if you already have an active BYU-Idaho SSO session in your browser
-- Be prompted to enter your BYU-Idaho credentials and complete multi-factor authentication (MFA)
+- Be prompted to enter your Church credentials and complete multi-factor authentication (MFA)
 
-Follow any on-screen prompts to complete the sign-in.
+Follow the prompts to enter your Church credentials and complete **Multi-Factor Authentication (MFA)** if prompted.
 
 ---
 
@@ -76,4 +76,4 @@ Contact the [IT Help Center](https://td.byui.edu/SBTDClient/79/ITHelpCenter/Home
 
 ---
 
-*For support, contact the [IT Help Center](https://td.byui.edu/SBTDClient/79/ITHelpCenter/Home/?ToUrl=).*
+*For support, visit the [IT Help Center](https://td.byui.edu/SBTDClient/79/ITHelpCenter/Home/?ToUrl=).*

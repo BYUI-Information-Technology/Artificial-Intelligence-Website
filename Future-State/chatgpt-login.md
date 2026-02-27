@@ -49,12 +49,12 @@ Under the **"Sign In"** heading, click the bright blue button labeled **"Use BYU
 
 ## Step 5 — Complete BYU-Idaho Authentication
 
-After clicking "Use BYU-Idaho," you'll be redirected through the standard BYU-Idaho / Microsoft Azure authentication flow. Depending on your session state, you may:
+After clicking "Use BYU-Idaho," you may be redirected to the Church login page. Depending on your session state, you may:
 
 - Be signed in automatically if you already have an active BYU-Idaho SSO session in your browser
-- Be prompted to enter your BYU-Idaho credentials and complete multi-factor authentication (MFA)
+- Be prompted to enter your Church credentials and complete multi-factor authentication (MFA)
 
-Follow any on-screen prompts to complete the sign-in.
+Follow the prompts to enter your Church credentials and complete **Multi-Factor Authentication (MFA)** if prompted.
 
 ---
 
@@ -107,4 +107,4 @@ Click your profile icon (bottom-left corner), select **Log out**, then follow th
 
 ---
 
-*For support, contact the BYU-Idaho Help Desk. For questions about license provisioning, contact your department administrator.*
+*For support, visit the [IT Help Center](https://td.byui.edu/SBTDClient/79/ITHelpCenter/Home/?ToUrl=).*
