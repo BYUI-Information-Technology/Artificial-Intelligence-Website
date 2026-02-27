@@ -22,6 +22,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - New Future-State content for the Tools page
 - ChatGPT login guide (chatgpt-login.md) for CES Edu subscription setup
 - Tools page clarifies ChatGPT data protections apply only to CES Edu accounts
+- Gemini login guide (gemini-login.md) with sign-in instructions
+- Tools page clarifies Gemini data protections apply only to institutional accounts
 
 ### Removed
 - Design document (docs/plans/2026-02-26-claude-md-design.md)
