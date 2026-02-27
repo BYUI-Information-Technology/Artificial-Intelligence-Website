@@ -27,5 +27,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Copilot login guide (copilot-login.md) with step-by-step sign-in instructions
 - Tools page clarifies Copilot data protections apply only to institutional Work experience
 
+### Changed
+- Tools table: moved tool-specific data protection notes into a new "Note" column with links to login guides
+
 ### Removed
 - Design document (docs/plans/2026-02-26-claude-md-design.md)

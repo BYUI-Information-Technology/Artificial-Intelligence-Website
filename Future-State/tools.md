@@ -2,17 +2,11 @@
 
 BYU-Idaho provides access to the following approved generative AI tools. Each tool is approved for use with specific [data classification levels](https://webmailbyui.sharepoint.com/sites/Policies/SitePages/Data%20Classification.aspx). Do not enter data above a tool's approved classification level.
 
-| Tool | Provider | Approved Data Levels | Access |
-| --- | --- | --- | --- |
-| ChatGPT Edu (CES) | OpenAI | Public, Internal, PII | [Access ChatGPT](https://chatgpt.com) |
-| Copilot | Microsoft | Public, Internal | [Access Copilot](https://copilot.microsoft.com) |
-| Gemini | Google | Public, Internal | [Access Gemini](https://gemini.google.com) |
-
-**ChatGPT note:** The approved data levels above apply only to employees with an active ChatGPT Edu license provisioned through the Church Educational System (CES). Personal ChatGPT accounts (free or paid) do not have these data protections and should be treated as Public-level only. See [How to Log In to ChatGPT with Your CES Subscription](/genai/chatgpt-login) for login instructions and how to request a license if you don't have one.
-
-**Copilot note:** The approved data levels above apply only when you are signed in with your BYU-Idaho Microsoft account and using the **Work** experience. Using your institutional account ensures commercial-grade data protections, no chat data stored by Microsoft, no data used to train foundational AI models, FERPA- and enterprise-compliant handling, and isolation within the BYU-Idaho Microsoft tenant. Personal Microsoft accounts do not provide these protections and should be treated as Public-level only. Copilot is included with BYU-Idaho's Microsoft 365 licenses -- no separate license request is needed. See [How to Log In to Microsoft Copilot with Your BYU-Idaho Account](/genai/copilot-login) for sign-in instructions.
-
-**Gemini note:** The approved data levels above apply only when you are signed in with your BYU-Idaho institutional Google account. Personal Google accounts do not have these data protections and should be treated as Public-level only. Gemini is included with BYU-Idaho's Google education licenses -- no separate license request is needed. See [How to Access Gemini with Your BYU-Idaho Account](/genai/gemini-login) for sign-in instructions.
+| Tool | Provider | Approved Data Levels | Note | Access |
+| --- | --- | --- | --- | --- |
+| ChatGPT Edu (CES) | OpenAI | Public, Internal, PII | Requires [CES Edu license](/genai/chatgpt-login). Personal accounts have no data protections. | [Access ChatGPT](https://chatgpt.com) |
+| Copilot | Microsoft | Public, Internal | Must use [institutional account (Work experience)](/genai/copilot-login). Personal accounts have no data protections. | [Access Copilot](https://copilot.microsoft.com) |
+| Gemini | Google | Public, Internal | Must use [institutional Google account](/genai/gemini-login). Personal accounts have no data protections. | [Access Gemini](https://gemini.google.com) |
 
 For details on what each data classification level means, see the [BYU-Idaho Data Classification Policy](https://webmailbyui.sharepoint.com/sites/Policies/SitePages/Data%20Classification.aspx).
 
