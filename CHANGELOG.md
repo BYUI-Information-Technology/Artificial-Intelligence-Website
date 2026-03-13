@@ -28,6 +28,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Tools page clarifies Copilot data protections apply only to institutional Work experience
 
 - Sycophancy best practices page (Best-Practices/syncophancy.md)
+- Data Usage Guide page (data-usage-guide.md) as subpage under Privacy/Data Privacy
 - Updated navbar reference for Future-State site structure
 
 ### Changed

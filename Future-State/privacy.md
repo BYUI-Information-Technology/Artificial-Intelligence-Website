@@ -15,7 +15,7 @@ As AI tools become integrated into our work and studies, responsible and ethical
 
 When interacting with AI tools, it's crucial to understand how your data is handled. BYU-Idaho is committed to protecting your privacy and intellectual property. The following guidelines will help you determine the appropriate use of AI tools based on data sensitivity. ( [See also the CES Privacy Principles](https://cesprivacy.org/global-privacy-principles))
 
-### Always remember:
+### Always remember
 
 1. **Don't Feed Private University Data to Unapproved AI Tools:** Never input sensitive university information like student IDs, grades, financial data, meeting transcripts, or confidential data into unapproved AI tools (e.g., personal accounts in ChatGPT, Claude, Perplexity, Grok, etc.). These tools learn from what you type, and your private data could become public.
 2. **Only Use University-Approved AI Tools:** When using AI for work, only use the specific [tools and platforms](https://www.byui.edu/genai/products) that have been approved by the University. The University has contracts and licenses in place that provide security and privacy to our users. Personally Identifiable Information (PII) should not be used with any AI tools [without approval](https://forms.office.com/pages/responsepage.aspx?id=Hx2s5pXW8U6R1JTN3vi-EdYpCaWQuqNDguNpHXsUOINUNzcxMzhXVkFMQ0ZJTFRWVlM2QTRBWTExUS4u&route=shorturl). If in doubt, ask your supervisor or the [AI Strategy and Leadership team](https://forms.office.com/pages/responsepage.aspx?id=Hx2s5pXW8U6R1JTN3vi-EdYpCaWQuqNDguNpHXsUOINUNzcxMzhXVkFMQ0ZJTFRWVlM2QTRBWTExUS4u&route=shorturl) before using an AI service for university work.
@@ -31,27 +31,12 @@ If you want to use an AI tool or data in ways that are not prescribed on this pa
 
 Understanding how to classify data is essential for responsible AI use. ( [See also the BYU-I Data Classification Policy](https://webmailbyui.sharepoint.com/sites/Policies/SitePages/Data%20Classification.aspx))
 
-AI Data Use Cards
+### AI Data Use Cards
 
-**Definition:** Any data that can be found publicly on the web or can reasonably be accessed without credentials.
-
-
-CHOOSE WISELY; USE WITH ANY TOOL
-
-**Definition:** Any data that you have access to and a reason for using, related to your role within the University.
-
-
-USE ONLY WITH BYU-IDAHO TOOLS
-
-**Definition:** Any data that could potentially identify a specific individual, either on its own or when combined with other data.
-
-
-GET APPROVAL FROM THE AI GROUP
-
-**Definition:** Information of the highest sensitivity where inappropriate loss, changes, or disclosure could have grave consequences to the University or its students.
-
-
-DO NOT USE WITH AI
+1. **Public Data:** Any data that can be found publicly on the web or can reasonably be accessed without credentials. CHOOSE WISELY; USE WITH ANY TOOL
+2. **Internal or Confidential Data without PII:** Any data that you have access to and a reason for using, related to your role within the University. USE ONLY WITH BYU-IDAHO TOOLS
+3. **Personally Identifiable Information (PII):** Any data that could potentially identify a specific individual, either on its own or when combined with other data. GET APPROVAL FROM THE AI GROUP
+4. **Restricted:** Information of the highest sensitivity where inappropriate loss, changes, or disclosure could have grave consequences to the University or its students. DO NOT USE WITH AI
 
 ## Recording Meetings & Privacy
 

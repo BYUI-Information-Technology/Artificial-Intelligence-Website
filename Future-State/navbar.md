@@ -6,6 +6,7 @@
 - Governance & Strategy
   - Copyright
   - Data Privacy
+    - Data Usage Guide
 - Helpful Information
   - *Future content ideas: Differences Between Generative & Agentic AI, Church Guidance*
 - Resources

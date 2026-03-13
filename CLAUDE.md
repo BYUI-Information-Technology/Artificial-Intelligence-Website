@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This repository manages the content overhaul of BYU-Idaho's GenAI website (<www.byui.edu/genai>). IT now has a leadership role in GenAI governance, and the CIO has tasked the AI Engineering team with revamping the site.
+This repository manages the content overhaul of BYU-Idaho's GenAI website (<www.byui.edu/genai>). IT now has a leadership role in GenAI governance, and the CIO has tasked the AI Solutions and Architecture team with revamping the site.
 
 ### What This Repo Is
 
@@ -46,6 +46,7 @@ BYUI-GenAI-Site/
     ├── Best-Practices/
     │   └── sycophancy.md
     ├── copyright.md
+    ├── data-usage-guide.md
     ├── grading-with-ai.md
     ├── home.md
     ├── navbar.md
@@ -107,6 +108,7 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 - Best Practices
   - (Subpages TBD -- e.g., AI usage, data privacy, staying safe with AI)
 - Privacy
+  - Data Usage Guide
 - Copyright
 - Training
 
@@ -246,6 +248,7 @@ To the best of your ability, use the following knowledge to help you author the 
 | privacy.md | privacy.md | |
 | copyright.md | copyright.md | |
 | training.md | training.md | Placeholder content only |
+| -- | data-usage-guide.md | Step-by-step AI data usage decision guide (subpage of Privacy) |
 | -- | Best-Practices/sycophancy.md | First best practices subpage |
 | navbar.md | navbar.md | Updated navigation structure |
 | custom-bots.md | -- | Removed (inaccurate, noise) |
@@ -270,6 +273,7 @@ Track content authoring status here. Update as pages are completed.
 | AI in the Syllabus | Baseline copied | Requires academic stakeholder review |
 | Grading with AI | Baseline copied | Requires academic stakeholder review |
 | Privacy | Baseline copied | Current-State content copied, not yet rewritten |
+| Data Usage Guide | Draft complete | Step-by-step decision guide for AI data usage (subpage of Privacy) |
 | Copyright | Baseline copied | Current-State content copied, not yet rewritten |
 | Best Practices | In progress | Sycophancy subpage drafted; additional subpages TBD |
 | Training | Baseline copied | Needs replacement with placeholder content |
@@ -305,3 +309,19 @@ This project maintains a `CHANGELOG.md` following the [Keep a Changelog](https:/
   - Changed: "Updated Privacy page to reflect new governance contacts"
   - Removed: "Removed Custom Bots and Connectors pages (inaccurate, out of scope)"
   - Fixed: "Corrected data classification levels for Copilot on Tools page"
+
+---
+
+This is a **Lucide "bot" icon** in SVG format. Here's a breakdown:
+
+- **Size:** 24x24 pixels
+- **Style:** Outline/stroke-based (no fill), with rounded line caps and joins
+- **Stroke color:** `#2b2b2b` (near-black dark gray)
+- **Stroke width:** 2px
+- **What it depicts:** A simple robot/bot face consisting of:
+  - A **rounded rectangle** (16x12) as the robot's head/body
+  - An **antenna** sticking up from the top (vertical line with a horizontal segment)
+  - Two **eyes** represented by short vertical lines
+  - Two small **horizontal lines** on the left and right sides (like ears or side connectors)
+
+It's from the [Lucide](https://lucide.dev/) icon library (a fork of Feather Icons), commonly used in web UIs to represent chatbots, AI assistants, or automated systems.
