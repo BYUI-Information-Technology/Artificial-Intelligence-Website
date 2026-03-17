@@ -3,8 +3,6 @@
 **Audience:** BYU-Idaho employees who have been provisioned a ChatGPT Edu license through the Church Educational System (CES)
 **Prerequisites:** You must have an active CES ChatGPT license assigned to your BYU-Idaho account before following these steps. If you're unsure whether you've been provisioned, contact your department administrator or the BYU-Idaho IT Help Desk.
 
----
-
 ## Step 1 — Go to ChatGPT
 
 Open your browser and navigate to **[https://chatgpt.com](https://chatgpt.com)**. You'll land on the ChatGPT homepage, which has a dark theme and a left sidebar showing options like New chat, Search chats, Images, Apps, and Deep research.
@@ -29,15 +27,13 @@ Replace `username` with your BYU-Idaho username (the same one you use to log in 
 
 > **Important:** This is your **username**, not your email address. It is used as your identifier in the authentication system. If a dropdown appears suggesting saved addresses from openai.com, ignore those — do not select them.
 
----
 
 ## Step 3 — Choose "Church Educational System"
 
 After entering your `@byui.edu` address, you'll be taken to a page asking **"How do you want to log in?"** with several method buttons listed vertically.
 
-Click **"Church Educational System"** — it is marked with a 🔑 key icon and will typically appear as the first or top option when your `@byui.edu` address is recognized.
+Click **"Church Educational System"** — it will typically appear as the first or top option when your `@byui.edu` address is recognized.
 
----
 
 ## Step 4 — Select "Use BYU-Idaho" on the CES Sign-In Page
 
@@ -45,7 +41,6 @@ You'll be redirected to the **BYU Church Educational System sign-in page**, whic
 
 Under the **"Sign In"** heading, click the bright blue button labeled **"Use BYU-Idaho"** — it's the third option in the list and matches BYU-Idaho's brand color.
 
----
 
 ## Step 5 — Complete BYU-Idaho Authentication
 
@@ -56,7 +51,6 @@ After clicking "Use BYU-Idaho," you may be redirected to the Church login page. 
 
 Follow the prompts to enter your Church credentials and complete **Multi-Factor Authentication (MFA)** if prompted.
 
----
 
 ## Step 6 — Confirm You're in the CES Workspace
 
@@ -67,15 +61,13 @@ Once authentication is complete, your browser will return to **chatgpt.com**. Yo
 - You see access to **GPTs, Projects**, and your **chat history** in the sidebar
 - An **"Organization knowledge"** button is visible on the main screen
 
-![Logged-in ChatGPT showing CES ChatGPT workspace](ss_8436p3i4k)
+[Insert Image/Graphic]
 
----
 
 ## Returning Users — Faster Login
 
 If you've logged in before, ChatGPT may show a **"Welcome back"** dialog with your `@byui.edu` account listed. Simply click your account tile to skip re-entering your email — you'll be taken directly to the "How do you want to log in?" screen (Step 3 above).
 
----
 
 ## Requesting a ChatGPTEdu License
 
@@ -89,7 +81,6 @@ In order to get access to CES ChatGPT, you will need to fill out a form through
 
 If a license is available, you will be notified by email that you have received a CES ChatGPT Edu license.
 
----
 
 ## Troubleshooting
 
@@ -104,7 +95,3 @@ Your license may not be active. Contact the BYU-Idaho IT Help Desk or your depar
 
 **I'm signed into a personal ChatGPT account and don't see the CES workspace.**
 Click your profile icon (bottom-left corner), select **Log out**, then follow this guide from Step 1 to sign in with your BYU-Idaho credentials.
-
----
-
-*For support, visit the [IT Help Center](https://td.byui.edu/SBTDClient/79/ITHelpCenter/Home/?ToUrl=).*

@@ -1,18 +1,19 @@
 ## Navigation
 
-- Home
-- Best Practices
-  - *Future content ideas: Reducing Hallucination, Mitigating Syncophancy, Prompting Techniques, Context Management*
-- Governance & Strategy
-  - Copyright
-  - Data Privacy
-    - Data Usage Guide
-- Helpful Information
-  - *Future content ideas: Differences Between Generative & Agentic AI, Church Guidance*
-- Resources
-  - Faculty
-    - Tools, Training, Academic Topics, Support Info
-  - Admin
-    - Tools, Training, Support Info
-  - Students
-    - Tools, Learning Resources, Support Info
+- Home (`home.md`)
+- Best Practices (`Best-Practices/best-practices.md`)
+  - Sycophancy (`Best-Practices/sycophancy.md`)
+  - Hallucination (`Best-Practices/hallucination.md`)
+- Academics (`Academics/academics.md`)
+  - AI in Academics (`Academics/ai-in-academics.md`)
+  - Academic Integrity (`Academics/academic-integrity.md`)
+  - AI in the Syllabus (`Academics/ai-in-the-syllabus.md`)
+  - Grading with AI (`Academics/grading-with-ai.md`)
+- Protecting Your Data (`Data-Privacy/protecting-data.md`)
+  - Data Privacy (`Data-Privacy/data-privacy.md`)
+  - Data Usage Guide (`Data-Privacy/data-usage-guide.md`)
+  - Copyright (`Data-Privacy/copyright.md`)
+- Resources (`Resources/approved-tools.md`)
+  - Access ChatGPT (`Resources/chatgpt.md`)
+  - Access Copilot (`Resources/copilot.md`)
+  - Access Gemini (`Resources/gemini.md`)

@@ -1,0 +1,51 @@
+# Best Practices for Detecting and Preventing Hallucination
+
+An employee asks ChatGPT about BYU-Idaho's policy on using AI tools in hiring. The response is detailed and confident -- it names a specific policy, cites a section number, and outlines a three-step compliance process. The employee begins drafting a recommendation based on this guidance. There is just one problem: the policy does not exist. ChatGPT fabricated it.
+
+## What Is Hallucination?
+
+Hallucination is when an AI tool generates information that sounds plausible and authoritative but is partially or completely fabricated. The model is not lying -- it has no intent to deceive. It is producing the most statistically likely sequence of words based on patterns in its training data, and sometimes that sequence includes things that are not true.
+
+This is not a rare edge case. It is a fundamental limitation of how these tools work, and it can happen in any conversation.
+
+## What Causes It?
+
+**Pattern completion, not knowledge retrieval.** Large language models do not look things up from a database of facts. They predict the next most likely word based on patterns learned during training. When the model lacks reliable information about a topic, it fills the gaps with whatever sounds right -- and the result can be convincingly wrong.
+
+**No awareness of its own uncertainty.** A person who does not know the answer to a question might say "I'm not sure." An AI model generates text with the same confident tone whether the information is accurate or entirely made up. There is no built-in signal that distinguishes certainty from guesswork.
+
+**Training data has limits.** Every model has a knowledge cutoff date, meaning it has no awareness of events or changes after that point. More critically, it has no access to internal or proprietary information -- BYU-Idaho policies, departmental procedures, campus-specific data -- unless you provide it. When asked about these topics, the model will often generate something plausible rather than admitting it does not know.
+
+## Why Is It a Problem?
+
+**Bad decisions internally.** AI-generated output can look authoritative enough that you do not think to question it. If you cite a nonexistent policy in a proposal, rely on fabricated statistics in a report, or follow a hallucinated procedure for a compliance process, the consequences are real -- even though the source material was not.
+
+**Reputational risk externally.** When you share AI-generated content with students, colleagues, or external partners, your name is on it. A hallucinated fact in a campus-wide communication or a fabricated citation in a published document erodes trust -- not in the AI tool, but in you and the university.
+
+## Best Practices
+
+### Detection: How to Spot It
+
+- **Watch for overly specific details you did not ask for.** Exact dates, section numbers, statistics, and named policies that appear unprompted are common hallucination indicators. The more specific and unsolicited the detail, the more you should verify it.
+
+- **Check every citation and reference.** AI tools frequently generate realistic-looking references that do not exist. If you ask ChatGPT for sources, search for them yourself before using them. A citation that looks right is not the same as a citation that is right.
+
+- **Be suspicious of "almost right" information.** Hallucinations are not always completely wrong. Often the model gets close -- a real organization with a fabricated report, a real policy name with invented details. Partial accuracy makes these harder to catch and more dangerous to act on.
+
+- **Question answers about BYU-Idaho-specific topics.** The model has no access to internal university systems, policies, or data. If it confidently answers a question about something specific to BYU-Idaho, it is almost certainly generating that answer from patterns, not from knowledge.
+
+### Prevention: How to Reduce It
+
+- **Give the model verified context.** Hallucination often happens because the model is guessing without good source material. Two practical methods reduce this:
+  - Ask ChatGPT to search the web before answering. This gives the model externally verified context rather than relying on training data alone.
+  - Upload the relevant document directly. If you are asking about a specific policy, attach the PDF. The model now has the actual source material and is far less likely to fabricate details.
+  - *Bad:* "What does BYU-Idaho's data classification policy say about sharing student records?"
+  - *Good:* "I've attached BYU-Idaho's data classification policy as a PDF. Based on this document, what are the requirements for sharing student records?"
+
+- **Ask the model to flag uncertainty.** Include instructions like "If you are not sure about something, say so." This does not guarantee honesty, but it gives the model explicit permission to hedge rather than fabricate.
+
+- **Break complex questions into smaller, verifiable pieces.** A single broad question invites the model to fill gaps. Smaller, focused questions produce answers that are easier to check against primary sources.
+
+- **Cross-reference before acting.** Treat AI output as a starting point, not a final answer. Verify factual claims against primary sources before making decisions, sending communications, or publishing content.
+
+- **Never use AI output as a primary source for anything consequential.** Policy decisions, official communications, data reporting -- anything with real stakes requires human verification against authoritative sources.

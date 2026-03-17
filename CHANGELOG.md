@@ -27,9 +27,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Copilot login guide (copilot-login.md) with step-by-step sign-in instructions
 - Tools page clarifies Copilot data protections apply only to institutional Work experience
 
-- Sycophancy best practices page (Best-Practices/syncophancy.md)
+- Sycophancy best practices page (Best-Practices/sycophancy.md)
 - Data Usage Guide page (data-usage-guide.md) as subpage under Privacy/Data Privacy
 - Updated navbar reference for Future-State site structure
+- Hallucination best practices article (Best-Practices/hallucination.md)
+- Best Practices landing page (Best-Practices/best-practices.md)
+- Academics landing page (Academics/academics.md)
+- Protecting Your Data landing page (Data-Privacy/protecting-data.md)
+- Footer content (footer.md)
+- Design spec for hallucination article (docs/superpowers/specs/2026-03-17-hallucination-article-design.md)
 
 ### Changed
 - Tools table: moved tool-specific data protection notes into a new "Note" column with links to login guides
@@ -37,8 +43,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Renamed login guides to access guides (chatgpt-login.md, copilot-login.md, gemini-login.md to access-chatgpt.md, access-copilot.md, access-gemini.md)
 - Simplified Tools page heading from "GenAI Tools" to "Tools"
 - Rewrote Home page: removed old updates, replaced University AI Office and LIT contacts with IT contact, modernized content structure
+- Reorganized Website/ into subdirectories: Academics/, Best-Practices/, Data-Privacy/, Resources/
+- Renamed access guides to Resources/ directory (chatgpt.md, copilot.md, gemini.md)
+- Renamed tools.md to Resources/approved-tools.md
+- Moved academic pages to Academics/ directory
+- Moved privacy, data-usage-guide, and copyright pages to Data-Privacy/ directory
+- Updated navbar to reflect new directory structure with nested subpages
 
 ### Removed
 - Design document (docs/plans/2026-02-26-claude-md-design.md)
 - Current-State/ directory and all old site webcrawl files (no longer needed)
 - Future-State/ renamed to Website/ (content is now the canonical version, not a draft)
+- Removed about.md and training.md from Website root (content relocated or pending rewrite)

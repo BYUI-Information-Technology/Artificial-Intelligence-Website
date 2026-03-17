@@ -4,17 +4,12 @@
 
 This guide outlines how to use artificial intelligence (AI) tools at BYU-Idaho in compliance with [AI Acceptable Use Policies](https://www.byui.edu/genai) and [data usage guidelines](https://genai.byu.edu/chatgpt-edu-data-restrictions-page).
 
----
-
 ## Step 1: Is the AI tool approved?
 
-**Is the AI tool you plan to use approved by the AI Committee?**
-See [www.byui.edu/genai/products](http://www.byui.edu/genai/products) for a current list of approved AI tools.
+**Is the AI tool you plan to use approved by the AI Committee?** See Approved Tools (link to approved-tools) for a current list of approved AI tools.
 
-- **No** -- [Submit an AI Tool Request](https://forms.office.com/r/PDM6ipUhGu) for approval. Unapproved AI tools may be used only if no private or institutional data is involved. Be cautious -- unknown tools can pose security risks, especially when linked to your BYUI account.
+- **No** -- [Submit a request](https://td.byui.edu/TDClient/79/ITHelpCenter/Requests/TicketRequests/NewForm?ID=fjIS982DLS0_&RequestorType=Service&SIDs=115) for approval. Unapproved AI tools may be used only if no private or institutional data is involved. Be cautious -- unknown tools can pose security risks, especially when linked to your BYUI account.
 - **Yes** -- Proceed to Step 2.
-
----
 
 ## Step 2: What type of data will you put into the AI tool?
 
@@ -64,8 +59,6 @@ Examples:
 
 **Result:** Restricted data is generally not allowed in AI tools. Contact the AI Committee to explore alternatives.
 
----
-
 ## Step 3: Are you using the authenticated version?
 
 **Are you using the BYUI-authenticated version of this tool that prevents AI models from training on the data?**
@@ -74,18 +67,8 @@ See [www.byui.edu/genai/training](http://www.byui.edu/genai/training) to learn h
 - **Yes** -- Proceed with care. Always log in with your BYUI account to protect private data.
 - **No** -- [Submit an AI Data Usage Request](https://forms.office.com/r/PDM6ipUhGu) for approval. The AI Committee will evaluate the use case.
 
----
-
 ## Always Remember
 
 - Whenever working with private data, always follow the [CES Privacy Principles](https://cesprivacy.org/global-privacy-principles).
 - Make sure to comply with intellectual property (IP) guidelines and copyright laws when using AI tools.
 - AI output can be wrong -- verify all results before making important decisions.
-
----
-
-## Which AI tools are provided by BYUI?
-
-- **[Microsoft Copilot Chat](https://m365.cloud.microsoft/chat)** (the free, authenticated version included with our Microsoft 365 apps) and **[Google Gemini](https://gemini.google.com)** (the free, authenticated version included with our Google Workspace) are available to all users. Be sure to log in with your @byui.edu account.
-- A limited number of **[ChatGPT Edu](https://genai.byu.edu/obtaining-a-chatgpt-edu-license)** licenses are also available for use with your @byui.edu login. Other free or paid ChatGPT versions not managed by CES are not approved AI tools and should be used with the same restrictions as other unapproved tools.
-- Other approved tools with additional costs, such as Microsoft Copilot 365 (paid version) and Google Gemini Premium (paid version), must be requested and funded separately by departments.

@@ -62,17 +62,12 @@ Faculty are strongly encouraged to review the full **Framework for Vetting and A
   - **University AI Office**
 
     Kimball 210D
-
     [208-496-4622](tel:2084964622)
-
     [palmers@byui.edu](mailto:palmers@byui.edu)
-
 
 - - **Learning Innovation & Technology**
 
       Manwaring Center 384
-
       [208-496-1536](tel:2084961536)
-
       [ashbyd@byui.edu](mailto:ashbyd@byui.edu)
 
