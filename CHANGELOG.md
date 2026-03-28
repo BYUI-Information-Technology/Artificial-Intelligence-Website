@@ -7,8 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
-- Reference documents for AI strategy, governance objectives, and landing page structure in `.claude/reference-docs/`
-- Project Knowledge section in CLAUDE.md with rules for referencing all four reference documents (strategy, objectives, landing pages, data classification)
+- Reference documents for AI strategy, governance objectives, landing page structure, and Church AI guiding principles in `.claude/reference-docs/`
+- Project Knowledge section in CLAUDE.md with rules for referencing all five reference documents (Church guidance, strategy, objectives, landing pages, data classification)
 - Per-page directives for Teaching with AI, Working with AI, and Learning with AI landing pages with audience-specific structure (Topics & Standards, Training Resources, Available Tools)
 - NOTES.md document specifically for the web dev team publishing to Brightspot CMS (explaining how to use the repo, reading Markdown, navigation, etc.)
    - *This file DOES not get included on the website. It's simply a reference document for the web dev team*

@@ -17,6 +17,7 @@ This repository manages the content overhaul of BYU-Idaho's Artificial Intellige
 BYUI-GenAI-Site/
 ├── .claude/
 │   ├── reference-docs/
+│   │   ├── church-guidance.md
 │   │   ├── data-classification-policy.md
 │   │   ├── landing-pages.md
 │   │   ├── objectives.md
@@ -85,7 +86,7 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 - **Front door:** All requests route through the IT Help Center, decisions made by a cross-functional governance committee
 - IT does NOT own academic policy (syllabus requirements, grading with AI, academic integrity)
 
-### Academic Content (under Teaching with AI)
+### Teaching with AI
 
 - The "Academics" section has been renamed to "Teaching with AI" to better reflect its faculty-centric, practical focus. The folder is still `Academics/` on disk (rename is a separate task).
 - Academic policy pages (AI in Academics, Academic Integrity, AI in the Syllabus, Grading with AI) are maintained on this site under Teaching with AI for now
@@ -229,6 +230,8 @@ See `Website/navbar.md` for the source of truth. Summary:
 ## Project Knowledge
 
 Reference documents in `.claude/reference-docs/` provide authoritative context for content decisions. Read the relevant document before writing or revising content in its domain.
+
+- **Church AI Guiding Principles** (`.claude/reference-docs/church-guidance.md`): Official guiding principles from The Church of Jesus Christ for AI use, introduced by Elder Gerrit W. Gong (March 2024). The four principles -- Spiritual Connection, Transparency, Privacy and Security, and Accountability -- are the upstream authority that BYU-Idaho's AI strategy references as "Alignment with Prophetic Guidance." Reference this document when writing content that touches on ethics, transparency (e.g., disclosing AI use), data privacy, or the institutional mission. Content should reflect these principles in spirit without turning the site into a doctrinal publication -- the audience is employees using AI tools at work, not a general church audience.
 
 - **AI Strategy** (`.claude/reference-docs/strategy.md`): BYU-Idaho's institutional AI strategy as defined by university leadership -- critical requirements, priorities to support students, and enabling workstreams. Use as background context that informs the purpose and tone of all site content. Content should support the strategic priorities (prophetic guidance alignment, data privacy, advancing knowledge, workforce readiness, student support) without quoting them verbatim. When a content decision could go multiple directions, favor the direction that better serves the strategy.
 
