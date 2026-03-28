@@ -34,7 +34,7 @@ const config = {
         docs: {
           path: '../Website',
           routeBasePath: '/',
-          sidebarPath: './sidebars.js',
+          sidebarPath: false,
           exclude: ['navbar.md', 'footer.md'],
         },
         blog: false,
@@ -51,13 +51,58 @@ const config = {
       navbar: {
         title: 'BYU-Idaho AI',
         items: [
-          { to: '/Best-Practices', label: 'Best Practices', position: 'left' },
-          { to: '/Learn-About-AI', label: 'Learn About AI', position: 'left' },
-          { to: '/Teaching-with-AI', label: 'Teaching with AI', position: 'left' },
-          { to: '/Data-Privacy', label: 'Protecting Your Data', position: 'left' },
-          { to: '/Working-with-AI', label: 'Working with AI', position: 'left' },
+          {
+            type: 'dropdown', label: 'Best Practices', position: 'left',
+            items: [
+              { to: '/Best-Practices/best-practices', label: 'Overview' },
+              { to: '/Best-Practices/sycophancy', label: 'Sycophancy' },
+              { to: '/Best-Practices/hallucination', label: 'Hallucination' },
+              { to: '/Best-Practices/managing-context', label: 'Managing Context' },
+            ],
+          },
+          {
+            type: 'dropdown', label: 'Learn About AI', position: 'left',
+            items: [
+              { to: '/Learn-About-AI/learn-about-ai', label: 'Overview' },
+              { to: '/Learn-About-AI/how-llms-are-trained', label: 'How LLMs Are Trained' },
+            ],
+          },
+          {
+            type: 'dropdown', label: 'Teaching with AI', position: 'left',
+            items: [
+              { to: '/Teaching-with-AI/academics', label: 'Overview' },
+              { to: '/Teaching-with-AI/ai-in-academics', label: 'AI in Academics' },
+              { to: '/Teaching-with-AI/academic-integrity', label: 'Academic Integrity' },
+              { to: '/Teaching-with-AI/ai-in-the-syllabus', label: 'AI in the Syllabus' },
+              { to: '/Teaching-with-AI/grading-with-ai', label: 'Grading with AI' },
+            ],
+          },
+          {
+            type: 'dropdown', label: 'Protecting Your Data', position: 'left',
+            items: [
+              { to: '/Data-Privacy/protecting-data', label: 'Overview' },
+              { to: '/Data-Privacy/data-privacy', label: 'Data Privacy' },
+              { to: '/Data-Privacy/data-usage-guide', label: 'Data Usage Guide' },
+              { to: '/Data-Privacy/copyright', label: 'Copyright' },
+            ],
+          },
+          {
+            type: 'dropdown', label: 'Working with AI', position: 'left',
+            items: [
+              { to: '/Working-with-AI/working-with-ai', label: 'Overview' },
+              { to: '/Working-with-AI/getting-started', label: 'Getting Started' },
+            ],
+          },
           { to: '/Learning-with-AI/learning-with-ai', label: 'Learning with AI', position: 'left' },
-          { to: '/Resources', label: 'Resources', position: 'left' },
+          {
+            type: 'dropdown', label: 'Resources', position: 'left',
+            items: [
+              { to: '/Resources/approved-tools', label: 'Approved Tools' },
+              { to: '/Resources/chatgpt', label: 'Access ChatGPT' },
+              { to: '/Resources/copilot', label: 'Access Copilot' },
+              { to: '/Resources/gemini', label: 'Access Gemini' },
+            ],
+          },
         ],
       },
       footer: {
