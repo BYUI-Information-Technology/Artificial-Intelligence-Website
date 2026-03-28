@@ -1,4 +1,4 @@
-name: Deploy Preview Site
+name: Deploy BYU-Idaho AI Preview Site
 
 on:
   push:
