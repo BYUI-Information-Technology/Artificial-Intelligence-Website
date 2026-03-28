@@ -51,6 +51,7 @@ const config = {
       navbar: {
         title: 'BYU-Idaho AI',
         items: [
+          { to: '/', label: 'Home', position: 'left' },
           {
             type: 'dropdown', label: 'Best Practices', position: 'left',
             items: [
