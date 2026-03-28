@@ -6,10 +6,10 @@ const config = {
   tagline: 'Content Preview',
   favicon: 'img/favicon.ico',
 
-  url: 'https://byu-idaho-it-ai-architecture.github.io',
+  url: 'https://byui-information-technology.github.io',
   baseUrl: '/Artificial-Intelligence-Website/',
 
-  organizationName: 'BYU-Idaho-IT-AI-Architecture',
+  organizationName: 'BYUI-Information-Technology',
   projectName: 'Artificial-Intelligence-Website',
   trailingSlash: false,
 
