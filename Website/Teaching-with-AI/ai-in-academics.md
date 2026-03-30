@@ -1,3 +1,7 @@
+---
+title: "AI in Academics"
+---
+
 # AI in Academics
 
 Resources for faculty on integrating AI into teaching, setting clear expectations for students, and maintaining academic integrity.

@@ -1,3 +1,7 @@
+---
+title: "Best Practices"
+---
+
 # Best Practices
 
 Using AI tools effectively means understanding their limitations. These guides cover common pitfalls and practical strategies to help you get reliable, useful results from generative AI.

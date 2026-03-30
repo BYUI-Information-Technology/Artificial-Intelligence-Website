@@ -1,3 +1,7 @@
+---
+title: "How to Access ChatGPT with Your BYU-Idaho CES Subscription"
+---
+
 # How to Access ChatGPT with Your BYU-Idaho CES Subscription
 
 **Audience:** BYU-Idaho employees who have been provisioned a ChatGPT Edu license through the Church Educational System (CES)

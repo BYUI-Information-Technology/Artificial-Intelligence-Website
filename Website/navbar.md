@@ -1,3 +1,7 @@
+---
+title: "Navigation"
+---
+
 ## Navigation
 
 - Home (`home.md`)

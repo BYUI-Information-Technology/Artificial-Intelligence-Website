@@ -1,3 +1,7 @@
+---
+title: "Tools"
+---
+
 # Tools
 
 BYU-Idaho provides access to the following approved generative AI tools. Each tool is approved for use with specific [data classification levels](/genai/privacy). Do not enter data above a tool's approved classification level.

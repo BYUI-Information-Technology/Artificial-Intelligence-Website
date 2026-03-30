@@ -1,3 +1,7 @@
+---
+title: "Learn About AI"
+---
+
 # Learn About AI
 
 Understanding how AI works helps you use it more effectively and recognize its limitations. These articles explain the concepts behind the tools BYU-Idaho provides, written for a general audience with no technical background required.

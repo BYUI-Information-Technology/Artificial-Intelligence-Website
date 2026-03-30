@@ -1,3 +1,7 @@
+---
+title: "How to Access Gemini with Your BYU-Idaho Account"
+---
+
 # How to Access Gemini with Your BYU-Idaho Account
 
 **Audience:** All BYU-Idaho users (employees and students)

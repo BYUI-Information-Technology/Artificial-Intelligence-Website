@@ -1,3 +1,7 @@
+---
+title: "Best Practices for Detecting and Preventing Hallucination"
+---
+
 # Best Practices for Detecting and Preventing Hallucination
 
 An employee asks ChatGPT about BYU-Idaho's policy on using AI tools in hiring. The response is detailed and confident -- it names a specific policy, cites a section number, and outlines a three-step compliance process. The employee begins drafting a recommendation based on this guidance. There is just one problem: the policy does not exist. ChatGPT fabricated it.

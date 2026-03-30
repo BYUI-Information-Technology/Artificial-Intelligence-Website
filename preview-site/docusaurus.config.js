@@ -13,11 +13,11 @@ const config = {
   projectName: 'Artificial-Intelligence-Website',
   trailingSlash: false,
 
-  onBrokenLinks: 'ignore',
+  onBrokenLinks: 'warn',
 
   markdown: {
     hooks: {
-      onBrokenMarkdownLinks: 'ignore',
+      onBrokenMarkdownLinks: 'warn',
     },
   },
 

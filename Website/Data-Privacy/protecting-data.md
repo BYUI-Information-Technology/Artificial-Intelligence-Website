@@ -1,3 +1,7 @@
+---
+title: "Protecting Your Data"
+---
+
 # Protecting Your Data
 
 Using AI responsibly starts with understanding how your data is handled. These resources cover BYU-Idaho's data classification standards, privacy guidelines, and copyright considerations for AI-generated content.

@@ -1,3 +1,7 @@
+---
+title: "BYU-Idaho AI Guide"
+---
+
 # BYU-Idaho AI Guide
 
 *March 17, 2025*

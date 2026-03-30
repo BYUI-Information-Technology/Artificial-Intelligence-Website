@@ -1,3 +1,7 @@
+---
+title: "Learning with AI"
+---
+
 # Learning with AI
 
 AI tools can support your learning at BYU-Idaho -- helping you study more effectively, explore ideas, and build skills for the workplace. These resources will help you understand the tools available to you, use them responsibly, and make the most of your education.

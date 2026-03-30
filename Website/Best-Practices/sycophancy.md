@@ -1,3 +1,7 @@
+---
+title: "Best Practices for Mitigating Syncophancy"
+---
+
 # Best Practices for Mitigating Syncophancy
 
 Sycophancy is one of the more subtle and pervasive challenges in making AI models genuinely useful rather than just superficially "polite." Here is a breakdown of what LLM sycophancy is, why it happens, and best practices to mitigate it.

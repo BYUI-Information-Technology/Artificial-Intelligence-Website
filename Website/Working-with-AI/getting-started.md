@@ -1,3 +1,7 @@
+---
+title: "Getting Started with AI"
+---
+
 # Getting Started with AI
 
 You've heard that BYU-Idaho wants employees to use AI. But where do you actually start? This guide walks you through the tools available to you, how to access them, and a few practical ways to put them to work right away.

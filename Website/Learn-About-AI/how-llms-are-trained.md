@@ -1,3 +1,7 @@
+---
+title: "How Large Language Models Are Trained"
+---
+
 # How Large Language Models Are Trained
 
 When you type a question into ChatGPT, Copilot, or Gemini, the response appears in seconds. Behind that speed is months of engineering work that happened long before you ever opened the tool. Large language models -- the technology powering today's AI assistants -- are not programmed with rules or loaded with a database of answers. They are trained through a process that transforms enormous volumes of text into something that can understand and generate language.

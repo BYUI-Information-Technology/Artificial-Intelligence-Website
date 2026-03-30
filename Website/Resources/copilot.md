@@ -1,3 +1,7 @@
+---
+title: "How to Access Microsoft Copilot with Your BYU‑Idaho Account"
+---
+
 # How to Access Microsoft Copilot with Your BYU‑Idaho Account
 
 **Audience:** BYU‑Idaho students and employees accessing Microsoft Copilot with university‑managed credentials

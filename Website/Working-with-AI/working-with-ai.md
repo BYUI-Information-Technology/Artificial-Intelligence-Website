@@ -1,3 +1,7 @@
+---
+title: "Working with AI"
+---
+
 # Working with AI
 
 AI tools can help you work more efficiently across everyday tasks -- summarizing documents, drafting communications, organizing information, and streamlining workflows. These resources will help you get started with the AI tools BYU-Idaho provides and use them responsibly.
