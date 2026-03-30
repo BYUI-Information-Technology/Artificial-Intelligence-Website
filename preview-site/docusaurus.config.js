@@ -71,7 +71,7 @@ const config = {
           {
             type: 'dropdown', label: 'Teaching with AI', position: 'left',
             items: [
-              { to: '/Teaching-with-AI/ai-in-academics.md', label: 'Overview' },
+              { to: '/Teaching-with-AI/ai-in-academics', label: 'Overview' },
               { to: '/Teaching-with-AI/academic-integrity', label: 'Academic Integrity' },
               { to: '/Teaching-with-AI/ai-in-the-syllabus', label: 'AI in the Syllabus' },
               { to: '/Teaching-with-AI/grading-with-ai', label: 'Grading with AI' },
