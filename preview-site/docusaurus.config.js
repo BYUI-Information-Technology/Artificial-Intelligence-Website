@@ -55,7 +55,7 @@ const config = {
           {
             type: 'dropdown', label: 'Best Practices', position: 'left',
             items: [
-              { to: '/Best-Practices/best-practices', label: 'Overview' },
+              { to: '/Best-Practices', label: 'Overview' },
               { to: '/Best-Practices/sycophancy', label: 'Sycophancy' },
               { to: '/Best-Practices/hallucination', label: 'Hallucination' },
               { to: '/Best-Practices/managing-context', label: 'Managing Context' },
@@ -64,7 +64,7 @@ const config = {
           {
             type: 'dropdown', label: 'Learn About AI', position: 'left',
             items: [
-              { to: '/Learn-About-AI/learn-about-ai', label: 'Overview' },
+              { to: '/Learn-About-AI', label: 'Overview' },
               { to: '/Learn-About-AI/how-llms-are-trained', label: 'How LLMs Are Trained' },
             ],
           },
@@ -89,11 +89,11 @@ const config = {
           {
             type: 'dropdown', label: 'Working with AI', position: 'left',
             items: [
-              { to: '/Working-with-AI/working-with-ai', label: 'Overview' },
+              { to: '/Working-with-AI', label: 'Overview' },
               { to: '/Working-with-AI/getting-started', label: 'Getting Started' },
             ],
           },
-          { to: '/Learning-with-AI/learning-with-ai', label: 'Learning with AI', position: 'left' },
+          { to: '/Learning-with-AI', label: 'Learning with AI', position: 'left' },
           {
             type: 'dropdown', label: 'Resources', position: 'left',
             items: [

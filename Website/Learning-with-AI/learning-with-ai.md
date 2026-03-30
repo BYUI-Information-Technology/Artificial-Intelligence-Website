@@ -15,7 +15,7 @@ As a BYU-Idaho student, you have access to two AI tools through your institution
 
 Always sign in with your BYU-Idaho account -- personal accounts do not have the same data protections.
 
-For access instructions, see [Access Gemini](/genai/gemini-login) and [Access Copilot](/genai/copilot-login).
+For access instructions, see [Access Gemini](/Resources/gemini) and [Access Copilot](/Resources/copilot).
 
 1. **Academic Integrity**
    - *Understand the expectations for using AI responsibly in your coursework*

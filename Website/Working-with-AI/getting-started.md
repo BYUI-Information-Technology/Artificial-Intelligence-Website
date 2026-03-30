@@ -14,13 +14,13 @@ BYU-Idaho provides three approved AI tools for employee use:
 - **Copilot** -- Built into Microsoft 365. Approved for Public and Internal data. Useful for tasks inside the tools you already use (Word, Outlook, Teams).
 - **Gemini** -- Google's AI assistant. Approved for Public and Internal data. Good for research, summarization, and content generation.
 
-Each tool has different data classification levels, meaning what information you can safely use with each one varies. See the [Approved Tools](/genai/approved-tools) page for the full comparison.
+Each tool has different data classification levels, meaning what information you can safely use with each one varies. See the [Approved Tools](/Resources/approved-tools) page for the full comparison.
 
 ## How Do I Get Access?
 
-- **ChatGPT:** Requires a CES Edu license. [Request access here](/genai/chatgpt-login).
-- **Copilot:** Log in with your BYU-Idaho institutional account (Work experience). [Access Copilot here](/genai/copilot-login).
-- **Gemini:** Log in with your BYU-Idaho Google account. [Access Gemini here](/genai/gemini-login).
+- **ChatGPT:** Requires a CES Edu license. [Request access here](/Resources/chatgpt).
+- **Copilot:** Log in with your BYU-Idaho institutional account (Work experience). [Access Copilot here](/Resources/copilot).
+- **Gemini:** Log in with your BYU-Idaho Google account. [Access Gemini here](/Resources/gemini).
 
 **Important:** Always use your institutional account, not a personal one. Personal accounts do not have the data protections that come with university-approved access.
 
@@ -47,7 +47,7 @@ The most important thing to understand before using any AI tool is what data you
 3. **PII (Personally Identifiable Information)** -- Data that could identify a person (names, student IDs, etc.). Requires approval and is only allowed in ChatGPT (CES Edu).
 4. **Restricted** -- Highly sensitive data (SSNs, medical records, financial accounts). Do not use with any AI tool.
 
-When in doubt, treat the data as more sensitive, not less. See the [Data Privacy](/genai/privacy) page for the full guide.
+When in doubt, treat the data as more sensitive, not less. See the [Data Privacy](/Data-Privacy/data-privacy) page for the full guide.
 
 ## Tips for Getting Better Results
 
@@ -56,7 +56,7 @@ When in doubt, treat the data as more sensitive, not less. See the [Data Privacy
 - **Iterate.** Your first prompt rarely produces the best result. Refine your request, provide feedback, and ask follow-up questions.
 - **Keep it conversational.** You can correct AI mid-conversation. If it misunderstands, tell it what went wrong and ask it to try again.
 
-For more on getting reliable results, see the [Best Practices](/genai/best-practices) guides on hallucination, sycophancy, and managing context.
+For more on getting reliable results, see the [Best Practices](/Best-Practices) guides on hallucination, sycophancy, and managing context.
 
 ## Need Help?
 

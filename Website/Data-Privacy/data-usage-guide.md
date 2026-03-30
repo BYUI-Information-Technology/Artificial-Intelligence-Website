@@ -17,7 +17,7 @@ This guide outlines how to use artificial intelligence (AI) tools at BYU-Idaho i
 
 ## Step 2: What type of data will you put into the AI tool?
 
-See the [Data Privacy](/genai/privacy) page for more information on data classification levels.
+See the [Data Privacy](/Data-Privacy/data-privacy) page for more information on data classification levels.
 
 ### Public Data
 
