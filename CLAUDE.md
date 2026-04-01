@@ -372,6 +372,7 @@ This project maintains a `CHANGELOG.md` following the [Keep a Changelog](https:/
 
 ## Tooling
 
+- **Preview site:** https://byui-information-technology.github.io/Artificial-Intelligence-Website/ -- built by GitHub Actions from `preview-site/` (Docusaurus), deployed to GitHub Pages on push to `main`
 - **Remark linting:** `remark-cli` configured at project root (`.remarkrc.mjs`) with MDX and frontmatter support. Run `npx remark <file>` to lint. The VS Code "remark" extension uses this config automatically.
 - **Root `package.json`** contains dev dependencies for remark tooling only (not a Node.js application)
 
