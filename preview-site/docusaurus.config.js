@@ -35,7 +35,7 @@ const config = {
           path: '../Website',
           routeBasePath: '/',
           sidebarPath: false,
-          exclude: ['navbar.md', 'footer.md'],
+          exclude: ['navbar.mdx', 'footer.mdx'],
         },
         blog: false,
         theme: {
@@ -69,12 +69,35 @@ const config = {
             ],
           },
           {
-            type: 'dropdown', label: 'Teaching with AI', position: 'left',
-            items: [
-              { to: '/Teaching-with-AI/ai-in-academics', label: 'Overview' },
-              { to: '/Teaching-with-AI/academic-integrity', label: 'Academic Integrity' },
-              { to: '/Teaching-with-AI/ai-in-the-syllabus', label: 'AI in the Syllabus' },
-              { to: '/Teaching-with-AI/grading-with-ai', label: 'Grading with AI' },
+            type: 'custom-accordionDropdown',
+            label: 'Resources',
+            position: 'left',
+            sections: [
+              {
+                label: 'Faculty',
+                href: '/Teaching-with-AI',
+                items: [
+                  { to: '/Teaching-with-AI/ai-in-academics', label: 'Teaching with AI' },
+                  { to: '/Teaching-with-AI/academic-integrity', label: 'Academic Integrity' },
+                  { to: '/Teaching-with-AI/ai-in-the-syllabus', label: 'AI in the Syllabus' },
+                  { to: '/Teaching-with-AI/grading-with-ai', label: 'Grading with AI' },
+                ],
+              },
+              {
+                label: 'Employees',
+                href: '/Working-with-AI',
+                items: [
+                  { to: '/Working-with-AI', label: 'Working with AI' },
+                  { to: '/Working-with-AI/getting-started', label: 'Getting Started' },
+                ],
+              },
+              {
+                label: 'Students',
+                href: '/Learning-with-AI',
+                items: [
+                  { to: '/Learning-with-AI', label: 'Learning with AI' },
+                ],
+              },
             ],
           },
           {
@@ -87,15 +110,7 @@ const config = {
             ],
           },
           {
-            type: 'dropdown', label: 'Working with AI', position: 'left',
-            items: [
-              { to: '/Working-with-AI', label: 'Overview' },
-              { to: '/Working-with-AI/getting-started', label: 'Getting Started' },
-            ],
-          },
-          { to: '/Learning-with-AI', label: 'Learning with AI', position: 'left' },
-          {
-            type: 'dropdown', label: 'Resources', position: 'left',
+            type: 'dropdown', label: 'Tools', position: 'left',
             items: [
               { to: '/Resources/approved-tools', label: 'Approved Tools' },
               { to: '/Resources/chatgpt', label: 'Access ChatGPT' },

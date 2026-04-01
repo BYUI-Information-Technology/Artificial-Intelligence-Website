@@ -10,6 +10,23 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+.dropdown-section-header {
+  display: block;
+  padding: 6px 12px 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ifm-color-emphasis-600);
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  margin-top: 4px;
+}
+
+.dropdown-section-header:first-child {
+  border-top: none;
+  margin-top: 0;
+}
+
 [data-theme='dark'] {
   --ifm-color-primary: #4da6e8;
   --ifm-color-primary-dark: #3599e4;
