@@ -9,7 +9,7 @@ This repository manages the content overhaul of BYU-Idaho's Artificial Intellige
 ### What This Repo Is
 
 - A content project, not a code project
-- Website/: Web content (Markdown) to be sent to University Communications for publishing in Brightspot CMS
+- Website/: Web content (MDX) to be sent to University Communications for publishing in Brightspot CMS
 
 ### Directory Tree
 
@@ -29,38 +29,37 @@ BYUI-GenAI-Site/
 ├── export-docx.sh
 ├── NOTES.md
 └── Website/
-    ├── home.md
-    ├── navbar.md
-    ├── footer.md
-    ├── Academics/
-    │   ├── academics.md
-    │   ├── ai-in-academics.md
-    │   ├── academic-integrity.md
-    │   ├── ai-in-the-syllabus.md
-    │   └── grading-with-ai.md
+    ├── home.mdx
+    ├── navbar.mdx
+    ├── footer.mdx
+    ├── Teaching-with-AI/
+    │   ├── ai-in-academics.mdx
+    │   ├── academic-integrity.mdx
+    │   ├── ai-in-the-syllabus.mdx
+    │   └── grading-with-ai.mdx
     ├── Best-Practices/
-    │   ├── best-practices.md
-    │   ├── sycophancy.md
-    │   ├── hallucination.md
-    │   └── managing-context.md
+    │   ├── best-practices.mdx
+    │   ├── sycophancy.mdx
+    │   ├── hallucination.mdx
+    │   └── managing-context.mdx
     ├── Working-with-AI/
-    │   ├── working-with-ai.md
-    │   └── getting-started.md
+    │   ├── working-with-ai.mdx
+    │   └── getting-started.mdx
     ├── Learning-with-AI/
-    │   └── learning-with-ai.md
+    │   └── learning-with-ai.mdx
     ├── Learn-About-AI/
-    │   ├── learn-about-ai.md
-    │   └── how-llms-are-trained.md
+    │   ├── learn-about-ai.mdx
+    │   └── how-llms-are-trained.mdx
     ├── Data-Privacy/
-    │   ├── protecting-data.md
-    │   ├── data-privacy.md
-    │   ├── data-usage-guide.md
-    │   └── copyright.md
+    │   ├── protecting-data.mdx
+    │   ├── data-privacy.mdx
+    │   ├── data-usage-guide.mdx
+    │   └── copyright.mdx
     └── Resources/
-        ├── approved-tools.md
-        ├── chatgpt.md
-        ├── copilot.md
-        └── gemini.md
+        ├── approved-tools.mdx
+        ├── chatgpt.mdx
+        ├── copilot.mdx
+        └── gemini.mdx
 ```
 
 ### What's In Scope
@@ -88,7 +87,7 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 
 ### Teaching with AI
 
-- The "Academics" section has been renamed to "Teaching with AI" to better reflect its faculty-centric, practical focus. The folder is still `Academics/` on disk (rename is a separate task).
+- The "Academics" section has been renamed to "Teaching with AI." The folder on disk is `Teaching-with-AI/`.
 - Academic policy pages (AI in Academics, Academic Integrity, AI in the Syllabus, Grading with AI) are maintained on this site under Teaching with AI for now
 - Updates to academic content require collaboration with academic stakeholders -- do not unilaterally rewrite academic policy
 - These pages may move to a different home in the future
@@ -97,31 +96,31 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 
 ### Navigation
 
-See `Website/navbar.md` for the source of truth. Summary:
+See `Website/navbar.mdx` for the source of truth. Summary:
 
-- Home (`home.md`)
-- Best Practices (`Best-Practices/best-practices.md`)
-  - Sycophancy (`Best-Practices/sycophancy.md`)
-  - Hallucination (`Best-Practices/hallucination.md`)
-  - Managing Context (`Best-Practices/managing-context.md`)
-- Learn About AI (`Learn-About-AI/learn-about-ai.md`)
-  - How LLMs Are Trained (`Learn-About-AI/how-llms-are-trained.md`)
-- Teaching with AI (`Academics/academics.md`)
-  - AI in Academics (`Academics/ai-in-academics.md`)
-  - Academic Integrity (`Academics/academic-integrity.md`)
-  - AI in the Syllabus (`Academics/ai-in-the-syllabus.md`)
-  - Grading with AI (`Academics/grading-with-ai.md`)
-- Protecting Your Data (`Data-Privacy/protecting-data.md`)
-  - Data Privacy (`Data-Privacy/data-privacy.md`)
-  - Data Usage Guide (`Data-Privacy/data-usage-guide.md`)
-  - Copyright (`Data-Privacy/copyright.md`)
-- Working with AI (`Working-with-AI/working-with-ai.md`)
-  - Getting Started (`Working-with-AI/getting-started.md`)
-- Learning with AI (`Learning-with-AI/learning-with-ai.md`)
-- Resources (`Resources/approved-tools.md`)
-  - Access ChatGPT (`Resources/chatgpt.md`)
-  - Access Copilot (`Resources/copilot.md`)
-  - Access Gemini (`Resources/gemini.md`)
+- Home (`home.mdx`)
+- Best Practices (`Best-Practices/best-practices.mdx`)
+  - Sycophancy (`Best-Practices/sycophancy.mdx`)
+  - Hallucination (`Best-Practices/hallucination.mdx`)
+  - Managing Context (`Best-Practices/managing-context.mdx`)
+- Learn About AI (`Learn-About-AI/learn-about-ai.mdx`)
+  - How LLMs Are Trained (`Learn-About-AI/how-llms-are-trained.mdx`)
+- Teaching with AI (no landing page file currently exists)
+  - AI in Academics (`Teaching-with-AI/ai-in-academics.mdx`)
+  - Academic Integrity (`Teaching-with-AI/academic-integrity.mdx`)
+  - AI in the Syllabus (`Teaching-with-AI/ai-in-the-syllabus.mdx`)
+  - Grading with AI (`Teaching-with-AI/grading-with-ai.mdx`)
+- Protecting Your Data (`Data-Privacy/protecting-data.mdx`)
+  - Data Privacy (`Data-Privacy/data-privacy.mdx`)
+  - Data Usage Guide (`Data-Privacy/data-usage-guide.mdx`)
+  - Copyright (`Data-Privacy/copyright.mdx`)
+- Working with AI (`Working-with-AI/working-with-ai.mdx`)
+  - Getting Started (`Working-with-AI/getting-started.mdx`)
+- Learning with AI (`Learning-with-AI/learning-with-ai.mdx`)
+- Resources (`Resources/approved-tools.mdx`)
+  - Access ChatGPT (`Resources/chatgpt.mdx`)
+  - Access Copilot (`Resources/copilot.mdx`)
+  - Access Gemini (`Resources/gemini.mdx`)
 
 ### Pages Removed (from original site)
 
@@ -147,11 +146,11 @@ See `Website/navbar.md` for the source of truth. Summary:
 - Three approved tools: ChatGPT (OpenAI), Copilot (Microsoft), Gemini (Google)
 - Each tool has data classification levels and a link to its access guide
 - IT Help Center callout for tool requests is prominent
-- Access guides in Resources/ folder: chatgpt.md, copilot.md, gemini.md
+- Access guides in Resources/ folder: chatgpt.mdx, copilot.mdx, gemini.mdx
 
 ### Teaching with AI (formerly Academics)
 
-- Landing page (`Academics/academics.md`) should organize image cards under three section headings per `.claude/reference-docs/landing-pages.md`: Topics & Standards (Data Protection, AI Priorities & Strategy, Ethics), Training Resources (tutorials and best practices), and Available Tools (link to `Resources/approved-tools.md`)
+- Landing page (no file currently exists -- needs to be created as `Teaching-with-AI/teaching-with-ai.mdx`) should organize image cards under three section headings per `.claude/reference-docs/landing-pages.md`: Topics & Standards (Data Protection, AI Priorities & Strategy, Ethics), Training Resources (tutorials and best practices), and Available Tools (link to `Resources/approved-tools.mdx`)
 - Faculty-centric audience -- language should speak directly to instructors and their teaching context
 - Policy subpages (AI in Academics, Academic Integrity, AI in the Syllabus, Grading with AI) remain as children
 
@@ -181,7 +180,7 @@ See `Website/navbar.md` for the source of truth. Summary:
 
 ### Learn About AI
 
-- Landing page (`learn-about-ai.md`) with image cards linking to subpages
+- Landing page (`Learn-About-AI/learn-about-ai.mdx`) with image cards linking to subpages
 - **Purpose:** Educational content that builds AI literacy across the BYU-Idaho community. Articles explain *how AI works* at a conceptual level -- not "do this, not that" (that's Best Practices), but "here's what's happening under the hood and why it matters"
 - **Audience calibration:** Write for accessibility first -- any employee should be able to follow the article without a technical background. Do not shy away from more advanced concepts, but explain them without assuming prior knowledge
 - **Distinction from Best Practices:** Best Practices = actionable guidance (protect yourself, avoid pitfalls). Learn About AI = understanding the technology (how LLMs are trained, what RAG is, how alignment works). There will be natural overlap in concepts, but the framing differs
@@ -191,7 +190,7 @@ See `Website/navbar.md` for the source of truth. Summary:
 
 ### Best Practices
 
-- Landing page (`best-practices.md`) with image cards linking to subpages
+- Landing page (`Best-Practices/best-practices.mdx`) with image cards linking to subpages
 - Sycophancy subpage: why AI agrees with users, how to prompt for honest answers
 - Hallucination subpage: why AI fabricates information, how to detect and prevent it
 - Managing Context subpage: how context shapes AI output, context window management, persistent context features per tool
@@ -201,20 +200,20 @@ See `Website/navbar.md` for the source of truth. Summary:
 
 ### Data Privacy
 
-- Landing page (`protecting-data.md`) with image cards linking to subpages
-- Data Privacy (`data-privacy.md`): largely accurate -- clean up and polish; keep 4-tier data classification system
-- Data Usage Guide (`data-usage-guide.md`): step-by-step decision guide for AI data usage
-- Copyright (`copyright.md`): largely accurate -- clean up and polish; legal content is time-sensitive
+- Landing page (`Data-Privacy/protecting-data.mdx`) with image cards linking to subpages
+- Data Privacy (`Data-Privacy/data-privacy.mdx`): largely accurate -- clean up and polish; keep 4-tier data classification system
+- Data Usage Guide (`Data-Privacy/data-usage-guide.mdx`): step-by-step decision guide for AI data usage
+- Copyright (`Data-Privacy/copyright.mdx`): largely accurate -- clean up and polish; legal content is time-sensitive
 
 ### Working with AI
 
-- Landing page (`Working-with-AI/working-with-ai.md`) should organize image cards under three section headings per `.claude/reference-docs/landing-pages.md`: Topics & Standards (Data Protection, AI Priorities & Strategy, Ethics), Training Resources (tutorials and best practices), and Available Tools (link to `Resources/approved-tools.md`)
+- Landing page (`Working-with-AI/working-with-ai.mdx`) should organize image cards under three section headings per `.claude/reference-docs/landing-pages.md`: Topics & Standards (Data Protection, AI Priorities & Strategy, Ethics), Training Resources (tutorials and best practices), and Available Tools (link to `Resources/approved-tools.mdx`)
 - Employee-centric audience (staff and administrative employees) -- language should speak to day-to-day work applications
 - Getting Started subpage: practical onboarding guide for employees new to AI tools
 
 ### Learning with AI
 
-- Landing page (`Learning-with-AI/learning-with-ai.md`) should organize image cards under three section headings per `.claude/reference-docs/landing-pages.md`: Topics & Standards (Data Protection and Ethics -- note: no AI Priorities & Strategy for students), Training Resources (student-specific tutorials), and Available Tools
+- Landing page (`Learning-with-AI/learning-with-ai.mdx`) should organize image cards under three section headings per `.claude/reference-docs/landing-pages.md`: Topics & Standards (Data Protection and Ethics -- note: no AI Priorities & Strategy for students), Training Resources (student-specific tutorials), and Available Tools
 - Student-centric audience -- language should speak directly to students and their academic context
 - Deeper student resources are a future phase; for now this is a landing page only
 
@@ -246,38 +245,37 @@ Reference documents in `.claude/reference-docs/` provide authoritative context f
 ### Content Authoring
 
 1. Apply the per-page directives from this CLAUDE.md
-2. Write the new content to Website/<page-name>.md
-3. Output format: Markdown (GitHub Flavored Markdown)
+2. Write the new content to Website/<page-name>.mdx
+3. Output format: MDX (Markdown with JSX components)
 
 ### File Inventory
 
 | File | Notes |
 |---|---|
-| home.md | Site homepage |
-| navbar.md | Navigation structure (source of truth) |
-| footer.md | Site footer content |
-| Academics/academics.md | Teaching with AI landing page (faculty audience) |
-| Academics/ai-in-academics.md | Academic stakeholder review required |
-| Academics/academic-integrity.md | Academic stakeholder review required |
-| Academics/ai-in-the-syllabus.md | Academic stakeholder review required |
-| Academics/grading-with-ai.md | Academic stakeholder review required |
-| Learn-About-AI/learn-about-ai.md | Learn About AI landing page |
-| Learn-About-AI/how-llms-are-trained.md | How LLMs are trained (source content exists at mintlify) |
-| Best-Practices/best-practices.md | Best Practices landing page |
-| Best-Practices/sycophancy.md | AI sycophancy article |
-| Best-Practices/hallucination.md | AI hallucination article |
-| Best-Practices/managing-context.md | Context management best practices |
-| Data-Privacy/protecting-data.md | Protecting Your Data landing page |
-| Data-Privacy/data-privacy.md | Data privacy guidelines |
-| Data-Privacy/data-usage-guide.md | Step-by-step AI data usage decision guide |
-| Data-Privacy/copyright.md | AI copyright considerations |
-| Working-with-AI/working-with-ai.md | Working with AI landing page (staff/admin audience) |
-| Working-with-AI/getting-started.md | Getting Started with AI article for employees |
-| Learning-with-AI/learning-with-ai.md | Learning with AI landing page (student audience) |
-| Resources/approved-tools.md | Approved tools with data classification |
-| Resources/chatgpt.md | ChatGPT access guide |
-| Resources/copilot.md | Copilot access guide |
-| Resources/gemini.md | Gemini access guide |
+| home.mdx | Site homepage |
+| navbar.mdx | Navigation structure (source of truth) |
+| footer.mdx | Site footer content |
+| Teaching-with-AI/ai-in-academics.mdx | Academic stakeholder review required |
+| Teaching-with-AI/academic-integrity.mdx | Academic stakeholder review required |
+| Teaching-with-AI/ai-in-the-syllabus.mdx | Academic stakeholder review required |
+| Teaching-with-AI/grading-with-ai.mdx | Academic stakeholder review required |
+| Learn-About-AI/learn-about-ai.mdx | Learn About AI landing page |
+| Learn-About-AI/how-llms-are-trained.mdx | How LLMs are trained (source content exists at mintlify) |
+| Best-Practices/best-practices.mdx | Best Practices landing page |
+| Best-Practices/sycophancy.mdx | AI sycophancy article |
+| Best-Practices/hallucination.mdx | AI hallucination article |
+| Best-Practices/managing-context.mdx | Context management best practices |
+| Data-Privacy/protecting-data.mdx | Protecting Your Data landing page |
+| Data-Privacy/data-privacy.mdx | Data privacy guidelines |
+| Data-Privacy/data-usage-guide.mdx | Step-by-step AI data usage decision guide |
+| Data-Privacy/copyright.mdx | AI copyright considerations |
+| Working-with-AI/working-with-ai.mdx | Working with AI landing page (staff/admin audience) |
+| Working-with-AI/getting-started.mdx | Getting Started with AI article for employees |
+| Learning-with-AI/learning-with-ai.mdx | Learning with AI landing page (student audience) |
+| Resources/approved-tools.mdx | Approved tools with data classification |
+| Resources/chatgpt.mdx | ChatGPT access guide |
+| Resources/copilot.mdx | Copilot access guide |
+| Resources/gemini.mdx | Gemini access guide |
 
 ### Review Process
 
@@ -317,7 +315,7 @@ Track content authoring status here. Update as pages are completed.
 | Home | Draft complete | Rewritten per directives |
 | Navbar | Draft complete | Updated navigation structure with file paths |
 | Footer | Draft complete | IT contact info |
-| Teaching with AI landing | Draft complete | Image cards linking to subpages (needs restructuring per landing-pages.md) |
+| Teaching with AI landing | Not started | Landing page file does not exist yet -- needs to be created as `Teaching-with-AI/teaching-with-ai.mdx` |
 | AI in Academics | Baseline copied | Requires academic stakeholder review |
 | Academic Integrity | Baseline copied | Requires academic stakeholder review |
 | AI in the Syllabus | Baseline copied | Requires academic stakeholder review |
@@ -335,7 +333,7 @@ Track content authoring status here. Update as pages are completed.
 | Working with AI landing | Draft complete | Landing page for staff/admin employees (needs restructuring per landing-pages.md) |
 | Getting Started with AI | Draft complete | Employee guide covering tool access, use cases, data basics |
 | Learning with AI landing | Draft complete | Landing page for students (needs restructuring per landing-pages.md) |
-| Approved Tools | Draft complete | Includes access guides (chatgpt/copilot/gemini.md), other tools acknowledgment |
+| Approved Tools | Draft complete | Includes access guides (chatgpt/copilot/gemini.mdx), other tools acknowledgment |
 
 ## Git
 
@@ -371,4 +369,9 @@ This project maintains a `CHANGELOG.md` following the [Keep a Changelog](https:/
   - Changed: "Updated Privacy page to reflect new governance contacts"
   - Removed: "Removed Custom Bots and Connectors pages (inaccurate, out of scope)"
   - Fixed: "Corrected data classification levels for Copilot on Tools page"
+
+## Tooling
+
+- **Remark linting:** `remark-cli` configured at project root (`.remarkrc.mjs`) with MDX and frontmatter support. Run `npx remark <file>` to lint. The VS Code "remark" extension uses this config automatically.
+- **Root `package.json`** contains dev dependencies for remark tooling only (not a Node.js application)
 

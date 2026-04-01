@@ -1,12 +1,16 @@
 .DS_Store
 .env
 
-# Claude Docs
+# Claude
 .claude/*
+.remember/*
 
 # Docx exports
 export/
 ai-website-content-*.zip
+
+# Node modules
+node_modules/
 
 # Docusaurus preview site
 preview-site/node_modules/

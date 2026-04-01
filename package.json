@@ -1,0 +1,29 @@
+{
+  "name": "artificial-intelligence-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BYUI-Information-Technology/Artificial-Intelligence-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BYUI-Information-Technology/Artificial-Intelligence-Website/issues"
+  },
+  "homepage": "https://github.com/BYUI-Information-Technology/Artificial-Intelligence-Website#readme",
+  "devDependencies": {
+    "remark-cli": "^12.0.1",
+    "remark-frontmatter": "^5.0.0",
+    "remark-lint-no-dead-urls": "^2.0.1",
+    "remark-mdx": "^3.1.1",
+    "remark-preset-lint-consistent": "^6.0.1",
+    "remark-preset-lint-markdown-style-guide": "^6.0.1",
+    "remark-preset-lint-recommended": "^7.0.1"
+  }
+}
