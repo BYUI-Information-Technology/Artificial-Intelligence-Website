@@ -52,6 +52,7 @@ const nav = [
     overview: { to: '/Learn-About-AI', file: 'Learn-About-AI/learn-about-ai.mdx' },
     items: [
       { label: 'How LLMs Are Trained', to: '/Learn-About-AI/how-llms-are-trained', file: 'Learn-About-AI/how-llms-are-trained.mdx' },
+      { label: 'What Are Tokens', to: '/Learn-About-AI/tokens', file: 'Learn-About-AI/tokens.mdx' },
     ],
   },
   {

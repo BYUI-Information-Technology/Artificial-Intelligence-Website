@@ -50,7 +50,8 @@ BYUI-GenAI-Site/
     │   └── learning-with-ai.mdx
     ├── Learn-About-AI/
     │   ├── learn-about-ai.mdx
-    │   └── how-llms-are-trained.mdx
+    │   ├── how-llms-are-trained.mdx
+    │   └── tokens.mdx
     ├── Data-Privacy/
     │   ├── protecting-data.mdx
     │   ├── data-privacy.mdx
@@ -119,6 +120,7 @@ Summary:
     - Learning with AI (`Learning-with-AI/learning-with-ai.mdx`)
 - How AI Works (`Learn-About-AI/learn-about-ai.mdx`)
   - How LLMs Are Trained (`Learn-About-AI/how-llms-are-trained.mdx`)
+  - What Are Tokens (`Learn-About-AI/tokens.mdx`)
 - Best Practices (`Best-Practices/best-practices.mdx`)
   - Why AI Agrees with You (`Best-Practices/sycophancy.mdx`)
   - Why AI Makes Things Up (`Best-Practices/hallucination.mdx`)
@@ -196,7 +198,7 @@ Summary:
 - **Distinction from Best Practices:** Best Practices = actionable guidance (protect yourself, avoid pitfalls). How AI Works = understanding the technology (how LLMs are trained, what RAG is, how alignment works). There will be natural overlap in concepts, but the framing differs
 - **Existing source content:** Ron has previously authored educational articles at `https://byui.mintlify.app/`. When adapting existing content for this site, generalize product-specific references (e.g., references to the Support Agent or specific model versions) so articles serve all employees, not just users of one system
 - **Article structure pattern:** accessible introduction, concept explanation with analogies, why it matters at BYU-Idaho, key takeaways
-- Planned articles: How LLMs Are Trained (first article, source content exists), additional topics TBD (e.g., What is RAG, What is Model Alignment)
+- Planned articles: How LLMs Are Trained (complete), What Are Tokens (complete), additional topics TBD (e.g., What is RAG, What is Model Alignment)
 
 ### Best Practices
 
@@ -274,6 +276,7 @@ Reference documents in `.claude/reference-docs/` provide authoritative context f
 | Teaching-with-AI/grading-with-ai.mdx | Academic stakeholder review required |
 | Learn-About-AI/learn-about-ai.mdx | How AI Works landing page |
 | Learn-About-AI/how-llms-are-trained.mdx | How LLMs Are Trained (source content exists at mintlify) |
+| Learn-About-AI/tokens.mdx | What Are Tokens article |
 | Best-Practices/best-practices.mdx | Best Practices landing page |
 | Best-Practices/sycophancy.mdx | Why AI Agrees with You article |
 | Best-Practices/hallucination.mdx | Why AI Makes Things Up article |
@@ -346,6 +349,7 @@ Track content authoring status here. Update as pages are completed.
 | Grading with AI | Baseline copied | Requires academic stakeholder review |
 | How AI Works landing | Draft complete | Renamed from "Learn About AI"; image cards linking to subpages |
 | How LLMs Are Trained | Draft complete | Educational article covering three-phase training process |
+| What Are Tokens | Draft complete | Educational article covering tokens, tokenization, context windows, and token economics |
 | Best Practices landing | Draft complete | Image cards with plain-language titles |
 | Why AI Agrees with You | Draft complete | First best practices article (sycophancy) |
 | Why AI Makes Things Up | Draft complete | Second best practices article (hallucination) |

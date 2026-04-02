@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- What Are Tokens article (`Learn-About-AI/tokens.mdx`) explaining tokens, tokenization, context windows, multimodal tokens, and token economics for a non-technical audience
+- Cross-references from How LLMs Are Trained and Managing Context articles linking to the new What Are Tokens article
 - Naming conventions reference document (`.claude/reference-docs/naming-conventions.md`) defining label hierarchy, terminology rules, and title patterns for consistent labeling across all site surfaces
 - Dedicated Teaching with AI landing page (`teaching-with-ai.mdx`) separated from the AI in Academics content page
 - Shared nav config (`preview-site/nav.config.js`) as single source of truth for navigation, with `generate-navbar.js` script to auto-generate `Website/navbar.mdx`
