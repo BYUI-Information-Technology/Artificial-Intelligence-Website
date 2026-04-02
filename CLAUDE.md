@@ -198,6 +198,8 @@ Summary:
 - **Distinction from Best Practices:** Best Practices = actionable guidance (protect yourself, avoid pitfalls). How AI Works = understanding the technology (how LLMs are trained, what RAG is, how alignment works). There will be natural overlap in concepts, but the framing differs
 - **Existing source content:** Ron has previously authored educational articles at `https://byui.mintlify.app/`. When adapting existing content for this site, generalize product-specific references (e.g., references to the Support Agent or specific model versions) so articles serve all employees, not just users of one system
 - **Article structure pattern:** accessible introduction, concept explanation with analogies, why it matters at BYU-Idaho, key takeaways
+- **Article length:** Target 1,200-1,500 words (matches existing articles). Structure: frontmatter + H1, opening paragraph (~150 words), multiple H2 concept sections, "Why This Matters" section, "Key Takeaways" with 5 bold-first bullets.
+- **Sources:** When writing educational articles, research 2-3 external sources (NVIDIA, Microsoft, IBM, etc.) for technical accuracy before drafting.
 - Planned articles: How LLMs Are Trained (complete), What Are Tokens (complete), additional topics TBD (e.g., What is RAG, What is Model Alignment)
 
 ### Best Practices
@@ -231,6 +233,7 @@ Summary:
 
 ## Editorial Principles
 
+- **No em dashes:** Do not use `--`, `---`, or `—` in content. They are an AI writing trope. Use periods, commas, colons, semicolons, or parentheses instead. For list lead-ins, use colons (e.g., `**Term:** description`).
 - **Cut aggressively:** When content is outdated, inaccurate, or confusing, remove it. Err on the side of less content, not more.
 - **Employee audience:** Write for faculty, admin, and staff. No need to explain basic concepts that employees would already understand.
 - **Plain language:** Avoid jargon, buzzwords, and aspirational fluff. Be direct and actionable.
@@ -242,11 +245,11 @@ Summary:
 
 Reference documents in `.claude/reference-docs/` provide authoritative context for content decisions. Read the relevant document before writing or revising content in its domain.
 
-- **Church AI Guiding Principles** (`.claude/reference-docs/church-guidance.md`): Official guiding principles from The Church of Jesus Christ for AI use, introduced by Elder Gerrit W. Gong (March 2024). The four principles -- Spiritual Connection, Transparency, Privacy and Security, and Accountability -- are the upstream authority that BYU-Idaho's AI strategy references as "Alignment with Prophetic Guidance." Reference this document when writing content that touches on ethics, transparency (e.g., disclosing AI use), data privacy, or the institutional mission. Content should reflect these principles in spirit without turning the site into a doctrinal publication -- the audience is employees using AI tools at work, not a general church audience.
+- **Church AI Guiding Principles** (`.claude/reference-docs/church-guidance.md`): Official guiding principles from The Church of Jesus Christ for AI use, introduced by Elder Gerrit W. Gong (March 2024). The four principles (Spiritual Connection, Transparency, Privacy and Security, and Accountability) are the upstream authority that BYU-Idaho's AI strategy references as "Alignment with Prophetic Guidance." Reference this document when writing content that touches on ethics, transparency (e.g., disclosing AI use), data privacy, or the institutional mission. Content should reflect these principles in spirit without turning the site into a doctrinal publication. The audience is employees using AI tools at work, not a general church audience.
 
-- **AI Strategy** (`.claude/reference-docs/strategy.md`): BYU-Idaho's institutional AI strategy as defined by university leadership -- critical requirements, priorities to support students, and enabling workstreams. Use as background context that informs the purpose and tone of all site content. Content should support the strategic priorities (prophetic guidance alignment, data privacy, advancing knowledge, workforce readiness, student support) without quoting them verbatim. When a content decision could go multiple directions, favor the direction that better serves the strategy.
+- **AI Strategy** (`.claude/reference-docs/strategy.md`): BYU-Idaho's institutional AI strategy as defined by university leadership: critical requirements, priorities to support students, and enabling workstreams. Use as background context that informs the purpose and tone of all site content. Content should support the strategic priorities (prophetic guidance alignment, data privacy, advancing knowledge, workforce readiness, student support) without quoting them verbatim. When a content decision could go multiple directions, favor the direction that better serves the strategy.
 
-- **Governance Objectives** (`.claude/reference-docs/objectives.md`): Five objectives defined by AI Governance that this website must serve: Informed Leadership, Clear Governance, Clear Rules, Proactive Sharing, and Communication Hub. Use as a content decision filter -- before writing or revising any page, consider which objective(s) the content supports. If a page doesn't clearly serve at least one objective, question whether the content belongs on the site.
+- **Governance Objectives** (`.claude/reference-docs/objectives.md`): Five objectives defined by AI Governance that this website must serve: Informed Leadership, Clear Governance, Clear Rules, Proactive Sharing, and Communication Hub. Use as a content decision filter. Before writing or revising any page, consider which objective(s) the content supports. If a page doesn't clearly serve at least one objective, question whether the content belongs on the site.
 
 - **Landing Page Structure** (`.claude/reference-docs/landing-pages.md`): Defines audience-specific landing page structure for the three audience landing pages (Teaching with AI, Working with AI, Learning with AI). Reference when creating or revising any audience landing page. Each landing page should organize image cards under three section headings: Topics & Standards, Training Resources, and Available Tools.
 
@@ -330,7 +333,8 @@ A Docusaurus preview site lives in `preview-site/`. It reads content from `../We
 - **Build:** `cd preview-site && npm run build`
 - **baseUrl:** `/Artificial-Intelligence-Website/` -- all internal links must use Docusaurus `Link` component (not raw `<a>` tags) to get the prefix applied automatically
 - **Directory index convention:** A file named the same as its parent directory (e.g., `teaching-with-ai.mdx` in `Teaching-with-AI/`) routes to the directory path (`/Teaching-with-AI`), not the file path (`/Teaching-with-AI/teaching-with-ai`)
-- **Custom components:** `AccordionDropdown` (audience-grouped nav), `ImageCard` (landing page cards) -- source in `preview-site/src/components/`
+- **Custom components:** `AccordionDropdown` (audience-grouped nav), `ImageCard` (landing page cards), source in `preview-site/src/components/`
+- **Footer:** Configured in `docusaurus.config.js` themeConfig.footer (not rendered from `Website/footer.mdx`). footer.mdx is the source-of-truth content; the config mirrors it.
 - **Verify with Playwright**, not curl -- curl checks server-side routes but misses client-side routing issues like missing `baseUrl` prefixes
 
 ## Progress

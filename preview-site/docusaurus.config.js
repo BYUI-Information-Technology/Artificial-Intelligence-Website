@@ -100,6 +100,16 @@ const config = {
       },
       footer: {
         style: 'dark',
+        links: [
+          {
+            title: 'Contact',
+            items: [
+              { label: 'Information Technology, Kimball 170', to: '/' },
+              { label: '208-496-9009', href: 'tel:2084969009' },
+              { label: 'it@byui.edu', href: 'mailto:it@byui.edu' },
+            ],
+          },
+        ],
         copyright: 'Content preview for internal review. Not the production site.',
       },
     }),
