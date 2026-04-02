@@ -1,0 +1,84 @@
+---
+url: "https://www.byui.edu/genai/how-ai-works/what-are-ai-agents"
+title: "What Are AI Agents"
+slug: /How-AI-Works/what-are-ai-agents
+---
+
+# What Are AI Agents
+
+Most people interact with AI the same way: you type a message, the AI responds, and you go back and forth until you get what you need. That is the chatbot pattern, and it works well for quick questions, brainstorming, or drafting text. But a newer category of AI systems goes further. Instead of waiting for your next instruction, these systems can take actions on their own, use external tools, and work through multi-step problems without you guiding every step. These are AI agents. They represent a meaningful shift in how AI tools work, and understanding them helps you make sense of where these technologies are heading. This article explains what agents are, how they work, what they can and cannot do, and why it matters for your work at BYU-Idaho.
+
+## What Is an AI Agent?
+
+To understand what an agent is, it helps to start with what it is not.
+
+A standard chatbot interaction is simple: you send a message, the AI generates a response. You send another message, it generates another response. The AI never does anything between your messages. It waits for you, processes your input, and produces text. Every action it takes is a direct reaction to something you typed.
+
+An AI agent is different. At its core, an agent is a system where a large language model (the same technology [behind tools like ChatGPT and Copilot](/How-AI-Works/how-llms-are-trained)) autonomously decides what to do next, uses tools to take action, evaluates the results, and repeats that cycle until a task is complete. The academic AI community has long defined agents as systems that "perceive, reason, and act." Today's LLM-based agents map directly to that framework: they perceive through user input and tool outputs, reason using the language model, and act through tool calls.
+
+The key differentiator is autonomy. A chatbot responds to each message. An agent receives a goal, breaks it into steps, and works through those steps on its own, deciding along the way which tools to use and what to do with the results.
+
+## How Agents Work
+
+Agents are built from three core components that work together in a cycle.
+
+**The Model (the brain).** This is the large language model at the center of the system. It does not just generate text. It interprets information, makes decisions about what needs to happen next, and plans the sequence of steps required to accomplish a goal. The model is the reasoning engine that drives everything else.
+
+**Tools (the hands).** Tools are the external capabilities an agent can call: search engines, databases, email systems, code interpreters, file systems, calendars, or any software integration available to it. Without tools, the model can only produce text. With tools, it can look up real information, send messages, create files, run calculations, and interact with other systems. Tools bridge the gap between generating words and taking real action.
+
+**Orchestration (the plan).** Orchestration is the loop that ties the model and tools together. The agent receives a task, the model decides which tool to call first, the tool returns a result, the model evaluates that result and decides what to do next, and the cycle continues until the task is complete (or the agent determines it cannot proceed). This loop is what gives agents their step-by-step problem-solving ability.
+
+Think of it like assigning a task to a capable colleague. You give them a goal: "Research these vendors and draft a comparison." They have a brain (their judgment and expertise), tools (email, spreadsheets, the internet), and a process (break the task into steps, work through each one, check their work). An AI agent works the same way, except the "brain" is a language model and the "tools" are software integrations.
+
+## Workflows vs. Agents
+
+Not every AI system that uses tools is an agent. There is an important architectural distinction between workflows and agents.
+
+**Workflows** are systems where LLMs and tools are orchestrated through predefined code paths. The sequence of steps is fixed in advance. The system always follows the same route, regardless of what it encounters. Think of an assembly line: each station does its job in order, every time, with no deviation.
+
+**Agents** are systems where the LLM dynamically directs its own processes and tool usage. The model decides which steps to take based on what it finds along the way. Think of a problem-solver: they assess the situation, adapt their approach, and change course when something unexpected comes up.
+
+A concrete example helps illustrate the difference:
+
+A **workflow** might power an automated email classifier that (1) reads incoming email, (2) categorizes it using an LLM, and (3) routes it to the correct department. Same three steps every time, in the same order, with no variation. The system never needs to improvise because the task is predictable.
+
+An **agent**, by contrast, might receive a request like "Find out how peer institutions handle AI governance." It decides to search the web, reads several pages, identifies the most relevant sources, compiles a summary, realizes it is missing a key comparison point, searches again with a more specific query, and then produces the final report. The path was not predetermined. The agent figured it out as it went.
+
+Most real-world AI systems fall somewhere on a spectrum between these two approaches. Many practical systems combine both: structured workflows for predictable tasks with agentic components where flexibility is needed.
+
+## What Agents Can and Can't Do
+
+Agents are a genuine step forward in AI capability, but it is important to ground expectations honestly.
+
+**What agents can do today:**
+
+- Conduct multi-step research across multiple sources
+- Write, review, and revise documents through iterative drafts
+- Process and transform data across different formats
+- Coordinate multiple tools to complete complex tasks
+- Monitor systems and take corrective actions based on predefined rules
+
+**What agents struggle with:**
+
+- **Compounding errors.** Each step depends on the previous one. A small mistake early in the process can cascade through subsequent steps, producing a final result that is significantly wrong. The longer the chain of steps, the greater the risk.
+- **Overconfidence.** Agents may proceed confidently down a wrong path without recognizing they have made an error. Unlike a human colleague who might pause and say "I'm not sure about this," an agent often pushes forward regardless.
+- **Judgment calls.** Tasks requiring nuanced human judgment, institutional knowledge, or ethical reasoning still need a person in the loop. An agent can gather information, but deciding what to do with politically sensitive findings or ambiguous policy questions is not something it handles well.
+- **Unpredictable environments.** Agents work best when the tools and constraints are well-defined. Open-ended, ambiguous situations with unclear goals remain challenging.
+
+The most effective agent systems include checkpoints where humans review progress, correct course, and approve critical actions. Autonomy does not mean unsupervised. It means the agent can handle the routine steps between the moments where human judgment is essential.
+
+## Why This Matters
+
+AI tools are already moving in this direction. ChatGPT, Copilot, and Gemini each offer features that go beyond simple chat: web browsing, code execution, file analysis, and multi-step task completion. These are early agent-like capabilities. Understanding what agents are helps you evaluate these features realistically, recognizing both their potential and their limitations.
+
+When new tools or features are proposed on campus, the agent framework (model + tools + orchestration) gives you a vocabulary to ask the right questions. What can this agent access? What tools does it use? Who reviews its outputs? Where are the human checkpoints? How does it handle [context limitations](/Best-Practices/managing-context)? What [data is it processing](/Protecting-Your-Data)? These are practical questions that cut through marketing language and get to what actually matters.
+
+This is not about replacing human work. Agents handle repetitive, multi-step processes so employees can focus on the judgment-intensive work that requires institutional knowledge, relationships, and context that no AI system has. The goal is not fewer people doing more work. It is people spending their time on the work that actually requires them.
+
+## Key Takeaways
+
+- **An AI agent is an LLM that uses tools autonomously.** Unlike a chatbot that simply responds to messages, an agent can take actions, call external tools, and work through multi-step tasks on its own.
+- **Three components make agents work.** The model (decision-making), tools (external capabilities), and orchestration (the loop that ties decisions to actions and evaluates results).
+- **Workflows and agents serve different needs.** Workflows follow predefined steps for predictable tasks. Agents adapt dynamically when the path forward is uncertain.
+- **Agents are powerful but not infallible.** They can compound errors, proceed overconfidently, and struggle with nuanced judgment. Human oversight remains essential.
+- **Understanding agents helps you evaluate AI tools.** As AI capabilities expand at BYU-Idaho, knowing what agents are (and are not) equips you to ask better questions and set realistic expectations.

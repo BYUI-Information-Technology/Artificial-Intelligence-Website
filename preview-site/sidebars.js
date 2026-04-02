@@ -16,7 +16,7 @@ const sidebars = {
       type: 'category',
       label: 'How AI Works',
       link: { type: 'doc', id: 'How-AI-Works/how-ai-works' },
-      items: ['How-AI-Works/how-llms-are-trained'],
+      items: ['How-AI-Works/how-llms-are-trained', 'How-AI-Works/tokens', 'How-AI-Works/what-are-ai-agents'],
     },
     {
       type: 'category',
@@ -58,6 +58,7 @@ const sidebars = {
         'Approved-Tools/chatgpt',
         'Approved-Tools/copilot',
         'Approved-Tools/gemini',
+        'Approved-Tools/request-process',
       ],
     },
   ],

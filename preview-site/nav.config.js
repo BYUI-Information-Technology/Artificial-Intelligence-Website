@@ -53,6 +53,7 @@ const nav = [
     items: [
       { label: 'How LLMs Are Trained', to: '/How-AI-Works/how-llms-are-trained', file: 'How-AI-Works/how-llms-are-trained.mdx' },
       { label: 'What Are Tokens', to: '/How-AI-Works/tokens', file: 'How-AI-Works/tokens.mdx' },
+      { label: 'What Are AI Agents', to: '/How-AI-Works/what-are-ai-agents', file: 'How-AI-Works/what-are-ai-agents.mdx' },
     ],
   },
   {
@@ -83,6 +84,7 @@ const nav = [
       { label: 'Access ChatGPT', to: '/Approved-Tools/chatgpt', file: 'Approved-Tools/chatgpt.mdx' },
       { label: 'Access Copilot', to: '/Approved-Tools/copilot', file: 'Approved-Tools/copilot.mdx' },
       { label: 'Access Gemini', to: '/Approved-Tools/gemini', file: 'Approved-Tools/gemini.mdx' },
+      { label: 'Request Process', to: '/Approved-Tools/request-process', file: 'Approved-Tools/request-process.mdx' },
     ],
   },
 ];

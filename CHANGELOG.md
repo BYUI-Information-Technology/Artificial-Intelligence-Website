@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Request Process page (`Approved-Tools/request-process.mdx`) explaining the IT front door for requesting software, AI tools, and IT projects, with image cards linking to the IT Help Center and Portfolio Manager lookup
+- What Are AI Agents article (`How-AI-Works/what-are-ai-agents.mdx`) explaining AI agents, their components (model, tools, orchestration), the distinction between workflows and agents, and current capabilities and limitations
 - What Are Tokens article (`Learn-About-AI/tokens.mdx`) explaining tokens, tokenization, context windows, multimodal tokens, and token economics for a non-technical audience
 - Cross-references from How LLMs Are Trained and Managing Context articles linking to the new What Are Tokens article
 - Naming conventions reference document (`.claude/reference-docs/naming-conventions.md`) defining label hierarchy, terminology rules, and title patterns for consistent labeling across all site surfaces

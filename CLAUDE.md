@@ -51,7 +51,8 @@ BYUI-GenAI-Site/
     ├── How-AI-Works/
     │   ├── how-ai-works.mdx
     │   ├── how-llms-are-trained.mdx
-    │   └── tokens.mdx
+    │   ├── tokens.mdx
+    │   └── what-are-ai-agents.mdx
     ├── Protecting-Your-Data/
     │   ├── protecting-your-data.mdx
     │   ├── data-privacy.mdx
@@ -61,7 +62,8 @@ BYUI-GenAI-Site/
         ├── approved-tools.mdx
         ├── chatgpt.mdx
         ├── copilot.mdx
-        └── gemini.mdx
+        ├── gemini.mdx
+        └── request-process.mdx
 ```
 
 ### What's In Scope
@@ -121,6 +123,7 @@ Summary:
 - How AI Works (`How-AI-Works/how-ai-works.mdx`)
   - How LLMs Are Trained (`How-AI-Works/how-llms-are-trained.mdx`)
   - What Are Tokens (`How-AI-Works/tokens.mdx`)
+  - What Are AI Agents (`How-AI-Works/what-are-ai-agents.mdx`)
 - Best Practices (`Best-Practices/best-practices.mdx`)
   - Why AI Agrees with You (`Best-Practices/sycophancy.mdx`)
   - Why AI Makes Things Up (`Best-Practices/hallucination.mdx`)
@@ -133,6 +136,7 @@ Summary:
   - Access ChatGPT (`Approved-Tools/chatgpt.mdx`)
   - Access Copilot (`Approved-Tools/copilot.mdx`)
   - Access Gemini (`Approved-Tools/gemini.mdx`)
+  - Request Process (`Approved-Tools/request-process.mdx`)
 
 ### Pages Removed (from original site)
 
@@ -280,6 +284,7 @@ Reference documents in `.claude/reference-docs/` provide authoritative context f
 | How-AI-Works/how-ai-works.mdx | How AI Works landing page |
 | How-AI-Works/how-llms-are-trained.mdx | How LLMs Are Trained (source content exists at mintlify) |
 | How-AI-Works/tokens.mdx | What Are Tokens article |
+| How-AI-Works/what-are-ai-agents.mdx | What Are AI Agents article |
 | Best-Practices/best-practices.mdx | Best Practices landing page |
 | Best-Practices/sycophancy.mdx | Why AI Agrees with You article |
 | Best-Practices/hallucination.mdx | Why AI Makes Things Up article |
@@ -295,6 +300,7 @@ Reference documents in `.claude/reference-docs/` provide authoritative context f
 | Approved-Tools/chatgpt.mdx | ChatGPT access guide |
 | Approved-Tools/copilot.mdx | Copilot access guide |
 | Approved-Tools/gemini.mdx | Gemini access guide |
+| Approved-Tools/request-process.mdx | How to request IT projects, software, or AI tools |
 
 ### Review Process
 
@@ -354,6 +360,7 @@ Track content authoring status here. Update as pages are completed.
 | How AI Works landing | Draft complete | Renamed from "Learn About AI"; image cards linking to subpages |
 | How LLMs Are Trained | Draft complete | Educational article covering three-phase training process |
 | What Are Tokens | Draft complete | Educational article covering tokens, tokenization, context windows, and token economics |
+| What Are AI Agents | Draft complete | Educational article covering AI agents, components, workflows vs. agents, capabilities and limitations |
 | Best Practices landing | Draft complete | Image cards with plain-language titles |
 | Why AI Agrees with You | Draft complete | First best practices article (sycophancy) |
 | Why AI Makes Things Up | Draft complete | Second best practices article (hallucination) |
@@ -366,6 +373,7 @@ Track content authoring status here. Update as pages are completed.
 | Getting Started with AI | Draft complete | Employee guide covering tool access, use cases, data basics |
 | Learning with AI landing | Draft complete | Landing page for students (needs restructuring per landing-pages.md) |
 | Approved Tools | Draft complete | Includes access guides, other tools acknowledgment |
+| Request Process | Draft complete | IT front door request process with image cards for IT Help Center and Portfolio Manager lookup |
 
 ## Git
 
