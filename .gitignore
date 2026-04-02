@@ -7,6 +7,7 @@
 !.claude/skills/
 !.claude/hooks/
 .remember/*
+genai-skills-workspace*
 
 # Docx exports
 export/

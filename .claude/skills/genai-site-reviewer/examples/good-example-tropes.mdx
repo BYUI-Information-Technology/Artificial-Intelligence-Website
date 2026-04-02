@@ -1,0 +1,53 @@
+---
+title: "What Are Tokens"
+---
+
+# What Are Tokens
+
+When you type a message into ChatGPT, Copilot, or Gemini, the AI does not read your words the way you do. Before it can process a single sentence, it breaks your text into smaller pieces called **tokens**. Tokens determine what the model can see, how much it can remember, and how much it costs to run.
+
+In [How Large Language Models Are Trained](/Learn-About-AI/how-llms-are-trained), we mentioned that modern training datasets contain "trillions of tokens" without explaining what that actually means. This article fills that gap. Once you understand tokens, you will know why AI tools forget things mid-conversation, why usage limits exist, and why the way you write your prompts matters.
+
+## What Is a Token?
+
+A token is a small unit of data that an AI model uses to process text. Tokens can be whole words, parts of words, or individual characters. You can picture tokenization like peeling an orange: you do not eat it whole, you break it into sections and eat each piece one at a time. Tokenization splits your input into pieces the model can work with the same way.
+
+Simple words often become a single token. The sentence "I like chocolate" becomes three tokens: "I", "like", and "chocolate." But longer or less common words get split further. The word "darkness" becomes two tokens: "dark" and "ness." The word "brightness" also ends in "ness," and because the model has seen that suffix thousands of times across different words, it understands the relationship between them. Both words share a token that signals a quality or state.
+
+The key insight: **tokens are not words.** They are fragments that help the model find patterns in language. By breaking text into reusable pieces, the model can handle words it has never seen before by recognizing familiar parts within them.
+
+## How Tokenization Works
+
+Every time you send a message to an AI tool, your text is converted into tokens before the model processes it. You never see this happen. It takes place behind the scenes in milliseconds.
+
+The model works from a fixed vocabulary of token pieces, typically between 30,000 and 100,000 entries. Common words like "the," "and," and "is" each get their own token. Uncommon words, technical terms, or words from other languages get split into smaller pieces the model has seen in other contexts. The most common approach for building this vocabulary is called Byte Pair Encoding. It starts with individual characters and repeatedly merges the most frequent pairs, like noticing that "t" and "h" almost always appear together and treating "th" as a single unit.
+
+**A useful rule of thumb: one token equals roughly three-quarters of a word in English.** A 500-word email is approximately 650 to 700 tokens. This ratio varies depending on vocabulary complexity, but it gives you a practical way to estimate.
+
+Tokenization is also language-dependent. English tokenizes efficiently because the vast majority of AI training data is in English. Text in other languages, specialized academic terminology, or uncommon proper nouns often requires more tokens to express the same meaning. A sentence in Korean or Arabic might use twice as many tokens as its English equivalent because the model's vocabulary was built primarily from English text, not because Korean or Arabic are inherently more complex.
+
+## Context Windows and Memory
+
+Every AI tool has a **context window**, a maximum number of tokens it can hold at one time. This includes your prompts, the AI's responses, any uploaded documents, and the entire conversation history. All of it competes for the same fixed space.
+
+When the context window fills up, the model loses access to the earliest parts of your conversation without telling you. This is why AI tools sometimes "forget" instructions you gave at the beginning of a long conversation. The model did not ignore your instructions. The conversation grew past the context window limit and the oldest content was dropped.
+
+Context window sizes have grown from roughly 4,000 tokens in early models to over 100,000 tokens in current ones, but the constraint is the same: the window is finite, and everything you send competes for space within it.
+
+For practical strategies on working within these limits, see [Managing Context](/Best-Practices/managing-context).
+
+## Beyond Text
+
+Tokens are not limited to text. When you upload an image to ChatGPT or Gemini, the model converts it into tokens by breaking the image into small patches of pixels. Audio works similarly: sound is converted into visual representations called spectrograms, then tokenized.
+
+The principle is the same regardless of input type. Break complex information into small, processable units. This is why uploading a high-resolution image consumes a large portion of your context window. A single image can become hundreds or thousands of tokens, leaving less room for your text instructions and the model's response.
+
+## Why Tokens Cost Money
+
+AI services measure usage in tokens. When BYU-Idaho pays for ChatGPT, Copilot, or Gemini, the cost is tied to how many tokens are processed, both the input tokens you send and the output tokens the model generates. More tokens means more computation, which means higher cost.
+
+This is why usage limits exist. A short, focused prompt consumes fewer tokens than a long, unfocused one. A request that generates a two-paragraph response costs less than one that produces a ten-page document.
+
+Token economics also explain tool behavior that might otherwise seem arbitrary. Message limits, document size restrictions, and conversation length caps all trace back to tokens. Newer reasoning models add another wrinkle: they generate internal "thinking" tokens as they work through complex problems. You do not see these tokens in the response, but they still count toward usage.
+
+At BYU-Idaho, where employees across departments are adopting AI tools for teaching, research, and administrative work, understanding tokens helps you work within these constraints rather than being surprised by them. You can write more efficient prompts, manage conversations more effectively, and get more out of the AI tools available to you.
