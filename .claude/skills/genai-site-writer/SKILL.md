@@ -161,7 +161,7 @@ Reading these before writing a new article is recommended but not required.
 - All site content lives in `Website/`
 - Subdirectories: `Teaching-with-AI/`, `Best-Practices/`, `Protecting-Your-Data/`, `Approved-Tools/`, `Working-with-AI/`, `Learning-with-AI/`, `How-AI-Works/`
 - Navigation source of truth: `Website/navbar.mdx`
-- Landing pages: `best-practices.mdx`, `teaching-with-ai.mdx`, `protecting-data.mdx`, `approved-tools.mdx`, `working-with-ai.mdx`, `learning-with-ai.mdx`, `learn-about-ai.mdx`
+- Landing pages: `best-practices.mdx`, `teaching-with-ai.mdx`, `protecting-your-data.mdx`, `approved-tools.mdx`, `working-with-ai.mdx`, `learning-with-ai.mdx`, `how-ai-works.mdx`
 
 ### After Writing
 
