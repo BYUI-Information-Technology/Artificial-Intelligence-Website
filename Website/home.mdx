@@ -5,12 +5,13 @@ slug: /
 ---
 
 import ImageCard from '@site/src/components/ImageCard';
+import Link from '@docusaurus/Link';
 
 # Artificial Intelligence
 
-BYU-Idaho engages with Artificial Intelligence technology to help us fulfill our mission as we prepare students for their futures as disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.
+BYU-Idaho uses AI to help fulfill our mission as we prepare students for their futures as disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.
 
-Artificial Intelligence is rapidly evolving and becoming increasingly important in our everyday lives. We've developed resources to help you responsibly harness the latest artificial intelligence technology. Find content curated for your unique role at BYU-Idaho by selecting an option below:
+We've developed resources to help you use AI tools responsibly and effectively. Find content curated for your role at BYU-Idaho by selecting an option below:
 
 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem', margin: '1rem 0' }}>
   <ImageCard
@@ -31,4 +32,89 @@ Artificial Intelligence is rapidly evolving and becoming increasingly important 
     buttonLabel="Resources for students"
     href="/Learning-with-AI"
   />
+</div>
+
+<div style={{
+  margin: '3rem 0',
+  padding: '1.5rem 2rem',
+  borderLeft: '4px solid var(--ifm-color-primary)',
+  background: 'var(--ifm-color-emphasis-100)',
+  borderRadius: '0 8px 8px 0',
+}}>
+  <h2 style={{ marginTop: 0 }}>Need AI Tools or Software?</h2>
+  <p>
+    The IT Help Center is the front door for all AI and software requests at BYU-Idaho. If you need a new AI tool, want to start a development project, or have a software acquisition in mind, visit the IT Help Center and select <strong>Request Software</strong> to get started.
+  </p>
+  <a href="https://ithelp.byui.edu?utm_source=byui&utm_medium=web&utm_campaign=front_door" style={{
+    display: 'inline-block',
+    marginTop: '0.5rem',
+    padding: '0.5rem 1.25rem',
+    background: 'var(--ifm-color-primary)',
+    color: '#ffffff',
+    borderRadius: '4px',
+    fontWeight: 600,
+    textDecoration: 'none',
+  }}>
+    Visit IT Help Center
+  </a>
+</div>
+
+## Featured Articles
+
+Explore some of our most popular resources on how AI works and how to use it well.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem', margin: '1rem 0' }}>
+  <ImageCard
+    src="https://placehold.co/600x338?text=Insert+Image"
+    label="Why AI Agrees with You"
+    buttonLabel="Understand sycophancy"
+    href="/Best-Practices/sycophancy"
+  />
+  <ImageCard
+    src="https://placehold.co/600x338?text=Insert+Image"
+    label="Why AI Makes Things Up"
+    buttonLabel="Understand hallucination"
+    href="/Best-Practices/hallucination"
+  />
+  <ImageCard
+    src="https://placehold.co/600x338?text=Insert+Image"
+    label="How LLMs Are Trained"
+    buttonLabel="Learn the process"
+    href="/How-AI-Works/how-llms-are-trained"
+  />
+  <ImageCard
+    src="https://placehold.co/600x338?text=Insert+Image"
+    label="Managing Context"
+    buttonLabel="Improve your results"
+    href="/Best-Practices/managing-context"
+  />
+</div>
+
+## Quick Links
+
+Jump directly to the resources you need.
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', margin: '1rem 0' }}>
+  <div>
+    <h3>Protect Your Data</h3>
+    <ul style={{ listStyle: 'none', padding: 0 }}>
+      <li style={{ marginBottom: '0.5rem' }}><Link to="/Protecting-Your-Data/data-privacy">Data Privacy</Link></li>
+      <li style={{ marginBottom: '0.5rem' }}><Link to="/Protecting-Your-Data/data-usage-guide">Data Usage Guide</Link></li>
+      <li style={{ marginBottom: '0.5rem' }}><Link to="/Protecting-Your-Data/copyright">AI and Copyright</Link></li>
+    </ul>
+  </div>
+  <div>
+    <h3>Get Started</h3>
+    <ul style={{ listStyle: 'none', padding: 0 }}>
+      <li style={{ marginBottom: '0.5rem' }}><Link to="/Working-with-AI/getting-started">Getting Started with AI</Link></li>
+      <li style={{ marginBottom: '0.5rem' }}><Link to="/Approved-Tools">Approved Tools</Link></li>
+    </ul>
+  </div>
+  <div>
+    <h3>Understand AI</h3>
+    <ul style={{ listStyle: 'none', padding: 0 }}>
+      <li style={{ marginBottom: '0.5rem' }}><Link to="/How-AI-Works/how-llms-are-trained">How LLMs Are Trained</Link></li>
+      <li style={{ marginBottom: '0.5rem' }}><Link to="/How-AI-Works/tokens">What Are Tokens</Link></li>
+    </ul>
+  </div>
 </div>
