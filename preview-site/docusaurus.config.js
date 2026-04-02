@@ -1,4 +1,50 @@
 // @ts-check
+const nav = require('./nav.config');
+
+/**
+ * Transform the shared nav config into Docusaurus navbar items.
+ */
+function buildNavbarItems(navConfig) {
+  return navConfig.map((item) => {
+    // Simple link (e.g., Home)
+    if (!item.type) {
+      return { to: item.to, label: item.label, position: 'left' };
+    }
+
+    // Accordion dropdown (e.g., Get Started with audience sections)
+    if (item.type === 'accordion') {
+      return {
+        type: 'custom-accordionDropdown',
+        label: item.label,
+        position: 'left',
+        sections: item.sections.map((section) => ({
+          label: section.label,
+          href: section.items[0].to,
+          items: section.items.map((i) => ({ to: i.to, label: i.label })),
+        })),
+      };
+    }
+
+    // Standard dropdown (e.g., Best Practices, How AI Works)
+    if (item.type === 'dropdown') {
+      const dropdownItems = [];
+      if (item.overview) {
+        dropdownItems.push({ to: item.overview.to, label: 'Overview' });
+      }
+      item.items.forEach((i) => {
+        dropdownItems.push({ to: i.to, label: i.label });
+      });
+      return {
+        type: 'dropdown',
+        label: item.label,
+        position: 'left',
+        items: dropdownItems,
+      };
+    }
+
+    return item;
+  });
+}
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -50,75 +96,7 @@ const config = {
     ({
       navbar: {
         title: 'BYU-Idaho AI',
-        items: [
-          { to: '/', label: 'Home', position: 'left' },
-          {
-            type: 'dropdown', label: 'Best Practices', position: 'left',
-            items: [
-              { to: '/Best-Practices', label: 'Overview' },
-              { to: '/Best-Practices/sycophancy', label: 'Sycophancy' },
-              { to: '/Best-Practices/hallucination', label: 'Hallucination' },
-              { to: '/Best-Practices/managing-context', label: 'Managing Context' },
-            ],
-          },
-          {
-            type: 'dropdown', label: 'Learn About AI', position: 'left',
-            items: [
-              { to: '/Learn-About-AI', label: 'Overview' },
-              { to: '/Learn-About-AI/how-llms-are-trained', label: 'How LLMs Are Trained' },
-            ],
-          },
-          {
-            type: 'custom-accordionDropdown',
-            label: 'Resources',
-            position: 'left',
-            sections: [
-              {
-                label: 'Faculty',
-                href: '/Teaching-with-AI',
-                items: [
-                  { to: '/Teaching-with-AI/ai-in-academics', label: 'Teaching with AI' },
-                  { to: '/Teaching-with-AI/academic-integrity', label: 'Academic Integrity' },
-                  { to: '/Teaching-with-AI/ai-in-the-syllabus', label: 'AI in the Syllabus' },
-                  { to: '/Teaching-with-AI/grading-with-ai', label: 'Grading with AI' },
-                ],
-              },
-              {
-                label: 'Employees',
-                href: '/Working-with-AI',
-                items: [
-                  { to: '/Working-with-AI', label: 'Working with AI' },
-                  { to: '/Working-with-AI/getting-started', label: 'Getting Started' },
-                ],
-              },
-              {
-                label: 'Students',
-                href: '/Learning-with-AI',
-                items: [
-                  { to: '/Learning-with-AI', label: 'Learning with AI' },
-                ],
-              },
-            ],
-          },
-          {
-            type: 'dropdown', label: 'Protecting Your Data', position: 'left',
-            items: [
-              { to: '/Data-Privacy/protecting-data', label: 'Overview' },
-              { to: '/Data-Privacy/data-privacy', label: 'Data Privacy' },
-              { to: '/Data-Privacy/data-usage-guide', label: 'Data Usage Guide' },
-              { to: '/Data-Privacy/copyright', label: 'Copyright' },
-            ],
-          },
-          {
-            type: 'dropdown', label: 'Tools', position: 'left',
-            items: [
-              { to: '/Resources/approved-tools', label: 'Approved Tools' },
-              { to: '/Resources/chatgpt', label: 'Access ChatGPT' },
-              { to: '/Resources/copilot', label: 'Access Copilot' },
-              { to: '/Resources/gemini', label: 'Access Gemini' },
-            ],
-          },
-        ],
+        items: buildNavbarItems(nav),
       },
       footer: {
         style: 'dark',

@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import Link from "@docusaurus/Link";
 import { useLocation } from "@docusaurus/router";
 
 interface NavItem {
@@ -127,13 +128,13 @@ export default function AccordionDropdown({
                   <ul style={styles.itemList}>
                     {section.items.map((item) => (
                       <li key={item.to} style={styles.item}>
-                        <a
-                          href={item.to}
+                        <Link
+                          to={item.to}
                           className="dropdown__link"
                           style={{ display: "block", padding: "6px 16px 6px 24px" }}
                         >
                           {item.label}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -187,9 +188,9 @@ function MobileAccordion({
                   <ul className="menu__list">
                     {section.items.map((item) => (
                       <li key={item.to} className="menu__list-item">
-                        <a href={item.to} className="menu__link">
+                        <Link to={item.to} className="menu__link">
                           {item.label}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>

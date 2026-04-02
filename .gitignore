@@ -1,8 +1,10 @@
 .DS_Store
 .env
 
-# Claude
+# Claude config (keep reference-docs and skills tracked)
 .claude/*
+!.claude/reference-docs/
+!.claude/skills/
 .remember/*
 
 # Docx exports
@@ -11,6 +13,9 @@ ai-website-content-*.zip
 
 # Node modules
 node_modules/
+
+# Playwright MCP artifacts
+.playwright-mcp/
 
 # Docusaurus preview site
 preview-site/node_modules/
