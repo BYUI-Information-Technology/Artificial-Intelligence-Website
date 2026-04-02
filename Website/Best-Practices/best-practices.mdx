@@ -1,17 +1,32 @@
 ---
+url: "https://www.byui.edu/genai/best-practices"
 title: "Best Practices"
+slug: /Best-Practices
 ---
+
+import ImageCard from '@site/src/components/ImageCard';
 
 # Best Practices
 
-Using AI tools effectively means understanding their limitations. These guides cover common pitfalls and practical strategies to help you get reliable, useful results from generative AI.
+Using AI tools effectively means understanding their limitations. These guides cover common pitfalls and practical strategies to help you get reliable, useful results.
 
-1. **Why AI Agrees with You**
-   - *Learn why AI models agree with you instead of correcting you, and how to prompt for honest answers*
-   - Links to Why AI Agrees with You page (see `Best-Practices/sycophancy.mdx`)
-2. **Why AI Makes Things Up**
-   - *Understand why AI fabricates information and how to detect and prevent it*
-   - Links to Why AI Makes Things Up page (see `Best-Practices/hallucination.mdx`)
-3. **Managing Context**
-   - *Learn how the information you provide shapes AI output, and how to avoid losing it in long conversations*
-   - Links to Managing Context page (see `Best-Practices/managing-context.mdx`)
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem', margin: '1rem 0' }}>
+  <ImageCard
+    src="https://placehold.co/600x338?text=Insert+Image"
+    label="Why AI Agrees with You"
+    buttonLabel="Understand sycophancy"
+    href="/Best-Practices/sycophancy"
+  />
+  <ImageCard
+    src="https://placehold.co/600x338?text=Insert+Image"
+    label="Why AI Makes Things Up"
+    buttonLabel="Understand hallucination"
+    href="/Best-Practices/hallucination"
+  />
+  <ImageCard
+    src="https://placehold.co/600x338?text=Insert+Image"
+    label="Managing Context"
+    buttonLabel="Improve your results"
+    href="/Best-Practices/managing-context"
+  />
+</div>

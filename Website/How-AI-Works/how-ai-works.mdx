@@ -1,15 +1,26 @@
 ---
+url: "https://www.byui.edu/genai/how-ai-works"
 title: "How AI Works"
+slug: /How-AI-Works
 ---
+
+import ImageCard from '@site/src/components/ImageCard';
 
 # How AI Works
 
 Understanding how AI works helps you use it more effectively and recognize its limitations. These articles explain the concepts behind the tools BYU-Idaho provides, written for a general audience with no technical background required.
 
-1. **How LLMs Are Trained**
-   - *Discover the three-phase journey from raw data to production-ready AI, and understand why these systems work the way they do*
-   - Links to How LLMs Are Trained page (see `How-AI-Works/how-llms-are-trained.mdx`)
-
-2. **What Are Tokens**
-   - *Learn what tokens are, how AI breaks down your input, and why it matters for how you use these tools*
-   - Links to What Are Tokens page (see `How-AI-Works/tokens.mdx`)
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem', margin: '1rem 0' }}>
+  <ImageCard
+    src="https://placehold.co/600x338?text=Insert+Image"
+    label="How LLMs Are Trained"
+    buttonLabel="The three-phase training process"
+    href="/How-AI-Works/how-llms-are-trained"
+  />
+  <ImageCard
+    src="https://placehold.co/600x338?text=Insert+Image"
+    label="What Are Tokens"
+    buttonLabel="How AI reads your input"
+    href="/How-AI-Works/tokens"
+  />
+</div>

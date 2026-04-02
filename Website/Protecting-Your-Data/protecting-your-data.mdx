@@ -1,17 +1,32 @@
 ---
+url: "https://www.byui.edu/genai/protecting-your-data"
 title: "Protecting Your Data"
+slug: /Protecting-Your-Data
 ---
+
+import ImageCard from '@site/src/components/ImageCard';
 
 # Protecting Your Data
 
 Using AI responsibly starts with understanding how your data is handled. These resources cover BYU-Idaho's data classification standards, privacy guidelines, and copyright considerations for AI-generated content.
 
-1. **Data Privacy**
-   - *Understand your role in protecting university data when using AI tools*
-   - Links to Data Privacy page (see `Protecting-Your-Data/data-privacy.mdx`)
-2. **Data Usage Guide**
-   - *A step-by-step guide to determine how you can use AI tools based on data sensitivity*
-   - Links to Data Usage Guide page (see `Protecting-Your-Data/data-usage-guide.mdx`)
-3. **Copyright**
-   - *Learn about copyright risks and fair use when working with AI-generated content*
-   - Links to AI and Copyright page (see `Protecting-Your-Data/copyright.mdx`)
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem', margin: '1rem 0' }}>
+  <ImageCard
+    src="https://placehold.co/600x338?text=Insert+Image"
+    label="Data Privacy"
+    buttonLabel="Understand your role in data protection"
+    href="/Protecting-Your-Data/data-privacy"
+  />
+  <ImageCard
+    src="https://placehold.co/600x338?text=Insert+Image"
+    label="Data Usage Guide"
+    buttonLabel="Know what data is safe to use"
+    href="/Protecting-Your-Data/data-usage-guide"
+  />
+  <ImageCard
+    src="https://placehold.co/600x338?text=Insert+Image"
+    label="AI and Copyright"
+    buttonLabel="Copyright risks and fair use"
+    href="/Protecting-Your-Data/copyright"
+  />
+</div>
