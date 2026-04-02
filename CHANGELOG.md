@@ -20,7 +20,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Project Knowledge section in CLAUDE.md with rules for referencing all five reference documents (Church guidance, strategy, objectives, landing pages, data classification)
 - Per-page directives for Teaching with AI, Working with AI, and Learning with AI landing pages with audience-specific structure (Topics & Standards, Training Resources, Available Tools)
 
+- Callout box on Working with AI landing page linking to Getting Started with AI guide and IT Help Center
+
 ### Changed
+- Simplified home page to focus on three audience cards (Teach/Work/Learn) and IT Help Center; removed Featured Articles and Quick Links sections per supervisor feedback
+- Restructured Working with AI landing page from three sections (Topics & Standards, Training Resources, Available Tools) to four category cards (Tools, Training, Data Protections, Best Practices and Standards) per supervisor feedback, with Coming Soon labels for planned content
 - Restructured navbar: replaced vague "Resources" mega-menu with "Get Started" (audience routing by role), promoted Teaching/Working/Learning with AI to visible sub-items
 - Renamed "Learn About AI" section to "How AI Works" to disambiguate from student-facing "Learning with AI"
 - Renamed Best Practices article titles to plain language: "Why AI Agrees with You" (sycophancy), "Why AI Makes Things Up" (hallucination), "Managing Context"

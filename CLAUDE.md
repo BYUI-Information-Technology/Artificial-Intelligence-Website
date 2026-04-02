@@ -6,6 +6,8 @@ This repository manages the content overhaul of BYU-Idaho's Artificial Intellige
 
 > Note: We're renaming the site from "GenAI" to simply "Artificial Intelligence." The term GenAI is an outdated term and limits the true depth and breadth of AI to simply generative AI. By using "Artificial Intelligence", we can expand into other topics, such as Agentic AI.
 
+> Note: If I have use the term "Front Door", please reference `.claude/reference-docs/front-door.md`
+
 ### What This Repo Is
 
 - A content project, not a code project
@@ -409,4 +411,9 @@ This project maintains a `CHANGELOG.md` following the [Keep a Changelog](https:/
   - Changed: "Updated Privacy page to reflect new governance contacts"
   - Removed: "Removed Custom Bots and Connectors pages (inaccurate, out of scope)"
   - Fixed: "Corrected data classification levels for Copilot on Tools page"
+
+## Important Links
+
+- IT Help Center (i.e., "Front Door") campaign: https://ithelp.byui.edu/?utm_source=byui&utm_medium=web&utm_campaign=front_door
+- Who is My IT Portfolio Manager campaign: https://td.byui.edu/TDClient/79/ITHelpCenter/KB/ArticleDet?ID=17453&utm_source=byui&utm_medium=web&utm_campaign=front_door
 

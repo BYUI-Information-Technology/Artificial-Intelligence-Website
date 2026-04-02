@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "@docusaurus/Link";
 
 interface ImageCardProps {
   src: string;
@@ -47,10 +48,18 @@ export default function ImageCard({
   );
 
   if (href) {
+    const isExternal = href.startsWith("http");
+    if (isExternal) {
+      return (
+        <a href={href} style={styles.link} target="_blank" rel="noopener noreferrer">
+          {card}
+        </a>
+      );
+    }
     return (
-      <a href={href} style={styles.link}>
+      <Link to={href} style={styles.link}>
         {card}
-      </a>
+      </Link>
     );
   }
 

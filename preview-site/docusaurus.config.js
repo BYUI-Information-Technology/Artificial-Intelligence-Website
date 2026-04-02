@@ -59,13 +59,8 @@ const config = {
   projectName: 'Artificial-Intelligence-Website',
   trailingSlash: false,
 
-  onBrokenLinks: 'warn',
-
-  markdown: {
-    hooks: {
-      onBrokenMarkdownLinks: 'warn',
-    },
-  },
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
 
   i18n: {
     defaultLocale: 'en',
