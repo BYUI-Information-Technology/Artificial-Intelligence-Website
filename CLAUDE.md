@@ -48,16 +48,16 @@ BYUI-GenAI-Site/
     │   └── getting-started.mdx
     ├── Learning-with-AI/
     │   └── learning-with-ai.mdx
-    ├── Learn-About-AI/
-    │   ├── learn-about-ai.mdx
+    ├── How-AI-Works/
+    │   ├── how-ai-works.mdx
     │   ├── how-llms-are-trained.mdx
     │   └── tokens.mdx
-    ├── Data-Privacy/
-    │   ├── protecting-data.mdx
+    ├── Protecting-Your-Data/
+    │   ├── protecting-your-data.mdx
     │   ├── data-privacy.mdx
     │   ├── data-usage-guide.mdx
     │   └── copyright.mdx
-    └── Resources/
+    └── Approved-Tools/
         ├── approved-tools.mdx
         ├── chatgpt.mdx
         ├── copilot.mdx
@@ -118,21 +118,21 @@ Summary:
     - Getting Started with AI (`Working-with-AI/getting-started.mdx`)
   - **For Students**
     - Learning with AI (`Learning-with-AI/learning-with-ai.mdx`)
-- How AI Works (`Learn-About-AI/learn-about-ai.mdx`)
-  - How LLMs Are Trained (`Learn-About-AI/how-llms-are-trained.mdx`)
-  - What Are Tokens (`Learn-About-AI/tokens.mdx`)
+- How AI Works (`How-AI-Works/how-ai-works.mdx`)
+  - How LLMs Are Trained (`How-AI-Works/how-llms-are-trained.mdx`)
+  - What Are Tokens (`How-AI-Works/tokens.mdx`)
 - Best Practices (`Best-Practices/best-practices.mdx`)
   - Why AI Agrees with You (`Best-Practices/sycophancy.mdx`)
   - Why AI Makes Things Up (`Best-Practices/hallucination.mdx`)
   - Managing Context (`Best-Practices/managing-context.mdx`)
-- Protecting Your Data (`Data-Privacy/protecting-data.mdx`)
-  - Data Privacy (`Data-Privacy/data-privacy.mdx`)
-  - Data Usage Guide (`Data-Privacy/data-usage-guide.mdx`)
-  - AI and Copyright (`Data-Privacy/copyright.mdx`)
-- Approved Tools (`Resources/approved-tools.mdx`)
-  - Access ChatGPT (`Resources/chatgpt.mdx`)
-  - Access Copilot (`Resources/copilot.mdx`)
-  - Access Gemini (`Resources/gemini.mdx`)
+- Protecting Your Data (`Protecting-Your-Data/protecting-your-data.mdx`)
+  - Data Privacy (`Protecting-Your-Data/data-privacy.mdx`)
+  - Data Usage Guide (`Protecting-Your-Data/data-usage-guide.mdx`)
+  - AI and Copyright (`Protecting-Your-Data/copyright.mdx`)
+- Approved Tools (`Approved-Tools/approved-tools.mdx`)
+  - Access ChatGPT (`Approved-Tools/chatgpt.mdx`)
+  - Access Copilot (`Approved-Tools/copilot.mdx`)
+  - Access Gemini (`Approved-Tools/gemini.mdx`)
 
 ### Pages Removed (from original site)
 
@@ -140,7 +140,7 @@ Summary:
 - Training -- replaced by How AI Works section with new educational content
 - Custom Bots -- inaccurate, noise
 - Connectors -- inaccurate, noise
-- All product-specific subpages from old Products section (replaced by Resources/approved-tools.mdx)
+- All product-specific subpages from old Products section (replaced by Approved-Tools/approved-tools.mdx)
 - Events/Expo (referenced in old navbar but no content existed)
 
 ## Per-Page Directives
@@ -158,11 +158,11 @@ Summary:
 - Three approved tools: ChatGPT (OpenAI), Copilot (Microsoft), Gemini (Google)
 - Each tool has data classification levels and a link to its access guide
 - IT Help Center callout for tool requests is prominent
-- Access guides in Resources/ folder: chatgpt.mdx, copilot.mdx, gemini.mdx
+- Access guides in Approved-Tools/ folder: chatgpt.mdx, copilot.mdx, gemini.mdx
 
 ### Teaching with AI (formerly Academics)
 
-- Landing page (`Teaching-with-AI/teaching-with-ai.mdx`) should organize image cards under three section headings per `.claude/reference-docs/landing-pages.md`: Topics & Standards (Data Protection, AI Priorities & Strategy, Ethics), Training Resources (tutorials and best practices), and Available Tools (link to `Resources/approved-tools.mdx`)
+- Landing page (`Teaching-with-AI/teaching-with-ai.mdx`) should organize image cards under three section headings per `.claude/reference-docs/landing-pages.md`: Topics & Standards (Data Protection, AI Priorities & Strategy, Ethics), Training Resources (tutorials and best practices), and Available Tools (link to `Approved-Tools/approved-tools.mdx`)
 - Faculty-centric audience -- language should speak directly to instructors and their teaching context
 - Policy subpages (AI in Academics, Academic Integrity, AI in the Syllabus, Grading with AI) remain as children
 
@@ -192,7 +192,7 @@ Summary:
 
 ### How AI Works
 
-- Landing page (`Learn-About-AI/learn-about-ai.mdx`) with image cards linking to subpages
+- Landing page (`How-AI-Works/how-ai-works.mdx`) with image cards linking to subpages
 - **Purpose:** Educational content that builds AI literacy across the BYU-Idaho community. Articles explain *how AI works* at a conceptual level -- not "do this, not that" (that's Best Practices), but "here's what's happening under the hood and why it matters"
 - **Audience calibration:** Write for accessibility first -- any employee should be able to follow the article without a technical background. Do not shy away from more advanced concepts, but explain them without assuming prior knowledge
 - **Distinction from Best Practices:** Best Practices = actionable guidance (protect yourself, avoid pitfalls). How AI Works = understanding the technology (how LLMs are trained, what RAG is, how alignment works). There will be natural overlap in concepts, but the framing differs
@@ -212,14 +212,14 @@ Summary:
 
 ### Data Privacy
 
-- Landing page (`Data-Privacy/protecting-data.mdx`) with image cards linking to subpages
+- Landing page (`Protecting-Your-Data/protecting-your-data.mdx`) with image cards linking to subpages
 - Data Privacy (`data-privacy.mdx`): largely accurate -- clean up and polish; keep 4-tier data classification system
 - Data Usage Guide (`data-usage-guide.mdx`): step-by-step decision guide for AI data usage
 - AI and Copyright (`copyright.mdx`): largely accurate -- clean up and polish; legal content is time-sensitive
 
 ### Working with AI
 
-- Landing page (`Working-with-AI/working-with-ai.mdx`) should organize image cards under three section headings per `.claude/reference-docs/landing-pages.md`: Topics & Standards (Data Protection, AI Priorities & Strategy, Ethics), Training Resources (tutorials and best practices), and Available Tools (link to `Resources/approved-tools.mdx`)
+- Landing page (`Working-with-AI/working-with-ai.mdx`) should organize image cards under three section headings per `.claude/reference-docs/landing-pages.md`: Topics & Standards (Data Protection, AI Priorities & Strategy, Ethics), Training Resources (tutorials and best practices), and Available Tools (link to `Approved-Tools/approved-tools.mdx`)
 - Employee-centric audience (staff and administrative employees) -- language should speak to day-to-day work applications
 - Getting Started subpage: practical onboarding guide for employees new to AI tools
 
@@ -274,24 +274,24 @@ Reference documents in `.claude/reference-docs/` provide authoritative context f
 | Teaching-with-AI/academic-integrity.mdx | Academic stakeholder review required |
 | Teaching-with-AI/ai-in-the-syllabus.mdx | Academic stakeholder review required |
 | Teaching-with-AI/grading-with-ai.mdx | Academic stakeholder review required |
-| Learn-About-AI/learn-about-ai.mdx | How AI Works landing page |
-| Learn-About-AI/how-llms-are-trained.mdx | How LLMs Are Trained (source content exists at mintlify) |
-| Learn-About-AI/tokens.mdx | What Are Tokens article |
+| How-AI-Works/how-ai-works.mdx | How AI Works landing page |
+| How-AI-Works/how-llms-are-trained.mdx | How LLMs Are Trained (source content exists at mintlify) |
+| How-AI-Works/tokens.mdx | What Are Tokens article |
 | Best-Practices/best-practices.mdx | Best Practices landing page |
 | Best-Practices/sycophancy.mdx | Why AI Agrees with You article |
 | Best-Practices/hallucination.mdx | Why AI Makes Things Up article |
 | Best-Practices/managing-context.mdx | Managing Context article |
-| Data-Privacy/protecting-data.mdx | Protecting Your Data landing page |
-| Data-Privacy/data-privacy.mdx | Data privacy guidelines |
-| Data-Privacy/data-usage-guide.mdx | Data Usage Guide -- step-by-step AI data usage decision guide |
-| Data-Privacy/copyright.mdx | AI and Copyright considerations |
+| Protecting-Your-Data/protecting-your-data.mdx | Protecting Your Data landing page |
+| Protecting-Your-Data/data-privacy.mdx | Data privacy guidelines |
+| Protecting-Your-Data/data-usage-guide.mdx | Data Usage Guide -- step-by-step AI data usage decision guide |
+| Protecting-Your-Data/copyright.mdx | AI and Copyright considerations |
 | Working-with-AI/working-with-ai.mdx | Working with AI landing page (staff/admin audience) |
 | Working-with-AI/getting-started.mdx | Getting Started with AI article for employees |
 | Learning-with-AI/learning-with-ai.mdx | Learning with AI landing page (student audience) |
-| Resources/approved-tools.mdx | Approved Tools with data classification |
-| Resources/chatgpt.mdx | ChatGPT access guide |
-| Resources/copilot.mdx | Copilot access guide |
-| Resources/gemini.mdx | Gemini access guide |
+| Approved-Tools/approved-tools.mdx | Approved Tools with data classification |
+| Approved-Tools/chatgpt.mdx | ChatGPT access guide |
+| Approved-Tools/copilot.mdx | Copilot access guide |
+| Approved-Tools/gemini.mdx | Gemini access guide |
 
 ### Review Process
 

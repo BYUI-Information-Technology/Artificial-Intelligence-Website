@@ -49,10 +49,10 @@ const nav = [
   {
     label: 'How AI Works',
     type: 'dropdown',
-    overview: { to: '/Learn-About-AI', file: 'Learn-About-AI/learn-about-ai.mdx' },
+    overview: { to: '/How-AI-Works', file: 'How-AI-Works/how-ai-works.mdx' },
     items: [
-      { label: 'How LLMs Are Trained', to: '/Learn-About-AI/how-llms-are-trained', file: 'Learn-About-AI/how-llms-are-trained.mdx' },
-      { label: 'What Are Tokens', to: '/Learn-About-AI/tokens', file: 'Learn-About-AI/tokens.mdx' },
+      { label: 'How LLMs Are Trained', to: '/How-AI-Works/how-llms-are-trained', file: 'How-AI-Works/how-llms-are-trained.mdx' },
+      { label: 'What Are Tokens', to: '/How-AI-Works/tokens', file: 'How-AI-Works/tokens.mdx' },
     ],
   },
   {
@@ -68,21 +68,21 @@ const nav = [
   {
     label: 'Protecting Your Data',
     type: 'dropdown',
-    overview: { to: '/Data-Privacy/protecting-data', file: 'Data-Privacy/protecting-data.mdx' },
+    overview: { to: '/Protecting-Your-Data', file: 'Protecting-Your-Data/protecting-your-data.mdx' },
     items: [
-      { label: 'Data Privacy', to: '/Data-Privacy/data-privacy', file: 'Data-Privacy/data-privacy.mdx' },
-      { label: 'Data Usage Guide', to: '/Data-Privacy/data-usage-guide', file: 'Data-Privacy/data-usage-guide.mdx' },
-      { label: 'AI and Copyright', to: '/Data-Privacy/copyright', file: 'Data-Privacy/copyright.mdx' },
+      { label: 'Data Privacy', to: '/Protecting-Your-Data/data-privacy', file: 'Protecting-Your-Data/data-privacy.mdx' },
+      { label: 'Data Usage Guide', to: '/Protecting-Your-Data/data-usage-guide', file: 'Protecting-Your-Data/data-usage-guide.mdx' },
+      { label: 'AI and Copyright', to: '/Protecting-Your-Data/copyright', file: 'Protecting-Your-Data/copyright.mdx' },
     ],
   },
   {
     label: 'Approved Tools',
     type: 'dropdown',
-    overview: { to: '/Resources/approved-tools', file: 'Resources/approved-tools.mdx' },
+    overview: { to: '/Approved-Tools', file: 'Approved-Tools/approved-tools.mdx' },
     items: [
-      { label: 'Access ChatGPT', to: '/Resources/chatgpt', file: 'Resources/chatgpt.mdx' },
-      { label: 'Access Copilot', to: '/Resources/copilot', file: 'Resources/copilot.mdx' },
-      { label: 'Access Gemini', to: '/Resources/gemini', file: 'Resources/gemini.mdx' },
+      { label: 'Access ChatGPT', to: '/Approved-Tools/chatgpt', file: 'Approved-Tools/chatgpt.mdx' },
+      { label: 'Access Copilot', to: '/Approved-Tools/copilot', file: 'Approved-Tools/copilot.mdx' },
+      { label: 'Access Gemini', to: '/Approved-Tools/gemini', file: 'Approved-Tools/gemini.mdx' },
     ],
   },
 ];

@@ -4,27 +4,27 @@ title: "Managing Context"
 
 # Managing Context
 
-An employee asks ChatGPT to summarize their department's travel reimbursement policy. The response sounds authoritative — it outlines a three-step process, names specific approval thresholds, and cites a section number. The employee begins drafting a memo based on this guidance. There is just one problem: none of it is real. The policy ChatGPT described does not exist. The employee tries again, this time uploading the actual policy PDF and asking a specific question. The second response is accurate, detailed, and useful. The difference was context.
+An employee asks ChatGPT to summarize their department's travel reimbursement policy. The response sounds authoritative: it outlines a three-step process, names specific approval thresholds, and cites a section number. The employee begins drafting a memo based on this guidance. There is just one problem: none of it is real. The policy ChatGPT described does not exist. The employee tries again, this time uploading the actual policy PDF and asking a specific question. The second response is accurate, detailed, and useful. The difference was context.
 
 ## What Is Context?
 
 Context is the information an AI model has available to work with when generating a response. It comes from two places:
 
-**What you provide.** Every piece of information you include in your prompt — files, background details, instructions, examples — shapes the quality of the response. The more relevant information the model has, the less it has to guess.
+**What you provide.** Every piece of information you include in your prompt (files, background details, instructions, examples) shapes the quality of the response. The more relevant information the model has, the less it has to guess.
 
-**What the model can hold.** Every AI tool has a context window — a fixed number of [tokens](/Learn-About-AI/tokens) it can process at one time. Think of it as the model's short-term memory. Everything in your conversation — your prompts, the AI's responses, uploaded documents — has to fit inside this window. Once it fills up, the oldest information gets quietly dropped and the model loses track of what you told it earlier.
+**What the model can hold.** Every AI tool has a context window, a fixed number of [tokens](/How-AI-Works/tokens) it can process at one time. Think of it as the model's short-term memory. Everything in your conversation (your prompts, the AI's responses, uploaded documents) has to fit inside this window. Once it fills up, the oldest information gets quietly dropped and the model loses track of what you told it earlier.
 
 ## Why Does Context Matter?
 
-**Without enough context, the model guesses.** AI tools do not look things up from a database of facts. They predict the most likely response based on patterns. When your prompt is vague or missing key details, the model fills the gaps with plausible-sounding information that may be completely fabricated. OpenAI's own research has confirmed that this kind of hallucination is a fundamental property of how these models work — not a bug that will be patched out. Studies have found that structured, context-rich prompts produce dramatically fewer errors than vague ones.
+**Without enough context, the model guesses.** AI tools do not look things up from a database of facts. They predict the most likely response based on patterns. When your prompt is vague or missing key details, the model fills the gaps with plausible-sounding information that may be completely fabricated. OpenAI's own research has confirmed that this kind of hallucination is a fundamental property of how these models work, not a bug that will be patched out. Studies have found that structured, context-rich prompts produce dramatically fewer errors than vague ones.
 
-**Too much context degrades quality too.** Research from Stanford and the University of Washington found that AI models pay the most attention to the beginning and end of their context, with significant performance drops for information in the middle. Long conversations compound the problem — your original instructions get buried under layers of follow-up, and the model starts ignoring or contradicting them.
+**Too much context degrades quality too.** Research from Stanford and the University of Washington found that AI models pay the most attention to the beginning and end of their context, with significant performance drops for information in the middle. Long conversations compound the problem. Your original instructions get buried under layers of follow-up, and the model starts ignoring or contradicting them.
 
-**The right context transforms the output.** When given proper context, AI tools perform substantially better. The question is not just what words you use in your prompt — it is what information the model needs to do the job well.
+**The right context transforms the output.** When given proper context, AI tools perform substantially better. The question is not just what words you use in your prompt; it is what information the model needs to do the job well.
 
 ## Best Practices for Providing Context
 
-- **Include the source material.** Upload the actual document rather than describing it from memory. All three approved tools — ChatGPT, Copilot, and Gemini — support file uploads. When the model works from your source material, it does not need to guess.
+- **Include the source material.** Upload the actual document rather than describing it from memory. All three approved tools (ChatGPT, Copilot, and Gemini) support file uploads. When the model works from your source material, it does not need to guess.
   - *Bad:* "What does BYU-Idaho's travel policy say about mileage reimbursement?"
   - *Good:* "I've attached BYU-Idaho's travel reimbursement policy. Based on this document, what is the current mileage reimbursement rate and process?"
 
@@ -40,13 +40,13 @@ Context is the information an AI model has available to work with when generatin
 
 - **Start new conversations for new topics.** Each conversation shares one context window. Switching topics in a long thread means the model is carrying irrelevant information from earlier exchanges. A fresh conversation gives it a clean slate and your full context window to work with.
 
-- **Front-load your most important instructions.** Models pay the most attention to the beginning and end of their context. Put critical requirements — the task, the format, any constraints — at the top of your prompt, not buried after several paragraphs of background.
+- **Front-load your most important instructions.** Models pay the most attention to the beginning and end of their context. Put critical requirements (the task, the format, any constraints) at the top of your prompt, not buried after several paragraphs of background.
 
 - **Watch for signs of context overload.** If the AI starts contradicting itself, forgetting your earlier instructions, or giving increasingly vague responses, the conversation has likely grown too long. Ask the model to summarize progress so far, then start a new conversation with that summary as your opening context.
 
 ## Set It Once: Persistent Context Features
 
-All three approved tools let you save preferences that apply to every conversation — set them once and benefit automatically.
+All three approved tools let you save preferences that apply to every conversation. Set them once and benefit automatically.
 
 - **ChatGPT:** Custom Instructions let you define your role and response preferences. Memory remembers facts across conversations. Access both via Settings.
 - **Copilot:** Custom Instructions let you set tone, detail level, and formatting preferences. Access via Settings > Personalization.

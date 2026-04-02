@@ -96,7 +96,7 @@ slug: /<Section>/<filename-without-extension>
 
 - **url:** The production URL on byui.edu. Use the pattern `https://www.byui.edu/genai/` followed by the page's path segment (e.g., `privacy`, `academic-integrity`, `best-practices/sycophancy`).
 - **title:** The canonical page title. The H1 must match this exactly (exception: access guides may use a longer descriptive form).
-- **slug:** The Docusaurus route. Use the format `/<Section>/<filename>` matching the file's location in `Website/` (e.g., `/Data-Privacy/data-privacy`, `/Best-Practices/sycophancy`). For the home page, use `/`.
+- **slug:** The Docusaurus route. Use the format `/<Section>/<filename>` matching the file's location in `Website/` (e.g., `/Protecting-Your-Data/data-privacy`, `/Best-Practices/sycophancy`). For the home page, use `/`.
 
 When revising an existing page, check its frontmatter and add any missing fields. When creating a new page, include all three fields.
 
@@ -159,7 +159,7 @@ Reading these before writing a new article is recommended but not required.
 ### File Locations
 
 - All site content lives in `Website/`
-- Subdirectories: `Teaching-with-AI/`, `Best-Practices/`, `Data-Privacy/`, `Resources/`, `Working-with-AI/`, `Learning-with-AI/`, `Learn-About-AI/`
+- Subdirectories: `Teaching-with-AI/`, `Best-Practices/`, `Protecting-Your-Data/`, `Approved-Tools/`, `Working-with-AI/`, `Learning-with-AI/`, `How-AI-Works/`
 - Navigation source of truth: `Website/navbar.mdx`
 - Landing pages: `best-practices.mdx`, `teaching-with-ai.mdx`, `protecting-data.mdx`, `approved-tools.mdx`, `working-with-ai.mdx`, `learning-with-ai.mdx`, `learn-about-ai.mdx`
 

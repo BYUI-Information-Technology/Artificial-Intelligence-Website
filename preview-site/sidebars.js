@@ -14,9 +14,9 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Learn About AI',
-      link: { type: 'doc', id: 'Learn-About-AI/learn-about-ai' },
-      items: ['Learn-About-AI/how-llms-are-trained'],
+      label: 'How AI Works',
+      link: { type: 'doc', id: 'How-AI-Works/how-ai-works' },
+      items: ['How-AI-Works/how-llms-are-trained'],
     },
     {
       type: 'category',
@@ -32,11 +32,11 @@ const sidebars = {
     {
       type: 'category',
       label: 'Protecting Your Data',
-      link: { type: 'doc', id: 'Data-Privacy/protecting-data' },
+      link: { type: 'doc', id: 'Protecting-Your-Data/protecting-your-data' },
       items: [
-        'Data-Privacy/data-privacy',
-        'Data-Privacy/data-usage-guide',
-        'Data-Privacy/copyright',
+        'Protecting-Your-Data/data-privacy',
+        'Protecting-Your-Data/data-usage-guide',
+        'Protecting-Your-Data/copyright',
       ],
     },
     {
@@ -52,12 +52,12 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Resources',
-      link: { type: 'doc', id: 'Resources/approved-tools' },
+      label: 'Approved Tools',
+      link: { type: 'doc', id: 'Approved-Tools/approved-tools' },
       items: [
-        'Resources/chatgpt',
-        'Resources/copilot',
-        'Resources/gemini',
+        'Approved-Tools/chatgpt',
+        'Approved-Tools/copilot',
+        'Approved-Tools/gemini',
       ],
     },
   ],

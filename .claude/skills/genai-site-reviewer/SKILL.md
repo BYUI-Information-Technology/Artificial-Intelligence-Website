@@ -14,7 +14,7 @@ Review content pages on BYU-Idaho's Artificial Intelligence website for alignmen
 Determine what to review. Ask the user if unclear.
 
 - **Single page:** User specifies a file (e.g., `Website/Best-Practices/sycophancy.mdx`)
-- **Section:** All pages in a subdirectory (e.g., `Website/Data-Privacy/`)
+- **Section:** All pages in a subdirectory (e.g., `Website/Protecting-Your-Data/`)
 - **Full site:** All pages under `Website/`
 
 ### Step 2: Load Reference Documents
