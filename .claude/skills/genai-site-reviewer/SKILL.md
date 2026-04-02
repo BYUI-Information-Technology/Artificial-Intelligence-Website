@@ -5,7 +5,7 @@ description: Review and audit content pages on the BYU-Idaho Artificial Intellig
 
 # AI Site Content Reviewer
 
-Review content pages on BYU-Idaho's Artificial Intelligence website for alignment with institutional reference documents and editorial standards. This skill acts as a quality gate -- run it after writing new content, before committing, or to audit existing drafts.
+Review content pages on BYU-Idaho's Artificial Intelligence website for alignment with institutional reference documents and editorial standards. This skill acts as a quality gate. Run it after writing new content, before committing, or to audit existing drafts.
 
 ## Workflow
 
@@ -13,7 +13,7 @@ Review content pages on BYU-Idaho's Artificial Intelligence website for alignmen
 
 Determine what to review. Ask the user if unclear.
 
-- **Single page:** User specifies a file (e.g., `Website/Best-Practices/sycophancy.md`)
+- **Single page:** User specifies a file (e.g., `Website/Best-Practices/sycophancy.mdx`)
 - **Section:** All pages in a subdirectory (e.g., `Website/Data-Privacy/`)
 - **Full site:** All pages under `Website/`
 
@@ -21,18 +21,18 @@ Determine what to review. Ask the user if unclear.
 
 Read all five reference documents before reviewing any content. These are the grounding sources:
 
-1. `.claude/reference-docs/church-guidance.md` -- Church AI Guiding Principles
-2. `.claude/reference-docs/strategy.md` -- BYU-Idaho AI Strategy
-3. `.claude/reference-docs/objectives.md` -- Governance Objectives
-4. `.claude/reference-docs/data-classification-policy.md` -- Data Classification Policy
-5. `.claude/reference-docs/landing-pages.md` -- Landing Page Structure
-6. `.claude/reference-docs/naming-conventions.md` -- Naming Conventions
+1. `.claude/reference-docs/church-guidance.md`: Church AI Guiding Principles
+2. `.claude/reference-docs/strategy.md`: BYU-Idaho AI Strategy
+3. `.claude/reference-docs/objectives.md`: Governance Objectives
+4. `.claude/reference-docs/data-classification-policy.md`: Data Classification Policy
+5. `.claude/reference-docs/landing-pages.md`: Landing Page Structure
+6. `.claude/reference-docs/naming-conventions.md`: Naming Conventions
 
 Also read the CLAUDE.md editorial principles and per-page directives for the target page(s).
 
 ### Step 3: Review Each Page
 
-For each page, evaluate against the four check areas below. Read the page content fully before evaluating.
+For each page, evaluate against the six check areas below. Read the page content fully before evaluating.
 
 #### Check 1: Governance Objectives Alignment
 
@@ -69,7 +69,7 @@ Does the content reflect the four Church AI guiding principles where relevant?
 | **Privacy and Security** | Data protection guidance is present where needed; sacred/personal information is treated with care |
 | **Accountability** | Content encourages testing, reviewing outputs, and compliance; doesn't promote uncritical AI use |
 
-**Flag if:** Content encourages blind trust in AI, omits relevant data protection guidance, or frames AI in ways that conflict with the principles. Not every principle applies to every page -- only flag when a principle is relevant and absent.
+**Flag if:** Content encourages blind trust in AI, omits relevant data protection guidance, or frames AI in ways that conflict with the principles. Not every principle applies to every page; only flag when a principle is relevant and absent.
 
 #### Check 4: Style and Editorial Compliance
 
@@ -80,10 +80,18 @@ Does the page follow the editorial principles and style guide?
 - **Audience:** Written for employees (faculty, staff, admin). Not over-explaining basics. Not writing for students (except Learning with AI).
 - **Policy accuracy:** No invented policy. Unclear items flagged for review, not guessed at.
 - **Academic boundary:** Academic policy pages not unilaterally rewritten.
-- **Formatting:** GFM, no emojis, no horizontal rules between sections, correct heading hierarchy.
+- **Formatting:** GFM, no emojis, no horizontal rules between sections, no double hyphens (`--`) or em dashes (`---`), correct heading hierarchy.
 - **IT Help Center:** Visible on pages discussing tool requests, acquisitions, or AI development requests.
 - **Data classification:** If data classification is mentioned, does it match the modified 4-tier system in the reference doc?
 - **Per-page directives:** Does the content follow the specific directives in CLAUDE.md for this page?
+- **Frontmatter completeness:** Every page must have YAML frontmatter with three fields: `url` (production URL on byui.edu), `title` (canonical page title), and `slug` (Docusaurus route). Flag any missing fields. The expected format is:
+  ```yaml
+  ---
+  url: "https://www.byui.edu/genai/<path>"
+  title: "<Page Title>"
+  slug: /<Section>/<filename>
+  ---
+  ```
 
 #### Check 5: Naming & IA Consistency
 
@@ -122,6 +130,67 @@ For each page under review, verify consistency across these surfaces:
 
 **Flag if:** Any surface has a label that doesn't match the naming conventions, any file path reference is stale, or CLAUDE.md is out of sync with the actual file system.
 
+#### Check 6: AI Writing Patterns
+
+Does the page read like a human wrote it? Scan for the following LLM writing tropes. Individual instances are not automatic flags. The tell is **clustering**: when 3+ patterns appear on a single page, the content reads as unmistakably AI-generated and must be revised.
+
+**Sentence-level patterns:**
+
+| Pattern | What to look for |
+|---------|-----------------|
+| **Negative parallelism** | "It's not X, it's Y" constructions that manufacture false profundity. Includes: "not because X, but because Y" and cross-sentence reframes ("The question isn't X. The question is Y."). One per page max; more is a flag. |
+| **Rhetorical Q&A** | Self-posed questions answered immediately: "The result? Devastating." "The takeaway? Simple." Nobody writes like this at scale except LLMs. |
+| **"Not X. Not Y. Just Z."** | Dramatic countdown negation to build false tension before a reveal. |
+| **Anaphora abuse** | Repeating the same sentence opening 3+ times in quick succession. |
+| **Participial tacking** | Ending sentences with shallow "-ing" analysis phrases: "highlighting its importance," "reflecting broader trends," "contributing to the development of..." These say nothing. |
+| **False ranges** | "From X to Y" where X and Y aren't on any real spectrum. "From innovation to cultural transformation" has no meaningful middle. |
+| **"It's worth noting"** | Filler transitions that connect nothing: "It bears mentioning," "Importantly," "Interestingly," "Notably." Cut or replace with an actual transition. |
+
+**Word choice patterns:**
+
+| Pattern | What to look for |
+|---------|-----------------|
+| **"Delve" and friends** | Overuse of: "delve," "utilize," "leverage" (as verb), "robust," "streamline," "harness," "foster," "bolster," "spearhead." Replace with plain verbs. |
+| **"Tapestry" / "Landscape"** | Ornate nouns where simpler words work: "tapestry," "landscape," "paradigm," "synergy," "ecosystem," "framework," "realm." |
+| **Magic adverbs** | "Quietly," "deeply," "fundamentally," "remarkably," "arguably" used to inject false significance. |
+| **The "Serves as" dodge** | Replacing "is" with "serves as," "stands as," "represents," "marks" to avoid simple copulas. Just say "is." |
+
+**Tone patterns:**
+
+| Pattern | What to look for |
+|---------|-----------------|
+| **"Here's the kicker"** | False suspense before an unremarkable point. Also: "Here's the thing," "Here's where it gets interesting," "Here's what most people miss." |
+| **"Let's break this down"** | Patronizing pedagogical voice. Also: "Let's unpack this," "Let's explore," "Let's dive in/deeper." The site audience is professional adults. |
+| **Grandiose stakes inflation** | Everything is world-historically important. A page about prompt tips becomes a meditation on the future of education. Keep stakes proportional. |
+| **Excessive hedging** | Uniform cautiousness that strips writing of conviction. Every claim softened with "may," "might," "could potentially," "it's possible that." Take a position. |
+| **Invented concept labels** | Fabricated compound terms that sound analytical but aren't established: "the supervision paradox," "the acceleration trap." Name a thing, skip the argument. |
+| **Vague attributions** | "Experts argue..." "Industry observers note..." without naming anyone. If you can't name the source, cut the claim or find a real citation. |
+
+**Structure patterns:**
+
+| Pattern | What to look for |
+|---------|-----------------|
+| **Fractal summaries** | "What I'm going to tell you; what I'm telling you; what I just told you" at every level. Every section summarized, then the page summarized again. Say it once. |
+| **One-point dilution** | A single argument restated 5+ ways across the page. Padding a simple point with different metaphors and framings to seem comprehensive. |
+| **Listicle in a trench coat** | Numbered points disguised as prose: "The first challenge is... The second challenge is... The third challenge is..." Either commit to a list or write actual prose. |
+| **Signposted conclusions** | "In conclusion," "To sum up," "In summary." Competent writing doesn't announce it's ending. |
+
+**Formatting patterns:**
+
+| Pattern | What to look for |
+|---------|-----------------|
+| **Bold-first bullets** | Every bullet point starts with a bolded keyword. Almost no human formats lists this way. (Note: this skill's own report template uses bold-first for structured output, which is appropriate for reports but not for article prose.) |
+| **Em-dash overuse** | More than 2-3 em dashes per page. Already caught by editorial rules banning `--` and `---`, but also watch for Unicode em dashes (—) that bypass the formatting check. |
+| **Uniform sentence length** | Every sentence is 15-25 words with no variation. Human writing naturally mixes short punchy sentences with longer complex ones. Read a paragraph aloud; if every sentence hits the same beat, flag it. |
+
+**Scoring:**
+
+- **0-2 patterns found:** Pass. Isolated instances are normal.
+- **3-4 patterns found:** Should fix. The page has a detectable AI voice. Identify the specific patterns and rewrite those passages.
+- **5+ patterns found:** Must fix. The page reads as AI-generated. Flag for full rewrite of affected sections with specific pattern callouts.
+
+When flagging, quote the offending passage and name the pattern so the fix is actionable. Do not just say "AI-sounding." Say: "Negative parallelism on line 14: 'It's not about the tool, it's about the mindset.' Rewrite as a direct statement."
+
 ### Step 4: Report
 
 Output a structured review report for each page. Use this format:
@@ -141,15 +210,22 @@ Output a structured review report for each page. Use this format:
 - **Finding:** [pass/flag with explanation]
 
 ### Editorial Compliance
+- **Frontmatter:** [complete/missing fields — list which of url, title, slug are present or absent]
 - **Finding:** [pass/flag with specific issues]
 
 ### Naming & IA Consistency
 - **Canonical title:** [frontmatter title]
 - **H1 match:** [yes/no]
-- **Navbar match:** [yes/no -- note label used]
-- **Landing page card match:** [yes/no -- note if listed]
-- **CLAUDE.md sync:** [yes/no -- note discrepancies]
+- **Navbar match:** [yes/no; note label used]
+- **Landing page card match:** [yes/no; note if listed]
+- **CLAUDE.md sync:** [yes/no; note discrepancies]
 - **Finding:** [pass/flag with specific issues]
+
+### AI Writing Patterns
+- **Patterns found:** [count and list pattern names]
+- **Severity:** [pass (0-2) / should fix (3-4) / must fix (5+)]
+- **Instances:** [quote offending passages with pattern name and line number]
+- **Finding:** [pass/flag with rewrite guidance]
 
 ### Summary
 - **Status:** [Pass / Needs Revision]
@@ -160,9 +236,9 @@ Output a structured review report for each page. Use this format:
 
 When flagging issues, categorize by severity:
 
-- **Must fix:** Contradicts a reference document, contains inaccurate policy, or violates a hard editorial rule (e.g., invented policy, wrong data classification level)
-- **Should fix:** Misses an opportunity to serve an objective, uses unclear language, or has formatting issues
-- **Consider:** Minor tone adjustments, opportunities to strengthen alignment, or suggestions that are subjective
+- **Must fix:** Contradicts a reference document, contains inaccurate policy, violates a hard editorial rule (e.g., invented policy, wrong data classification level), or has 5+ AI writing patterns (page reads as AI-generated)
+- **Should fix:** Misses an opportunity to serve an objective, uses unclear language, has formatting issues, or has 3-4 AI writing patterns (detectable AI voice)
+- **Consider:** Minor tone adjustments, opportunities to strengthen alignment, suggestions that are subjective, or 1-2 isolated AI writing patterns
 
 ### Step 5: Offer Fixes
 
@@ -175,9 +251,9 @@ When reviewing a section or the full site, output individual page reports, then 
 ```
 ## Site Review Summary
 
-| Page | Status | Must Fix | Should Fix | Consider |
-|------|--------|----------|------------|----------|
-| ... | ... | ... | ... | ... |
+| Page | Status | Must Fix | Should Fix | Consider | AI Patterns |
+|------|--------|----------|------------|----------|-------------|
+| ... | ... | ... | ... | ... | [count] |
 
 ### Cross-Cutting Issues
 [Issues that appear across multiple pages]
@@ -188,8 +264,11 @@ When reviewing a section or the full site, output individual page reports, then 
 
 ## When NOT to Flag
 
-- Do not flag academic policy pages for content accuracy -- those require stakeholder review, not automated correction. Only flag style/formatting issues on those pages.
+- Do not flag academic policy pages for content accuracy. Those require stakeholder review, not automated correction. Only flag style/formatting issues on those pages.
 - Do not flag pages for missing objectives alignment if the page is a landing page (landing pages serve as navigation, not standalone content).
 - Do not require every Church principle to appear on every page. Only flag when a relevant principle is absent.
-- Do not flag home page card labels for not matching canonical titles -- home page cards intentionally use concise verb phrases per naming conventions.
-- Do not flag access guide H1s for being longer than the frontmatter title -- access guides are explicitly allowed to use a longer descriptive form in the H1.
+- Do not flag home page card labels for not matching canonical titles. Home page cards intentionally use concise verb phrases per naming conventions.
+- Do not flag access guide H1s for being longer than the frontmatter title. Access guides are explicitly allowed to use a longer descriptive form in the H1.
+- Do not flag isolated AI writing patterns (1-2 per page) as must-fix. Individual instances of common patterns like em dashes or a single "It's not X, it's Y" are normal in human writing. Only escalate when patterns cluster.
+- Do not flag the report template's own bold-first bullet formatting as an AI pattern. Structured review output is not article prose.
+- Do not flag technical terms like "framework" or "ecosystem" when they are used in their literal, domain-appropriate sense (e.g., "the OpenAI Agents SDK framework" or "the Azure ecosystem"). Only flag when used as vague ornamental nouns.

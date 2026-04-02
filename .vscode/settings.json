@@ -1,0 +1,10 @@
+{
+  "[markdown]": {
+    "editor.defaultFormatter": "unifiedjs.vscode-remark",
+    "editor.formatOnSave": true
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "unifiedjs.vscode-mdx",
+    "editor.formatOnSave": true
+  }
+}

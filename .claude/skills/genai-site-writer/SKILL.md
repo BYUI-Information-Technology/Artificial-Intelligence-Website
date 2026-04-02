@@ -29,20 +29,20 @@ For Best Practices articles specifically, also ask:
 - Should the article open with a scenario or lead with the definition?
 - Any tool-specific tips to include (ChatGPT, Copilot, Gemini)?
 
-Stop interviewing when you have enough to write a clear plan. You do not need to ask every question above -- skip any that are already obvious from context or the user's initial request. Limit yourself to 2-4 questions total unless the topic genuinely requires more.
+Stop interviewing when you have enough to write a clear plan. You do not need to ask every question above; skip any that are already obvious from context or the user's initial request. Limit yourself to 2-4 questions total unless the topic genuinely requires more.
 
 ### Grounding: Read Reference Documents
 
 Before planning or writing, read the reference documents that apply to this page. At minimum, always read:
 
-1. `.claude/reference-docs/objectives.md` -- identify which governance objective(s) this page will serve
-2. `.claude/reference-docs/strategy.md` -- confirm the content supports the institutional AI strategy
+1. `.claude/reference-docs/objectives.md`: identify which governance objective(s) this page will serve
+2. `.claude/reference-docs/strategy.md`: confirm the content supports the institutional AI strategy
 
 Also read these when relevant:
 
-3. `.claude/reference-docs/church-guidance.md` -- when the page touches on ethics, transparency, data privacy, or institutional mission
-4. `.claude/reference-docs/data-classification-policy.md` -- when the page involves data handling, tool approval levels, or privacy guidance
-5. `.claude/reference-docs/landing-pages.md` -- when creating or revising an audience landing page (Teaching with AI, Working with AI, Learning with AI)
+3. `.claude/reference-docs/church-guidance.md`: when the page touches on ethics, transparency, data privacy, or institutional mission
+4. `.claude/reference-docs/data-classification-policy.md`: when the page involves data handling, tool approval levels, or privacy guidance
+5. `.claude/reference-docs/landing-pages.md`: when creating or revising an audience landing page (Teaching with AI, Working with AI, Learning with AI)
 
 You do not need to quote these documents in the article. They inform tone, emphasis, and what belongs on the page.
 
@@ -52,7 +52,7 @@ Enter Plan mode. Present a structured plan that includes:
 
 - **Article title**
 - **File path** (where it will be saved in `Website/`)
-- **Governance objective(s) served** (which of the five objectives this page supports -- identified from the grounding step)
+- **Governance objective(s) served** (which of the five objectives this page supports, identified from the grounding step)
 - **Section-by-section outline** with a 1-2 sentence description of each section's content
 - **Estimated length** (word count range)
 - **Style notes** (any deviations from the defaults below)
@@ -66,8 +66,9 @@ Write the article to the specified file path. After writing:
 
 1. If the article belongs to a section with a landing page, update the landing page to include a card for the new article.
 2. Update `Website/navbar.md` if the navigation structure changed.
-3. Offer to update `CLAUDE.md` (progress table, file inventory, directory tree) and `CHANGELOG.md`.
-4. Offer to commit.
+3. **Run the reviewer.** Invoke the `genai-site-reviewer` skill on the page you just wrote. Present the review report to the user. If the reviewer flags issues, fix them before proceeding.
+4. Offer to update `CLAUDE.md` (progress table, file inventory, directory tree) and `CHANGELOG.md`.
+5. Offer to commit.
 
 ## Style Guide
 
@@ -80,6 +81,24 @@ These rules apply to all content written for this site.
 - **Employee audience.** Write for faculty, administrative staff, and staff at BYU-Idaho. Do not over-explain basic concepts. Do not write for students (future phase).
 - **Second person.** Address the reader as "you." Exception: opening scenarios in Best Practices articles use third person ("an employee"), then transition to "you."
 - **Cut aggressively.** When in doubt, cut it. Less content, not more.
+
+### Frontmatter
+
+Every page must have YAML frontmatter with three fields:
+
+```yaml
+---
+url: "https://www.byui.edu/genai/<path>"
+title: "<Page Title>"
+slug: /<Section>/<filename-without-extension>
+---
+```
+
+- **url:** The production URL on byui.edu. Use the pattern `https://www.byui.edu/genai/` followed by the page's path segment (e.g., `privacy`, `academic-integrity`, `best-practices/sycophancy`).
+- **title:** The canonical page title. The H1 must match this exactly (exception: access guides may use a longer descriptive form).
+- **slug:** The Docusaurus route. Use the format `/<Section>/<filename>` matching the file's location in `Website/` (e.g., `/Data-Privacy/data-privacy`, `/Best-Practices/sycophancy`). For the home page, use `/`.
+
+When revising an existing page, check its frontmatter and add any missing fields. When creating a new page, include all three fields.
 
 ### Formatting
 
@@ -94,6 +113,7 @@ These rules apply to all content written for this site.
 Do not use any of the following:
 
 - Horizontal rules (`---`) between major sections
+- Double hyphens (`--`) or em dashes (`—`). Use colons, commas, parentheses, or separate sentences instead.
 
 ### Content Rules
 
@@ -117,11 +137,11 @@ Landing pages use numbered lists to represent image cards:
 
 Best Practices articles follow a consistent pattern established by the sycophancy and hallucination articles. When writing a new Best Practices article, follow this structure:
 
-1. **Opening scenario** (optional but recommended) -- 3-4 sentence vignette set at BYU-Idaho showing the problem in action. Third person ("an employee"), no character names. Transition to second person after this.
-2. **What Is [Topic]?** -- 1-2 short paragraphs defining the concept. Accessible, no jargon. Emphasize this is a limitation, not malice.
-3. **What Causes It?** -- 2-4 key points, one short paragraph each with bold lead-ins. Accessible explanation, not a deep technical dive.
-4. **Why Is It a Problem?** -- Concrete examples grounded in university work context. Consider both internal risks (bad decisions) and external risks (reputational damage).
-5. **Best Practices** -- Split into subsections as appropriate (e.g., Detection + Prevention). Each point gets a bold lead-in with 1-2 sentences of explanation. Include Bad/Good prompt examples where they add clarity:
+1. **Opening scenario** (optional but recommended): 3-4 sentence vignette set at BYU-Idaho showing the problem in action. Third person ("an employee"), no character names. Transition to second person after this.
+2. **What Is [Topic]?**: 1-2 short paragraphs defining the concept. Accessible, no jargon. Emphasize this is a limitation, not malice.
+3. **What Causes It?**: 2-4 key points, one short paragraph each with bold lead-ins. Accessible explanation, not a deep technical dive.
+4. **Why Is It a Problem?**: Concrete examples grounded in university work context. Consider both internal risks (bad decisions) and external risks (reputational damage).
+5. **Best Practices**: Split into subsections as appropriate (e.g., Detection + Prevention). Each point gets a bold lead-in with 1-2 sentences of explanation. Include Bad/Good prompt examples where they add clarity:
    - *Bad:* "Example of what not to do"
    - *Good:* "Example of what to do instead"
 6. **IT Help Center closing line.**
@@ -159,7 +179,7 @@ All reference documents live in `.claude/reference-docs/`. See the Grounding ste
 |----------|--------------------------|
 | `church-guidance.md` | Ethics, transparency, institutional mission, AI limitations |
 | `strategy.md` | Strategic priorities, institutional direction, why AI matters at BYU-Idaho |
-| `objectives.md` | Content relevance -- does this page serve a governance objective? |
+| `objectives.md` | Content relevance: does this page serve a governance objective? |
 | `data-classification-policy.md` | Data classification levels, tool approval, privacy guidance |
 | `landing-pages.md` | Audience landing page structure (Teaching/Working/Learning with AI) |
 | `naming-conventions.md` | Page titles, nav labels, terminology rules, label hierarchy across surfaces |

@@ -1,10 +1,11 @@
 .DS_Store
 .env
 
-# Claude config (keep reference-docs and skills tracked)
+# Claude config (keep reference-docs, skills, and hooks tracked)
 .claude/*
 !.claude/reference-docs/
 !.claude/skills/
+!.claude/hooks/
 .remember/*
 
 # Docx exports
