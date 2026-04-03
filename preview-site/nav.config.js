@@ -47,13 +47,14 @@ const nav = [
     ],
   },
   {
-    label: 'How AI Works',
+    label: 'Training',
     type: 'dropdown',
-    overview: { to: '/How-AI-Works', file: 'How-AI-Works/how-ai-works.mdx' },
+    overview: { to: '/Training', file: 'Training/training.mdx' },
     items: [
-      { label: 'How LLMs Are Trained', to: '/How-AI-Works/how-llms-are-trained', file: 'How-AI-Works/how-llms-are-trained.mdx' },
-      { label: 'What Are Tokens', to: '/How-AI-Works/tokens', file: 'How-AI-Works/tokens.mdx' },
-      { label: 'What Are AI Agents', to: '/How-AI-Works/what-are-ai-agents', file: 'How-AI-Works/what-are-ai-agents.mdx' },
+      { label: 'How LLMs Are Trained', to: '/Training/how-llms-are-trained', file: 'Training/how-llms-are-trained.mdx' },
+      { label: 'What Are Tokens', to: '/Training/tokens', file: 'Training/tokens.mdx' },
+      { label: 'What Are AI Agents', to: '/Training/what-are-ai-agents', file: 'Training/what-are-ai-agents.mdx' },
+      { label: 'Top 5 Things You Can Do with AI Today', to: '/Training/top-5-things', file: 'Training/top-5-things.mdx' },
     ],
   },
   {
@@ -64,6 +65,7 @@ const nav = [
       { label: 'Why AI Agrees with You', to: '/Best-Practices/sycophancy', file: 'Best-Practices/sycophancy.mdx' },
       { label: 'Why AI Makes Things Up', to: '/Best-Practices/hallucination', file: 'Best-Practices/hallucination.mdx' },
       { label: 'Managing Context', to: '/Best-Practices/managing-context', file: 'Best-Practices/managing-context.mdx' },
+      { label: 'Why You Should Learn Markdown', to: '/Best-Practices/markdown', file: 'Best-Practices/markdown.mdx' },
     ],
   },
   {

@@ -25,7 +25,7 @@ function buildNavbarItems(navConfig) {
       };
     }
 
-    // Standard dropdown (e.g., Best Practices, How AI Works)
+    // Standard dropdown (e.g., Best Practices, Training)
     if (item.type === 'dropdown') {
       const dropdownItems = [];
       if (item.overview) {
@@ -90,7 +90,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'BYU-Idaho AI',
+        title: 'BYU-Idaho',
         items: buildNavbarItems(nav),
       },
       footer: {

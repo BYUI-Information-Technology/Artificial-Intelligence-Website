@@ -10,13 +10,14 @@ const sidebars = {
         'Best-Practices/sycophancy',
         'Best-Practices/hallucination',
         'Best-Practices/managing-context',
+        'Best-Practices/markdown',
       ],
     },
     {
       type: 'category',
-      label: 'How AI Works',
-      link: { type: 'doc', id: 'How-AI-Works/how-ai-works' },
-      items: ['How-AI-Works/how-llms-are-trained', 'How-AI-Works/tokens', 'How-AI-Works/what-are-ai-agents'],
+      label: 'Training',
+      link: { type: 'doc', id: 'Training/training' },
+      items: ['Training/how-llms-are-trained', 'Training/tokens', 'Training/what-are-ai-agents', 'Training/top-5-things'],
     },
     {
       type: 'category',

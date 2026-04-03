@@ -44,17 +44,19 @@ BYUI-GenAI-Site/
     │   ├── best-practices.mdx
     │   ├── sycophancy.mdx
     │   ├── hallucination.mdx
-    │   └── managing-context.mdx
+    │   ├── managing-context.mdx
+    │   └── markdown.mdx
     ├── Working-with-AI/
     │   ├── working-with-ai.mdx
     │   └── getting-started.mdx
     ├── Learning-with-AI/
     │   └── learning-with-ai.mdx
-    ├── How-AI-Works/
-    │   ├── how-ai-works.mdx
+    ├── Training/
+    │   ├── training.mdx
     │   ├── how-llms-are-trained.mdx
     │   ├── tokens.mdx
-    │   └── what-are-ai-agents.mdx
+    │   ├── what-are-ai-agents.mdx
+    │   └── top-5-things.mdx
     ├── Protecting-Your-Data/
     │   ├── protecting-your-data.mdx
     │   ├── data-privacy.mdx
@@ -122,14 +124,16 @@ Summary:
     - Getting Started with AI (`Working-with-AI/getting-started.mdx`)
   - **For Students**
     - Learning with AI (`Learning-with-AI/learning-with-ai.mdx`)
-- How AI Works (`How-AI-Works/how-ai-works.mdx`)
-  - How LLMs Are Trained (`How-AI-Works/how-llms-are-trained.mdx`)
-  - What Are Tokens (`How-AI-Works/tokens.mdx`)
-  - What Are AI Agents (`How-AI-Works/what-are-ai-agents.mdx`)
+- Training (`Training/training.mdx`)
+  - How LLMs Are Trained (`Training/how-llms-are-trained.mdx`)
+  - What Are Tokens (`Training/tokens.mdx`)
+  - What Are AI Agents (`Training/what-are-ai-agents.mdx`)
+  - Top 5 Things You Can Do with AI Today (`Training/top-5-things.mdx`)
 - Best Practices (`Best-Practices/best-practices.mdx`)
   - Why AI Agrees with You (`Best-Practices/sycophancy.mdx`)
   - Why AI Makes Things Up (`Best-Practices/hallucination.mdx`)
   - Managing Context (`Best-Practices/managing-context.mdx`)
+  - Why You Should Learn Markdown (`Best-Practices/markdown.mdx`)
 - Protecting Your Data (`Protecting-Your-Data/protecting-your-data.mdx`)
   - Data Privacy (`Protecting-Your-Data/data-privacy.mdx`)
   - Data Usage Guide (`Protecting-Your-Data/data-usage-guide.mdx`)
@@ -143,7 +147,7 @@ Summary:
 ### Pages Removed (from original site)
 
 - About GenAI -- removed (content pending rewrite)
-- Training -- replaced by How AI Works section with new educational content
+- Training (old) -- replaced by the new Training section (formerly "How AI Works")
 - Custom Bots -- inaccurate, noise
 - Connectors -- inaccurate, noise
 - All product-specific subpages from old Products section (replaced by Approved-Tools/approved-tools.mdx)
@@ -196,17 +200,17 @@ Summary:
 - Clean up verbosity
 - Updates require collaboration with academic stakeholders
 
-### How AI Works
+### Training (formerly How AI Works)
 
-- Landing page (`How-AI-Works/how-ai-works.mdx`) with image cards linking to subpages
-- **Purpose:** Educational content that builds AI literacy across the BYU-Idaho community. Articles explain *how AI works* at a conceptual level -- not "do this, not that" (that's Best Practices), but "here's what's happening under the hood and why it matters"
-- **Audience calibration:** Write for accessibility first -- any employee should be able to follow the article without a technical background. Do not shy away from more advanced concepts, but explain them without assuming prior knowledge
-- **Distinction from Best Practices:** Best Practices = actionable guidance (protect yourself, avoid pitfalls). How AI Works = understanding the technology (how LLMs are trained, what RAG is, how alignment works). There will be natural overlap in concepts, but the framing differs
-- **Existing source content:** Ron has previously authored educational articles at `https://byui.mintlify.app/`. When adapting existing content for this site, generalize product-specific references (e.g., references to the Support Agent or specific model versions) so articles serve all employees, not just users of one system
+- Landing page (`Training/training.mdx`) with image cards linking to subpages
+- **Purpose:** Training content that builds AI literacy and practical skills. Includes both educational articles (how AI works conceptually) and practical guides (how to use AI tools effectively)
+- **Audience calibration:** Write for accessibility first. Any employee should be able to follow without a technical background. Do not shy away from advanced concepts, but explain them without assuming prior knowledge
+- **Distinction from Best Practices:** Best Practices = actionable guidance (protect yourself, avoid pitfalls). Training = understanding the technology and building practical skills
+- **Existing source content:** Ron has previously authored educational articles at `https://byui.mintlify.app/`. When adapting existing content for this site, generalize product-specific references so articles serve all employees
 - **Article structure pattern:** accessible introduction, concept explanation with analogies, why it matters at BYU-Idaho, key takeaways
-- **Article length:** Target 1,200-1,500 words (matches existing articles). Structure: frontmatter + H1, opening paragraph (~150 words), multiple H2 concept sections, "Why This Matters" section, "Key Takeaways" with 5 bold-first bullets.
+- **Article length:** Target 1,200-1,500 words. Structure: frontmatter + H1, opening paragraph (~150 words), multiple H2 concept sections, "Why This Matters" section, "Key Takeaways" with 5 bold-first bullets.
 - **Sources:** When writing educational articles, research 2-3 external sources (NVIDIA, Microsoft, IBM, etc.) for technical accuracy before drafting.
-- Planned articles: How LLMs Are Trained (complete), What Are Tokens (complete), additional topics TBD (e.g., What is RAG, What is Model Alignment)
+- Articles: How LLMs Are Trained (complete), What Are Tokens (complete), What Are AI Agents (complete), Top 5 Things You Can Do with AI Today (complete), additional topics TBD (e.g., What is RAG, What is Model Alignment)
 
 ### Best Practices
 
@@ -283,14 +287,16 @@ Reference documents in `.claude/reference-docs/` provide authoritative context f
 | Teaching-with-AI/academic-integrity.mdx | Academic stakeholder review required |
 | Teaching-with-AI/ai-in-the-syllabus.mdx | Academic stakeholder review required |
 | Teaching-with-AI/grading-with-ai.mdx | Academic stakeholder review required |
-| How-AI-Works/how-ai-works.mdx | How AI Works landing page |
-| How-AI-Works/how-llms-are-trained.mdx | How LLMs Are Trained (source content exists at mintlify) |
-| How-AI-Works/tokens.mdx | What Are Tokens article |
-| How-AI-Works/what-are-ai-agents.mdx | What Are AI Agents article |
+| Training/training.mdx | Training landing page (formerly How AI Works) |
+| Training/how-llms-are-trained.mdx | How LLMs Are Trained (source content exists at mintlify) |
+| Training/tokens.mdx | What Are Tokens article |
+| Training/what-are-ai-agents.mdx | What Are AI Agents article |
+| Training/top-5-things.mdx | Top 5 Things You Can Do with AI Today (scoped to ChatGPT) |
 | Best-Practices/best-practices.mdx | Best Practices landing page |
 | Best-Practices/sycophancy.mdx | Why AI Agrees with You article |
 | Best-Practices/hallucination.mdx | Why AI Makes Things Up article |
 | Best-Practices/managing-context.mdx | Managing Context article |
+| Best-Practices/markdown.mdx | Why You Should Learn Markdown article |
 | Protecting-Your-Data/protecting-your-data.mdx | Protecting Your Data landing page |
 | Protecting-Your-Data/data-privacy.mdx | Data privacy guidelines |
 | Protecting-Your-Data/data-usage-guide.mdx | Data Usage Guide -- step-by-step AI data usage decision guide |
@@ -359,14 +365,16 @@ Track content authoring status here. Update as pages are completed.
 | Academic Integrity | Baseline copied | Requires academic stakeholder review |
 | AI in the Syllabus | Baseline copied | Requires academic stakeholder review |
 | Grading with AI | Baseline copied | Requires academic stakeholder review |
-| How AI Works landing | Draft complete | Renamed from "Learn About AI"; image cards linking to subpages |
+| Training landing | Draft complete | Renamed from "How AI Works"; image cards linking to subpages |
 | How LLMs Are Trained | Draft complete | Educational article covering three-phase training process |
 | What Are Tokens | Draft complete | Educational article covering tokens, tokenization, context windows, and token economics |
 | What Are AI Agents | Draft complete | Educational article covering AI agents, components, workflows vs. agents, capabilities and limitations |
+| Top 5 Things You Can Do with AI Today | Draft complete | Practical guide scoped to ChatGPT: summarize docs, take notes, revise emails, plan your day, improve prompts |
 | Best Practices landing | Draft complete | Image cards with plain-language titles |
 | Why AI Agrees with You | Draft complete | First best practices article (sycophancy) |
 | Why AI Makes Things Up | Draft complete | Second best practices article (hallucination) |
 | Managing Context | Draft complete | Third best practices article |
+| Why You Should Learn Markdown | Draft complete | Practical case for learning Markdown in the age of AI |
 | Protecting Your Data landing | Draft complete | Image cards linking to subpages |
 | Data Privacy | Baseline copied | Not yet rewritten |
 | Data Usage Guide | Draft complete | Step-by-step decision guide for AI data usage |

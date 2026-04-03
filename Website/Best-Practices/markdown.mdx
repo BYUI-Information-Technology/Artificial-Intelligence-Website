@@ -1,0 +1,121 @@
+---
+title: "Why You Should Learn Markdown"
+url: "https://www.byui.edu/genai/best-practices/markdown"
+slug: /Best-Practices/markdown
+---
+
+# Why You Should Learn Markdown
+
+You probably write most of your documents in Word. That makes sense. Word is familiar, widely supported, and good at what it does. But if you are using AI tools (or plan to), there is a simpler format worth learning. Markdown is a lightweight way to write formatted text using plain characters. It takes about ten minutes to pick up the basics, and it works well with AI tools, collaboration platforms, and most modern software.
+
+This is not an argument to abandon Word. It is an argument that Markdown is a useful skill to add to your toolkit, especially as AI tools become a bigger part of daily work at BYU-Idaho.
+
+## What Is Markdown?
+
+Markdown is a way to format text using plain characters instead of toolbar buttons. You type `# Heading` instead of selecting text and clicking a heading style. You type `**bold**` instead of pressing Ctrl+B. You type `- item` to create a bullet list. The formatting lives in the text itself, not in a hidden layer of XML that only the application understands.
+
+Here are a few common examples:
+
+| What you type | What it becomes |
+|---|---|
+| `# Section Title` | A large heading |
+| `**important**` | **important** |
+| `*emphasis*` | *emphasis* |
+| `- first item` | A bullet list |
+| `[BYU-Idaho](https://www.byui.edu)` | A clickable link |
+| `` `code` `` | Inline code formatting |
+
+Markdown was created in 2004 by John Gruber as a way to write for the web without dealing with HTML tags. It has since become the default writing format across much of the software industry. GitHub uses it for documentation. Notion uses it for page content. Slack uses it for message formatting. Most documentation platforms and static site generators are built around it. This website is written in Markdown.
+
+## AI Tools Already Speak Markdown
+
+Every approved AI tool at BYU-Idaho (ChatGPT, Copilot, and Gemini) outputs Markdown by default. When ChatGPT gives you a bulleted list, that is Markdown. When it formats a code block with syntax highlighting, that is Markdown. When it creates a table, that is Markdown too. The models learned this behavior from their training data, which includes millions of GitHub repositories, Stack Overflow posts, and technical documents, all written in Markdown.
+
+This matters because the format you use in your prompts influences the format and quality of the response you get back. AI models tend to mirror the structure of their input. When you send a wall of unformatted text, you often get a wall of text in return. When you send a structured prompt with clear sections, the model produces a more organized response.
+
+Consider the difference:
+
+**Unstructured prompt:**
+> I need you to write a communication to faculty about the new ChatGPT license. It should mention how to get access, what data they can and can't use, and when the rollout starts. Keep it professional.
+
+**Structured prompt:**
+> ```
+> # Task
+> Write a faculty communication about the new ChatGPT license.
+>
+> ## Include
+> - How to request access (IT Help Center)
+> - Data classification reminders (no Level 3 or 4 data)
+> - Rollout timeline (starting January 6)
+>
+> ## Tone
+> Professional, concise, under 300 words
+> ```
+
+Both prompts ask for the same thing. The second one gives the model clear sections, explicit constraints, and a visual hierarchy. Surveys of over 1,500 prompt engineering research papers have confirmed what practitioners already know from experience: structured prompts consistently produce better results. The model can parse your intent more accurately when you give it structure to work with.
+
+You do not need to be a Markdown expert to benefit from this. Even basic formatting (a heading to name the task, a list to specify requirements) makes a noticeable difference.
+
+## Beyond AI: Where Markdown Shows Up
+
+Markdown is not just an AI tool trick. It has become the common language for writing across a wide range of platforms.
+
+**GitHub** uses Markdown for README files, issues, pull requests, and wikis. If your department works with any code repositories, you will encounter it.
+
+**Notion** uses Markdown shortcuts for all formatting. Type `#` followed by a space and you get a heading. Type `-` followed by a space and you get a bullet. Most Notion users pick up Markdown without realizing it.
+
+**Slack and Teams** both support Markdown-style formatting for messages. Bold, italic, code blocks, and lists all use Markdown syntax or close variants.
+
+**Documentation platforms** like Confluence, GitBook, and Read the Docs are built on Markdown. Technical writers across industries use it as their primary format.
+
+If you learn Markdown once, you can use it in all of these places. The syntax is the same everywhere.
+
+## Why Not Just Use Word?
+
+Word is a powerful tool, and for many tasks it is the right choice. Formal documents with complex layouts, mail merges, tracked changes for legal review: Word handles these well. But Word has tradeoffs that become visible when you start working with AI tools, collaborating on text-heavy projects, or thinking about long-term portability.
+
+**Word files are messy under the hood.** A `.docx` file is not a text file. It is a compressed ZIP archive containing XML markup, style definitions, relationship maps, and embedded metadata. A single sentence like "Hello, world" in a Word document produces hundreds of lines of XML encoding: font declarations, paragraph properties, run elements, theme references, and document settings. All of that encoding exists to support Word's rich formatting engine, but none of it is your content.
+
+This matters for AI. When you upload a `.docx` file to ChatGPT, the model has to parse through all of that structural noise to find the actual text. It usually handles this well, but the extra encoding consumes tokens from your context window and can introduce artifacts, especially with complex formatting, tracked changes, or embedded objects. A Markdown file, by contrast, is clean text. What you see is what the model sees. There is no hidden layer between your content and the AI. The signal-to-noise ratio is as high as it gets.
+
+Beyond AI, the encoding difference has practical consequences. You cannot open a `.docx` file in a text editor and read the content. You need Microsoft Word (or a compatible application) to view it. If you have ever tried to open a `.doc` file from 2003 and gotten garbled formatting, you have experienced the cost of proprietary formats. A Markdown file is plain text. You can open it with any text editor on any operating system, today or twenty years from now.
+
+**Version control does not work well with Word.** Git, the version control system used across software development, tracks changes line by line. With Markdown, you can see exactly what changed: "This sentence was reworded" or "This section was added." With Word files, Git sees only that the binary file changed. It cannot tell you what is different. Research on collaborative writing workflows has found that plain text formats reduce merge conflicts by roughly 60% compared to rich text, because the tools can actually read and compare the content.
+
+**Markdown converts to anything.** A single Markdown file can be converted to HTML for a website, PDF for printing, or DOCX for sharing with colleagues who prefer Word. Tools like Pandoc handle these conversions automatically. You write once, in a simple format, and output to whatever your audience needs.
+
+None of this means you should stop using Word. It means that for certain workflows, particularly ones involving AI tools, documentation, or collaborative writing, Markdown offers advantages worth considering.
+
+## Getting Started with Markdown
+
+You can learn the core syntax in about ten minutes. Here is what covers 90% of everyday use:
+
+| Syntax | Result |
+|---|---|
+| `# Heading 1` | Top-level heading |
+| `## Heading 2` | Second-level heading |
+| `**bold text**` | **bold text** |
+| `*italic text*` | *italic text* |
+| `- item` | Bullet list |
+| `1. item` | Numbered list |
+| `[link text](url)` | Clickable link |
+| `` `inline code` `` | Inline code |
+| ```` ``` ```` | Code block (triple backticks on their own line, before and after) |
+
+The fastest way to practice is to use it where you are already working. Paste some Markdown formatting into your next ChatGPT prompt and compare the output to an unformatted version. Try the formatting shortcuts in Notion or Slack.
+
+You may also be surprised how many tools already support Markdown natively:
+
+- **Obsidian** is a popular note-taking app built entirely around Markdown files. It's support of Markdown formatting is best-in-class. Your notes are stored as plain `.md` files on your computer, in a private database that they call a "[Vault](https://obsidian.md/help/vault)". Read and write Markdown directly, with a live preview of the formatted output. *See official [Obsidian documentation](https://help.obsidian.md/Editing+and+formatting/Markdown+syntax) for details.*
+- **VS Code** has a built-in Markdown preview and is widely used for writing documentation alongside code.
+- **Apple Notes** added Markdown support in 2025, so you can use headings, bold, lists, and other formatting with standard Markdown syntax right from your Mac or iPhone. *See official [Apple documentation](https://support.apple.com/guide/iphone/export-or-print-notes-iphdf551cfa2/ios)* for details.
+- **Notion** uses Markdown shortcuts for all formatting, even if you never see a `.md` file directly. Learn Notion's Markdown shortcuts by going to the [Notion Help Center](https://www.notion.com/help/writing-and-editing-basics#markdown-and-shortcuts) and practicing in your next page.
+- **Google Docs** supports Markdown input: type `#` followed by a space to create a heading, `**` around text for bold, and so on.
+    - Google added full interoperability for Markdown in 2024. Features included:
+        - Export/Download: The ability to download a document as a Markdown (.md) file via the Google Docs File > Download menu.
+        - Import/Open: Opening .md files directly in Google Docs.
+        - Copy/Paste: Copying Docs content specifically as Markdown or converting Markdown to formatted text upon pasting.
+
+For a complete reference, the [Markdown Guide](https://www.markdownguide.org) covers everything from basic syntax to extended features like tables and task lists.
+
+Markdown is not a replacement for every writing tool you use. It is a small, practical skill that makes you more effective with AI tools, more portable across platforms, and more prepared for the way modern software expects text to be written. Ten minutes of learning pays off every time you open ChatGPT.

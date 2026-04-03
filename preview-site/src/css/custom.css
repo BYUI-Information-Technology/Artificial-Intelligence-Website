@@ -27,6 +27,21 @@
   margin-top: 0;
 }
 
+/* BYU-Idaho Brand Blue navbar */
+.navbar {
+  background-color: #006eb6;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: #a0d4ed;
+}
+
+.navbar__title {
+  color: #ffffff;
+}
+
+.navbar__toggle {
+  color: #ffffff;
+}
+
 [data-theme='dark'] {
   --ifm-color-primary: #4da6e8;
   --ifm-color-primary-dark: #3599e4;
