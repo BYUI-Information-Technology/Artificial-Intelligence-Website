@@ -45,7 +45,7 @@ Every page has a canonical label (the frontmatter `title`). Other surfaces may u
 | Audience landing pages | "[Verb]-ing with AI" | Teaching with AI, Working with AI, Learning with AI |
 | Home page cards | Imperative verb phrase | Teach with AI, Work with AI, Learn with AI |
 | Best Practices articles | Plain-language description of the problem | Why AI Agrees with You, Why AI Makes Things Up |
-| How AI Works articles | Descriptive phrase | How LLMs Are Trained |
+| Training articles | Descriptive phrase | How LLMs Are Trained |
 | Access guides (navbar) | "Access [Tool Name]" | Access ChatGPT, Access Copilot |
 | Access guides (H1) | "How to Access [Tool] with Your BYU-Idaho [Account/Subscription]" | How to Access ChatGPT with Your BYU-Idaho CES Subscription |
 | Data Privacy articles | Descriptive noun phrase | Data Privacy, Data Usage Guide, AI and Copyright |

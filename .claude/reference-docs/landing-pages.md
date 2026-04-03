@@ -18,7 +18,7 @@ All landing pages should have:
 4. Students - `Website/Learning-with-AI/learning-with-ai.mdx`
 5. Best Practices - `Website/Best-Practices/best-practices.mdx`
 6. Protecting Your Data - `Website/Protecting-Your-Data/protecting-your-data.mdx`
-7. How AI Works - `Website/How-AI-Works/how-ai-works.mdx`
+7. Training - `Website/Training/training.mdx`
 
 ## Examples
 

@@ -159,9 +159,9 @@ Reading these before writing a new article is recommended but not required.
 ### File Locations
 
 - All site content lives in `Website/`
-- Subdirectories: `Teaching-with-AI/`, `Best-Practices/`, `Protecting-Your-Data/`, `Approved-Tools/`, `Working-with-AI/`, `Learning-with-AI/`, `How-AI-Works/`
+- Subdirectories: `Teaching-with-AI/`, `Best-Practices/`, `Protecting-Your-Data/`, `Approved-Tools/`, `Working-with-AI/`, `Learning-with-AI/`, `Training/`
 - Navigation source of truth: `Website/navbar.mdx`
-- Landing pages: `best-practices.mdx`, `teaching-with-ai.mdx`, `protecting-your-data.mdx`, `approved-tools.mdx`, `working-with-ai.mdx`, `learning-with-ai.mdx`, `how-ai-works.mdx`
+- Landing pages: `best-practices.mdx`, `teaching-with-ai.mdx`, `protecting-your-data.mdx`, `approved-tools.mdx`, `working-with-ai.mdx`, `learning-with-ai.mdx`, `training.mdx`
 
 ### After Writing
 
