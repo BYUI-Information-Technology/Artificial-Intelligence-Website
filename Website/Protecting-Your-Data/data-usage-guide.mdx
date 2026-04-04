@@ -2,6 +2,9 @@
 title: "Data Usage Guide"
 ---
 
+import ClassificationCards from '@site/src/components/ClassificationCards';
+import ClassificationCard from '@site/src/components/ClassificationCard';
+
 # Data Usage Guide
 
 *March 17, 2025*
@@ -17,51 +20,40 @@ This guide outlines how to use artificial intelligence (AI) tools at BYU-Idaho i
 
 ## Step 2: What type of data will you put into the AI tool?
 
-See the [Data Privacy](/Protecting-Your-Data/data-privacy) page for more information on data classification levels.
+Understanding how to classify data is essential for responsible AI use. See the [Data Privacy](/Protecting-Your-Data/data-privacy) page for more information on data classification levels.
 
-### Public Data
+<ClassificationCards>
+  <ClassificationCard
+    title="Public Data"
+    description="Any data that can be found publicly on the web or can reasonably be accessed without credentials."
+    examples={["Public website information", "Calendars and events", "Course catalogs", "Basic campus maps", "Social media posts"]}
+    actionText="Choose wisely; use with any tool"
+    color="green"
+  />
+  <ClassificationCard
+    title="Internal or Confidential Data without PII"
+    description="Any data that you have access to and a reason for using, related to your role within the University."
+    examples={["Policies and procedures", "Budgets and financials", "Resources and scheduling", "Course content", "Deidentified data with PII removed"]}
+    actionText="Use only with BYU-Idaho tools"
+    color="yellow"
+  />
+  <ClassificationCard
+    title="Personally Identifiable Information (PII)"
+    description="Any data that could potentially identify a specific individual, either on its own or when combined with other data."
+    examples={["Names", "Contact information", "Usernames, I-Numbers", "Photos of individuals", "Other data that can be used to identify an individual"]}
+    actionText="Request approval*"
+    color="pink"
+  />
+  <ClassificationCard
+    title="Restricted"
+    description="Information of the highest sensitivity where inappropriate loss, changes, or disclosure could have grave consequences to the University or its students."
+    examples={["Social Security numbers", "Credit card numbers", "Bank account numbers", "Passwords", "HIPAA-protected data (e.g., medical records)"]}
+    actionText="Do not use with AI"
+    color="red"
+  />
+</ClassificationCards>
 
-Examples:
-- BYU-Idaho public websites
-- Calendars and events
-- Course catalogs
-- Basic campus maps
-
-**Result:** Go nuts.
-
-### Internal or Confidential Data (without PII)
-
-Examples:
-- Policies and procedures
-- Budgets and financials
-- Resources and scheduling
-- Course content
-- Meeting notes/recordings
-- Deidentified data (surveys, evals, etc.) with PII removed
-
-**Result:** Proceed to Step 3.
-
-### Personally Identifiable Information (PII)
-
-Examples:
-- Names
-- Contact information
-- Usernames, I-Numbers
-- Photos of individuals
-- Other data that could be used to identify individuals
-
-**Result:** Proceed to Step 3.
-
-### Restricted Data
-
-Examples:
-- Social Security numbers
-- Credit card numbers
-- Bank account numbers
-- Passwords
-- HIPAA-protected data (e.g., medical records)
-
-**Result:** Restricted data is generally not allowed in AI tools. Contact the AI Committee to explore alternatives.
+\*To request approval for a PII use case, [submit a request through the IT Help Center](https://ithelp.byui.edu/?utm_source=byui&utm_medium=web&utm_campaign=front_door). Your request will be routed to AI Governance on your behalf.
 
 ## Step 3: Are you using the authenticated version?
 
@@ -69,7 +61,7 @@ Examples:
 See [www.byui.edu/genai/training](http://www.byui.edu/genai/training) to learn how to check.
 
 - **Yes:** Proceed with care. Always log in with your BYUI account to protect private data.
-- **No:** [Submit an AI Data Usage Request](https://forms.office.com/r/PDM6ipUhGu) for approval. The AI Committee will evaluate the use case.
+- **No:** [Submit a request through the IT Help Center](https://ithelp.byui.edu/?utm_source=byui&utm_medium=web&utm_campaign=front_door) for approval. Your request will be routed to AI Governance on your behalf.
 
 ## Always Remember
 
